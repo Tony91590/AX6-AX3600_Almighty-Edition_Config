@@ -1,4 +1,4 @@
-.class public final Lcom/ibopro/ultra/utils/DemoUtil;
+.class public final Lcom/ibopro/player/utils/DemoUtil;
 .super Ljava/lang/Object;
 .source "DemoUtil.java"
 
@@ -67,7 +67,7 @@
     .registers 3
 
     .line 1
-    invoke-static {}, Lcom/ibopro/ultra/utils/DemoUtil;->useExtensionRenderers()Z
+    invoke-static {}, Lcom/ibopro/player/utils/DemoUtil;->useExtensionRenderers()Z
 
     move-result v0
 
@@ -108,13 +108,13 @@
 .method public static declared-synchronized getDataSourceFactory(Landroid/content/Context;Z)Lcom/google/android/exoplayer2/upstream/DataSource$Factory;
     .registers 4
 
-    const-class v0, Lcom/ibopro/ultra/utils/DemoUtil;
+    const-class v0, Lcom/ibopro/player/utils/DemoUtil;
 
     monitor-enter v0
 
     .line 1
     :try_start_3
-    sget-object v1, Lcom/ibopro/ultra/utils/DemoUtil;->dataSourceFactory:Lcom/google/android/exoplayer2/upstream/DataSource$Factory;
+    sget-object v1, Lcom/ibopro/player/utils/DemoUtil;->dataSourceFactory:Lcom/google/android/exoplayer2/upstream/DataSource$Factory;
 
     if-nez v1, :cond_1e
 
@@ -127,26 +127,26 @@
     new-instance v1, Lcom/google/android/exoplayer2/upstream/DefaultDataSource$Factory;
 
     .line 4
-    invoke-static {p0, p1}, Lcom/ibopro/ultra/utils/DemoUtil;->getHttpDataSourceFactory(Landroid/content/Context;Z)Lcom/google/android/exoplayer2/upstream/HttpDataSource$Factory;
+    invoke-static {p0, p1}, Lcom/ibopro/player/utils/DemoUtil;->getHttpDataSourceFactory(Landroid/content/Context;Z)Lcom/google/android/exoplayer2/upstream/HttpDataSource$Factory;
 
     move-result-object p1
 
     invoke-direct {v1, p0, p1}, Lcom/google/android/exoplayer2/upstream/DefaultDataSource$Factory;-><init>(Landroid/content/Context;Lcom/google/android/exoplayer2/upstream/DataSource$Factory;)V
 
     .line 5
-    invoke-static {p0}, Lcom/ibopro/ultra/utils/DemoUtil;->getDownloadCache(Landroid/content/Context;)Lcom/google/android/exoplayer2/upstream/cache/Cache;
+    invoke-static {p0}, Lcom/ibopro/player/utils/DemoUtil;->getDownloadCache(Landroid/content/Context;)Lcom/google/android/exoplayer2/upstream/cache/Cache;
 
     move-result-object p0
 
-    invoke-static {v1, p0}, Lcom/ibopro/ultra/utils/DemoUtil;->buildReadOnlyCacheDataSource(Lcom/google/android/exoplayer2/upstream/DataSource$Factory;Lcom/google/android/exoplayer2/upstream/cache/Cache;)Lcom/google/android/exoplayer2/upstream/cache/CacheDataSource$Factory;
+    invoke-static {v1, p0}, Lcom/ibopro/player/utils/DemoUtil;->buildReadOnlyCacheDataSource(Lcom/google/android/exoplayer2/upstream/DataSource$Factory;Lcom/google/android/exoplayer2/upstream/cache/Cache;)Lcom/google/android/exoplayer2/upstream/cache/CacheDataSource$Factory;
 
     move-result-object p0
 
-    sput-object p0, Lcom/ibopro/ultra/utils/DemoUtil;->dataSourceFactory:Lcom/google/android/exoplayer2/upstream/DataSource$Factory;
+    sput-object p0, Lcom/ibopro/player/utils/DemoUtil;->dataSourceFactory:Lcom/google/android/exoplayer2/upstream/DataSource$Factory;
 
     .line 6
     :cond_1e
-    sget-object p0, Lcom/ibopro/ultra/utils/DemoUtil;->dataSourceFactory:Lcom/google/android/exoplayer2/upstream/DataSource$Factory;
+    sget-object p0, Lcom/ibopro/player/utils/DemoUtil;->dataSourceFactory:Lcom/google/android/exoplayer2/upstream/DataSource$Factory;
     :try_end_20
     .catchall {:try_start_3 .. :try_end_20} :catchall_22
 
@@ -165,13 +165,13 @@
 .method private static declared-synchronized getDatabaseProvider(Landroid/content/Context;)Lcom/google/android/exoplayer2/database/DatabaseProvider;
     .registers 3
 
-    const-class v0, Lcom/ibopro/ultra/utils/DemoUtil;
+    const-class v0, Lcom/ibopro/player/utils/DemoUtil;
 
     monitor-enter v0
 
     .line 1
     :try_start_3
-    sget-object v1, Lcom/ibopro/ultra/utils/DemoUtil;->databaseProvider:Lcom/google/android/exoplayer2/database/DatabaseProvider;
+    sget-object v1, Lcom/ibopro/player/utils/DemoUtil;->databaseProvider:Lcom/google/android/exoplayer2/database/DatabaseProvider;
 
     if-nez v1, :cond_e
 
@@ -180,11 +180,11 @@
 
     invoke-direct {v1, p0}, Lcom/google/android/exoplayer2/database/StandaloneDatabaseProvider;-><init>(Landroid/content/Context;)V
 
-    sput-object v1, Lcom/ibopro/ultra/utils/DemoUtil;->databaseProvider:Lcom/google/android/exoplayer2/database/DatabaseProvider;
+    sput-object v1, Lcom/ibopro/player/utils/DemoUtil;->databaseProvider:Lcom/google/android/exoplayer2/database/DatabaseProvider;
 
     .line 3
     :cond_e
-    sget-object p0, Lcom/ibopro/ultra/utils/DemoUtil;->databaseProvider:Lcom/google/android/exoplayer2/database/DatabaseProvider;
+    sget-object p0, Lcom/ibopro/player/utils/DemoUtil;->databaseProvider:Lcom/google/android/exoplayer2/database/DatabaseProvider;
     :try_end_10
     .catchall {:try_start_3 .. :try_end_10} :catchall_12
 
@@ -203,13 +203,13 @@
 .method private static declared-synchronized getDownloadCache(Landroid/content/Context;)Lcom/google/android/exoplayer2/upstream/cache/Cache;
     .registers 5
 
-    const-class v0, Lcom/ibopro/ultra/utils/DemoUtil;
+    const-class v0, Lcom/ibopro/player/utils/DemoUtil;
 
     monitor-enter v0
 
     .line 1
     :try_start_3
-    sget-object v1, Lcom/ibopro/ultra/utils/DemoUtil;->downloadCache:Lcom/google/android/exoplayer2/upstream/cache/Cache;
+    sget-object v1, Lcom/ibopro/player/utils/DemoUtil;->downloadCache:Lcom/google/android/exoplayer2/upstream/cache/Cache;
 
     if-nez v1, :cond_22
 
@@ -217,7 +217,7 @@
     new-instance v1, Ljava/io/File;
 
     .line 3
-    invoke-static {p0}, Lcom/ibopro/ultra/utils/DemoUtil;->getDownloadDirectory(Landroid/content/Context;)Ljava/io/File;
+    invoke-static {p0}, Lcom/ibopro/player/utils/DemoUtil;->getDownloadDirectory(Landroid/content/Context;)Ljava/io/File;
 
     move-result-object v2
 
@@ -233,17 +233,17 @@
     invoke-direct {v3}, Lcom/google/android/exoplayer2/upstream/cache/NoOpCacheEvictor;-><init>()V
 
     .line 5
-    invoke-static {p0}, Lcom/ibopro/ultra/utils/DemoUtil;->getDatabaseProvider(Landroid/content/Context;)Lcom/google/android/exoplayer2/database/DatabaseProvider;
+    invoke-static {p0}, Lcom/ibopro/player/utils/DemoUtil;->getDatabaseProvider(Landroid/content/Context;)Lcom/google/android/exoplayer2/database/DatabaseProvider;
 
     move-result-object p0
 
     invoke-direct {v2, v1, v3, p0}, Lcom/google/android/exoplayer2/upstream/cache/SimpleCache;-><init>(Ljava/io/File;Lcom/google/android/exoplayer2/upstream/cache/CacheEvictor;Lcom/google/android/exoplayer2/database/DatabaseProvider;)V
 
-    sput-object v2, Lcom/ibopro/ultra/utils/DemoUtil;->downloadCache:Lcom/google/android/exoplayer2/upstream/cache/Cache;
+    sput-object v2, Lcom/ibopro/player/utils/DemoUtil;->downloadCache:Lcom/google/android/exoplayer2/upstream/cache/Cache;
 
     .line 6
     :cond_22
-    sget-object p0, Lcom/ibopro/ultra/utils/DemoUtil;->downloadCache:Lcom/google/android/exoplayer2/upstream/cache/Cache;
+    sget-object p0, Lcom/ibopro/player/utils/DemoUtil;->downloadCache:Lcom/google/android/exoplayer2/upstream/cache/Cache;
     :try_end_24
     .catchall {:try_start_3 .. :try_end_24} :catchall_26
 
@@ -262,13 +262,13 @@
 .method private static declared-synchronized getDownloadDirectory(Landroid/content/Context;)Ljava/io/File;
     .registers 3
 
-    const-class v0, Lcom/ibopro/ultra/utils/DemoUtil;
+    const-class v0, Lcom/ibopro/player/utils/DemoUtil;
 
     monitor-enter v0
 
     .line 1
     :try_start_3
-    sget-object v1, Lcom/ibopro/ultra/utils/DemoUtil;->downloadDirectory:Ljava/io/File;
+    sget-object v1, Lcom/ibopro/player/utils/DemoUtil;->downloadDirectory:Ljava/io/File;
 
     if-nez v1, :cond_16
 
@@ -279,7 +279,7 @@
 
     move-result-object v1
 
-    sput-object v1, Lcom/ibopro/ultra/utils/DemoUtil;->downloadDirectory:Ljava/io/File;
+    sput-object v1, Lcom/ibopro/player/utils/DemoUtil;->downloadDirectory:Ljava/io/File;
 
     if-nez v1, :cond_16
 
@@ -288,11 +288,11 @@
 
     move-result-object p0
 
-    sput-object p0, Lcom/ibopro/ultra/utils/DemoUtil;->downloadDirectory:Ljava/io/File;
+    sput-object p0, Lcom/ibopro/player/utils/DemoUtil;->downloadDirectory:Ljava/io/File;
 
     .line 4
     :cond_16
-    sget-object p0, Lcom/ibopro/ultra/utils/DemoUtil;->downloadDirectory:Ljava/io/File;
+    sget-object p0, Lcom/ibopro/player/utils/DemoUtil;->downloadDirectory:Ljava/io/File;
     :try_end_18
     .catchall {:try_start_3 .. :try_end_18} :catchall_1a
 
@@ -311,15 +311,15 @@
 .method public static declared-synchronized getHttpDataSourceFactory(Landroid/content/Context;Z)Lcom/google/android/exoplayer2/upstream/HttpDataSource$Factory;
     .registers 5
 
-    const-class v0, Lcom/ibopro/ultra/utils/DemoUtil;
+    const-class v0, Lcom/ibopro/player/utils/DemoUtil;
 
     monitor-enter v0
 
     .line 1
     :try_start_3
-    sget-object v1, Lcom/ibopro/ultra/utils/DemoUtil;->httpDataSourceFactory:Lcom/google/android/exoplayer2/upstream/HttpDataSource$Factory;
+    sget-object v1, Lcom/ibopro/player/utils/DemoUtil;->httpDataSourceFactory:Lcom/google/android/exoplayer2/upstream/HttpDataSource$Factory;
 
-    if-nez v1, :cond_39
+    if-nez v1, :cond_38
 
     .line 2
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
@@ -343,13 +343,13 @@
 
     invoke-direct {v1, p0, v2}, Lcom/google/android/exoplayer2/ext/cronet/CronetDataSource$Factory;-><init>(Lorg/chromium/net/CronetEngine;Ljava/util/concurrent/Executor;)V
 
-    sput-object v1, Lcom/ibopro/ultra/utils/DemoUtil;->httpDataSourceFactory:Lcom/google/android/exoplayer2/upstream/HttpDataSource$Factory;
+    sput-object v1, Lcom/ibopro/player/utils/DemoUtil;->httpDataSourceFactory:Lcom/google/android/exoplayer2/upstream/HttpDataSource$Factory;
 
     .line 6
     :cond_1c
-    sget-object p0, Lcom/ibopro/ultra/utils/DemoUtil;->httpDataSourceFactory:Lcom/google/android/exoplayer2/upstream/HttpDataSource$Factory;
+    sget-object p0, Lcom/ibopro/player/utils/DemoUtil;->httpDataSourceFactory:Lcom/google/android/exoplayer2/upstream/HttpDataSource$Factory;
 
-    if-nez p0, :cond_39
+    if-nez p0, :cond_38
 
     .line 7
     new-instance p0, Ljava/net/CookieManager;
@@ -370,25 +370,23 @@
     invoke-direct {p0}, Lcom/google/android/exoplayer2/upstream/DefaultHttpDataSource$Factory;-><init>()V
 
     .line 11
-    const/4 p1, 0x1
-
     invoke-virtual {p0, p1}, Lcom/google/android/exoplayer2/upstream/DefaultHttpDataSource$Factory;->setAllowCrossProtocolRedirects(Z)Lcom/google/android/exoplayer2/upstream/DefaultHttpDataSource$Factory;
 
     move-result-object p0
 
-    sput-object p0, Lcom/ibopro/ultra/utils/DemoUtil;->httpDataSourceFactory:Lcom/google/android/exoplayer2/upstream/HttpDataSource$Factory;
+    sput-object p0, Lcom/ibopro/player/utils/DemoUtil;->httpDataSourceFactory:Lcom/google/android/exoplayer2/upstream/HttpDataSource$Factory;
 
     .line 12
-    :cond_39
-    sget-object p0, Lcom/ibopro/ultra/utils/DemoUtil;->httpDataSourceFactory:Lcom/google/android/exoplayer2/upstream/HttpDataSource$Factory;
-    :try_end_3b
-    .catchall {:try_start_3 .. :try_end_3b} :catchall_3d
+    :cond_38
+    sget-object p0, Lcom/ibopro/player/utils/DemoUtil;->httpDataSourceFactory:Lcom/google/android/exoplayer2/upstream/HttpDataSource$Factory;
+    :try_end_3a
+    .catchall {:try_start_3 .. :try_end_3a} :catchall_3c
 
     monitor-exit v0
 
     return-object p0
 
-    :catchall_3d
+    :catchall_3c
     move-exception p0
 
     monitor-exit v0
