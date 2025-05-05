@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="23" android:compileSdkVersionCodename="6.0-2438415" android:versionCode="47" android:versionName="1.3" package="com.shamel.tv" platformBuildVersionCode="34" platformBuildVersionName="14">
-	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="34" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" android:versionCode="42" android:versionName="3.9" package="com.ibopro.player" platformBuildVersionCode="33" platformBuildVersionName="13">
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="33" />
 	<uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -34,42 +34,42 @@
 			<action android:name="android.media.action.IMAGE_CAPTURE" />
 		</intent>
 	</queries>
-	<permission android:name="com.shamel.tv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature" />
-	<uses-permission android:name="com.shamel.tv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+	<permission android:name="com.ibopro.player.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature" />
+	<uses-permission android:name="com.ibopro.player.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 	<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-	<application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:banner="@drawable/banner" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.shamel.tv.apps.LTVApp" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme.NoActionBar" android:usesCleartextTraffic="true">
-		<activity android:exported="false" android:name="com.shamel.tv.activities.AddGroupActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
-		<activity android:exported="false" android:name="com.shamel.tv.activities.mobile.LiveChannelMobileActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
-		<activity android:exported="false" android:name="com.shamel.tv.activities.SeriesSecondActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
-		<activity android:exported="false" android:name="com.shamel.tv.activities.MovieSecondActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
-		<activity android:exported="false" android:name="com.shamel.tv.activities.LiveChannelActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
-		<activity android:exported="false" android:name="com.shamel.tv.activities.CategoryActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
-		<activity android:exported="false" android:name="com.shamel.tv.activities.MovieCreditActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
-		<activity android:exported="false" android:name="com.shamel.tv.activities.mobile.SeriesMobilePlayer" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
-		<activity android:exported="false" android:name="com.shamel.tv.activities.mobile.MovieMobilePlayer" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
-		<activity android:exported="false" android:name="com.shamel.tv.activities.CatchUpPlayerActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
-		<activity android:exported="false" android:name="com.shamel.tv.activities.SeriesPlayerActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
-		<activity android:exported="false" android:name="com.shamel.tv.activities.MoviePlayerActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
-		<activity android:exported="false" android:name="com.shamel.tv.activities.CatchUpActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
-		<activity android:exported="false" android:name="com.shamel.tv.activities.SeasonActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
-		<activity android:exported="false" android:name="com.shamel.tv.activities.SettingActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
-		<activity android:exported="false" android:name="com.shamel.tv.activities.mobile.LiveMobileActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
-		<activity android:exported="false" android:name="com.shamel.tv.activities.SearchActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
-		<activity android:exported="false" android:name="com.shamel.tv.activities.SeriesInfoActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
-		<activity android:exported="false" android:name="com.shamel.tv.activities.SeriesActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
-		<activity android:exported="false" android:name="com.shamel.tv.activities.MovieInfoActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
-		<activity android:exported="false" android:name="com.shamel.tv.activities.MovieActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
-		<activity android:exported="false" android:name="com.shamel.tv.activities.LiveActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
-		<activity android:exported="false" android:name="com.shamel.tv.activities.ChangePlaylistActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
-		<activity android:exported="false" android:name="com.shamel.tv.activities.HomeActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
-		<activity android:exported="true" android:name="com.shamel.tv.MainActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar">
+	<application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:banner="@drawable/banner" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.ibopro.player.apps.LTVApp" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme.NoActionBar" android:usesCleartextTraffic="true">
+		<activity android:exported="false" android:name="com.ibopro.player.activities.AddGroupActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:exported="false" android:name="com.ibopro.player.activities.mobile.LiveChannelMobileActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:exported="false" android:name="com.ibopro.player.activities.SeriesSecondActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:exported="false" android:name="com.ibopro.player.activities.MovieSecondActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:exported="false" android:name="com.ibopro.player.activities.LiveChannelActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:exported="false" android:name="com.ibopro.player.activities.CategoryActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:exported="false" android:name="com.ibopro.player.activities.MovieCreditActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:exported="false" android:name="com.ibopro.player.activities.mobile.SeriesMobilePlayer" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:exported="false" android:name="com.ibopro.player.activities.mobile.MovieMobilePlayer" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:exported="false" android:name="com.ibopro.player.activities.CatchUpPlayerActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:exported="false" android:name="com.ibopro.player.activities.SeriesPlayerActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:exported="false" android:name="com.ibopro.player.activities.MoviePlayerActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:exported="false" android:name="com.ibopro.player.activities.CatchUpActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:exported="false" android:name="com.ibopro.player.activities.SeasonActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:exported="false" android:name="com.ibopro.player.activities.SettingActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:exported="false" android:name="com.ibopro.player.activities.mobile.LiveMobileActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:exported="false" android:name="com.ibopro.player.activities.SearchActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:exported="false" android:name="com.ibopro.player.activities.SeriesInfoActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:exported="false" android:name="com.ibopro.player.activities.SeriesActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:exported="false" android:name="com.ibopro.player.activities.MovieInfoActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:exported="false" android:name="com.ibopro.player.activities.MovieActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:exported="false" android:name="com.ibopro.player.activities.LiveActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:exported="false" android:name="com.ibopro.player.activities.ChangePlaylistActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:exported="false" android:name="com.ibopro.player.activities.HomeActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar" />
+		<activity android:exported="true" android:name="com.ibopro.player.MainActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LEANBACK_LAUNCHER" />
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>
-		<provider android:authorities="com.shamel.tv.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+		<provider android:authorities="com.ibopro.player.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
 			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths" />
 		</provider>
 		<uses-library android:name="org.apache.http.legacy" android:required="false" />
@@ -77,9 +77,20 @@
 		<meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule" />
 		<activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
-		<provider android:authorities="com.shamel.tv.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+		<provider android:authorities="com.ibopro.player.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
 			<meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup" />
 			<meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup" />
 		</provider>
+		<activity android:enabled="false" android:exported="false" android:launchMode="singleInstance" android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" android:process=":playcore_missing_splits_activity" android:stateNotNeeded="true" />
+		<activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent" />
+		<service android:enabled="false" android:exported="true" android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService">
+			<meta-data android:name="com.google.android.play.core.assetpacks.versionCode" android:value="11003" />
+		</service>
+		<service android:enabled="false" android:exported="false" android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService" />
+		<meta-data android:name="com.android.dynamic.apk.fused.modules" android:value="base" />
+		<meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store" />
+		<meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_STANDALONE_APK" />
+		<meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0" />
+		<meta-data android:name="com.android.vending.derived.apk.id" android:value="2" />
 	</application>
 </manifest>
