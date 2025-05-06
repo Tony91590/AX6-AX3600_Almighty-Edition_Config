@@ -1,4 +1,4 @@
-.class public Lcom/ibopro/player/models/WordModels;
+.class public Lcom/ibopro/ultra/models/WordModels;
 .super Ljava/lang/Object;
 .source "WordModels.java"
 
@@ -1331,7 +1331,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->account:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->account:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -1345,7 +1345,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->account:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->account:Ljava/lang/String;
 
     return-object v0
 
@@ -1360,7 +1360,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->account_expired:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->account_expired:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -1374,7 +1374,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->account_expired:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->account_expired:Ljava/lang/String;
 
     return-object v0
 
@@ -1389,7 +1389,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->activate_success:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->activate_success:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -1403,7 +1403,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->activate_success:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->activate_success:Ljava/lang/String;
 
     return-object v0
 
@@ -1418,7 +1418,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->add_correct_alert:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->add_correct_alert:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -1432,7 +1432,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->add_correct_alert:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->add_correct_alert:Ljava/lang/String;
 
     return-object v0
 
@@ -1447,7 +1447,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->add_group:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->add_group:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -1461,7 +1461,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->add_group:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->add_group:Ljava/lang/String;
 
     return-object v0
 
@@ -1476,7 +1476,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->add_m3u:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->add_m3u:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -1490,7 +1490,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->add_m3u:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->add_m3u:Ljava/lang/String;
 
     return-object v0
 
@@ -1505,7 +1505,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->add_playlist:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->add_playlist:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -1519,7 +1519,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->add_playlist:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->add_playlist:Ljava/lang/String;
 
     return-object v0
 
@@ -1534,7 +1534,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->add_to_favorite:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->add_to_favorite:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -1548,7 +1548,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->add_to_favorite:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->add_to_favorite:Ljava/lang/String;
 
     return-object v0
 
@@ -1563,7 +1563,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->age:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->age:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -1577,7 +1577,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->age:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->age:Ljava/lang/String;
 
     return-object v0
 
@@ -1592,7 +1592,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->all:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->all:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -1606,7 +1606,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->all:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->all:Ljava/lang/String;
 
     return-object v0
 
@@ -1621,7 +1621,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->app_is_up_to_date:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->app_is_up_to_date:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -1635,7 +1635,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->app_is_up_to_date:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->app_is_up_to_date:Ljava/lang/String;
 
     return-object v0
 
@@ -1650,7 +1650,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->app_status:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->app_status:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -1664,7 +1664,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->app_status:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->app_status:Ljava/lang/String;
 
     return-object v0
 
@@ -1679,7 +1679,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->audio_track:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->audio_track:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -1693,7 +1693,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->audio_track:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->audio_track:Ljava/lang/String;
 
     return-object v0
 
@@ -1708,7 +1708,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->auto_update_2day:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->auto_update_2day:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -1722,7 +1722,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->auto_update_2day:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->auto_update_2day:Ljava/lang/String;
 
     return-object v0
 
@@ -1737,7 +1737,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->auto_update_everyday:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->auto_update_everyday:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -1751,7 +1751,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->auto_update_everyday:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->auto_update_everyday:Ljava/lang/String;
 
     return-object v0
 
@@ -1766,7 +1766,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->auto_update_everytime:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->auto_update_everytime:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -1780,7 +1780,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->auto_update_everytime:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->auto_update_everytime:Ljava/lang/String;
 
     return-object v0
 
@@ -1795,7 +1795,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->automatic:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->automatic:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -1809,7 +1809,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->automatic:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->automatic:Ljava/lang/String;
 
     return-object v0
 
@@ -1824,7 +1824,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->back:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->back:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -1838,7 +1838,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->back:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->back:Ljava/lang/String;
 
     return-object v0
 
@@ -1853,7 +1853,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->cancel:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->cancel:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -1867,7 +1867,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->cancel:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->cancel:Ljava/lang/String;
 
     return-object v0
 
@@ -1882,7 +1882,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->cant_add_this_movie:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->cant_add_this_movie:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -1896,7 +1896,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->cant_add_this_movie:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->cant_add_this_movie:Ljava/lang/String;
 
     return-object v0
 
@@ -1911,7 +1911,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->cast:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->cast:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -1925,7 +1925,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->cast:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->cast:Ljava/lang/String;
 
     return-object v0
 
@@ -1940,7 +1940,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->catch_up:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->catch_up:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -1954,7 +1954,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->catch_up:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->catch_up:Ljava/lang/String;
 
     return-object v0
 
@@ -1969,7 +1969,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->change_layout:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->change_layout:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -1983,7 +1983,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->change_layout:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->change_layout:Ljava/lang/String;
 
     return-object v0
 
@@ -1998,7 +1998,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->change_language:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->change_language:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2012,7 +2012,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->change_language:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->change_language:Ljava/lang/String;
 
     return-object v0
 
@@ -2027,7 +2027,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->change_my_group:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->change_my_group:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2041,7 +2041,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->change_my_group:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->change_my_group:Ljava/lang/String;
 
     return-object v0
 
@@ -2056,7 +2056,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->change_player:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->change_player:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2070,7 +2070,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->change_player:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->change_player:Ljava/lang/String;
 
     return-object v0
 
@@ -2085,7 +2085,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->change_playlist:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->change_playlist:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2099,7 +2099,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->change_playlist:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->change_playlist:Ljava/lang/String;
 
     return-object v0
 
@@ -2114,7 +2114,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->change_theme:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->change_theme:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2128,7 +2128,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->change_theme:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->change_theme:Ljava/lang/String;
 
     return-object v0
 
@@ -2143,7 +2143,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->channel_added_to_fav:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->channel_added_to_fav:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2157,7 +2157,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->channel_added_to_fav:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->channel_added_to_fav:Ljava/lang/String;
 
     return-object v0
 
@@ -2172,7 +2172,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->channel_locked:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->channel_locked:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2186,7 +2186,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->channel_locked:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->channel_locked:Ljava/lang/String;
 
     return-object v0
 
@@ -2201,7 +2201,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->channel_locked_default:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->channel_locked_default:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2215,7 +2215,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->channel_locked_default:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->channel_locked_default:Ljava/lang/String;
 
     return-object v0
 
@@ -2230,7 +2230,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->channel_removed_from_fav:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->channel_removed_from_fav:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2244,7 +2244,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->channel_removed_from_fav:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->channel_removed_from_fav:Ljava/lang/String;
 
     return-object v0
 
@@ -2259,7 +2259,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->channel_unlocked:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->channel_unlocked:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2273,7 +2273,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->channel_unlocked:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->channel_unlocked:Ljava/lang/String;
 
     return-object v0
 
@@ -2288,7 +2288,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->check_internet:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->check_internet:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2302,7 +2302,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->check_internet:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->check_internet:Ljava/lang/String;
 
     return-object v0
 
@@ -2317,7 +2317,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->clear_all:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->clear_all:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2331,7 +2331,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->clear_all:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->clear_all:Ljava/lang/String;
 
     return-object v0
 
@@ -2346,7 +2346,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->clear_channel_header:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->clear_channel_header:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2360,7 +2360,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->clear_channel_header:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->clear_channel_header:Ljava/lang/String;
 
     return-object v0
 
@@ -2375,7 +2375,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->clear_history_channels:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->clear_history_channels:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2389,7 +2389,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->clear_history_channels:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->clear_history_channels:Ljava/lang/String;
 
     return-object v0
 
@@ -2404,7 +2404,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->clear_history_movies:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->clear_history_movies:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2418,7 +2418,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->clear_history_movies:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->clear_history_movies:Ljava/lang/String;
 
     return-object v0
 
@@ -2433,7 +2433,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->clear_history_series:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->clear_history_series:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2447,7 +2447,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->clear_history_series:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->clear_history_series:Ljava/lang/String;
 
     return-object v0
 
@@ -2462,7 +2462,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->clear_movie_header:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->clear_movie_header:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2476,7 +2476,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->clear_movie_header:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->clear_movie_header:Ljava/lang/String;
 
     return-object v0
 
@@ -2491,7 +2491,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->clear_series_header:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->clear_series_header:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2505,7 +2505,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->clear_series_header:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->clear_series_header:Ljava/lang/String;
 
     return-object v0
 
@@ -2520,7 +2520,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->confirm_pass_cant_empty:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->confirm_pass_cant_empty:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2534,7 +2534,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->confirm_pass_cant_empty:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->confirm_pass_cant_empty:Ljava/lang/String;
 
     return-object v0
 
@@ -2549,7 +2549,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->confirm_pass_not_matched:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->confirm_pass_not_matched:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2563,7 +2563,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->confirm_pass_not_matched:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->confirm_pass_not_matched:Ljava/lang/String;
 
     return-object v0
 
@@ -2578,7 +2578,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->confirm_password:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->confirm_password:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2592,7 +2592,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->confirm_password:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->confirm_password:Ljava/lang/String;
 
     return-object v0
 
@@ -2607,7 +2607,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->connect:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->connect:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2621,7 +2621,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->connect:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->connect:Ljava/lang/String;
 
     return-object v0
 
@@ -2636,7 +2636,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->contact:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->contact:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2650,7 +2650,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->contact:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->contact:Ljava/lang/String;
 
     return-object v0
 
@@ -2665,7 +2665,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->current_expired:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->current_expired:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2679,7 +2679,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->current_expired:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->current_expired:Ljava/lang/String;
 
     return-object v0
 
@@ -2694,7 +2694,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->date_added:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->date_added:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2708,7 +2708,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->date_added:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->date_added:Ljava/lang/String;
 
     return-object v0
 
@@ -2723,7 +2723,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->days:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->days:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2737,7 +2737,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->days:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->days:Ljava/lang/String;
 
     return-object v0
 
@@ -2752,7 +2752,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->default_resolution:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->default_resolution:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2766,7 +2766,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->default_resolution:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->default_resolution:Ljava/lang/String;
 
     return-object v0
 
@@ -2781,7 +2781,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->delete:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->delete:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2795,7 +2795,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->delete:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->delete:Ljava/lang/String;
 
     return-object v0
 
@@ -2810,7 +2810,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->delete_cache:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->delete_cache:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2824,7 +2824,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->delete_cache:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->delete_cache:Ljava/lang/String;
 
     return-object v0
 
@@ -2839,7 +2839,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->delete_playlist:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->delete_playlist:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2853,7 +2853,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->delete_playlist:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->delete_playlist:Ljava/lang/String;
 
     return-object v0
 
@@ -2868,7 +2868,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->device_key:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->device_key:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2882,7 +2882,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->device_key:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->device_key:Ljava/lang/String;
 
     return-object v0
 
@@ -2897,7 +2897,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->director:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->director:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2911,7 +2911,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->director:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->director:Ljava/lang/String;
 
     return-object v0
 
@@ -2926,7 +2926,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->edit:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->edit:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2940,7 +2940,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->edit:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->edit:Ljava/lang/String;
 
     return-object v0
 
@@ -2955,7 +2955,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->edit_group_name:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->edit_group_name:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2969,7 +2969,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->edit_group_name:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->edit_group_name:Ljava/lang/String;
 
     return-object v0
 
@@ -2984,7 +2984,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->enable_subtitles:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->enable_subtitles:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -2998,7 +2998,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->enable_subtitles:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->enable_subtitles:Ljava/lang/String;
 
     return-object v0
 
@@ -3013,7 +3013,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->enjoy_tv:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->enjoy_tv:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3027,7 +3027,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->enjoy_tv:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->enjoy_tv:Ljava/lang/String;
 
     return-object v0
 
@@ -3042,7 +3042,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->enter_m3u:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->enter_m3u:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3056,7 +3056,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->enter_m3u:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->enter_m3u:Ljava/lang/String;
 
     return-object v0
 
@@ -3071,7 +3071,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->epg:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->epg:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3085,7 +3085,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->epg:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->epg:Ljava/lang/String;
 
     return-object v0
 
@@ -3100,7 +3100,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->exit:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->exit:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3114,7 +3114,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->exit:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->exit:Ljava/lang/String;
 
     return-object v0
 
@@ -3129,7 +3129,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->exit_description:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->exit_description:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3143,7 +3143,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->exit_description:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->exit_description:Ljava/lang/String;
 
     return-object v0
 
@@ -3158,7 +3158,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->expire_date:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->expire_date:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3172,7 +3172,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->expire_date:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->expire_date:Ljava/lang/String;
 
     return-object v0
 
@@ -3187,7 +3187,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->external_player:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->external_player:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3201,7 +3201,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->external_player:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->external_player:Ljava/lang/String;
 
     return-object v0
 
@@ -3216,7 +3216,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->favorite:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->favorite:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3230,7 +3230,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->favorite:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->favorite:Ljava/lang/String;
 
     return-object v0
 
@@ -3245,7 +3245,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->fill_screen:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->fill_screen:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3259,7 +3259,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->fill_screen:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->fill_screen:Ljava/lang/String;
 
     return-object v0
 
@@ -3274,7 +3274,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->find_movie:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->find_movie:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3288,7 +3288,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->find_movie:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->find_movie:Ljava/lang/String;
 
     return-object v0
 
@@ -3303,7 +3303,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->fit_screen:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->fit_screen:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3317,7 +3317,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->fit_screen:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->fit_screen:Ljava/lang/String;
 
     return-object v0
 
@@ -3332,7 +3332,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->grid_layout:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->grid_layout:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3346,7 +3346,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->grid_layout:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->grid_layout:Ljava/lang/String;
 
     return-object v0
 
@@ -3361,7 +3361,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->hide_live_category:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->hide_live_category:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3375,7 +3375,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->hide_live_category:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->hide_live_category:Ljava/lang/String;
 
     return-object v0
 
@@ -3390,7 +3390,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->hide_series_category:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->hide_series_category:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3404,7 +3404,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->hide_series_category:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->hide_series_category:Ljava/lang/String;
 
     return-object v0
 
@@ -3419,7 +3419,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->hide_vod_category:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->hide_vod_category:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3433,7 +3433,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->hide_vod_category:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->hide_vod_category:Ljava/lang/String;
 
     return-object v0
 
@@ -3448,7 +3448,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->home:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->home:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3462,7 +3462,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->home:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->home:Ljava/lang/String;
 
     return-object v0
 
@@ -3477,7 +3477,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->ibo_pro_description:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->ibo_pro_description:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3491,13 +3491,13 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->ibo_pro_description:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->ibo_pro_description:Ljava/lang/String;
 
     return-object v0
 
     :cond_e
     :goto_e
-    const-string v0, ""
+    const-string v0, "Ibo Pro Player doesn\'t sell playlist or subscriptions."
 
     return-object v0
 .end method
@@ -3506,7 +3506,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->ibo_pro_general_player:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->ibo_pro_general_player:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3520,13 +3520,13 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->ibo_pro_general_player:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->ibo_pro_general_player:Ljava/lang/String;
 
     return-object v0
 
     :cond_e
     :goto_e
-    const-string v0, ""
+    const-string v0, "Ibo Pro Player is General Media Player and it doesn\'t include any content or playlists."
 
     return-object v0
 .end method
@@ -3535,7 +3535,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->install_external_player:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->install_external_player:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3549,7 +3549,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->install_external_player:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->install_external_player:Ljava/lang/String;
 
     return-object v0
 
@@ -3564,7 +3564,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->length:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->length:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3578,7 +3578,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->length:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->length:Ljava/lang/String;
 
     return-object v0
 
@@ -3593,7 +3593,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->list_layout:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->list_layout:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3607,7 +3607,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->list_layout:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->list_layout:Ljava/lang/String;
 
     return-object v0
 
@@ -3622,7 +3622,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->live:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->live:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3636,7 +3636,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->live:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->live:Ljava/lang/String;
 
     return-object v0
 
@@ -3651,7 +3651,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->live_sort:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->live_sort:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3665,7 +3665,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->live_sort:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->live_sort:Ljava/lang/String;
 
     return-object v0
 
@@ -3680,7 +3680,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->live_stream_format:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->live_stream_format:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3694,7 +3694,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->live_stream_format:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->live_stream_format:Ljava/lang/String;
 
     return-object v0
 
@@ -3709,7 +3709,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->live_tv:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->live_tv:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3723,7 +3723,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->live_tv:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->live_tv:Ljava/lang/String;
 
     return-object v0
 
@@ -3738,7 +3738,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->lock:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->lock:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3752,7 +3752,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->lock:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->lock:Ljava/lang/String;
 
     return-object v0
 
@@ -3767,7 +3767,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->mac_activated:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->mac_activated:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3781,7 +3781,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->mac_activated:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->mac_activated:Ljava/lang/String;
 
     return-object v0
 
@@ -3796,7 +3796,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->mac_address:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->mac_address:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3810,7 +3810,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->mac_address:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->mac_address:Ljava/lang/String;
 
     return-object v0
 
@@ -3825,7 +3825,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->movie_is_added_to_fav:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->movie_is_added_to_fav:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3839,7 +3839,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->movie_is_added_to_fav:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->movie_is_added_to_fav:Ljava/lang/String;
 
     return-object v0
 
@@ -3854,7 +3854,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->movie_is_removed_from_fav:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->movie_is_removed_from_fav:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3868,7 +3868,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->movie_is_removed_from_fav:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->movie_is_removed_from_fav:Ljava/lang/String;
 
     return-object v0
 
@@ -3883,7 +3883,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->movies:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->movies:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3897,7 +3897,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->movies:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->movies:Ljava/lang/String;
 
     return-object v0
 
@@ -3912,7 +3912,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->mx_player:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->mx_player:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3926,7 +3926,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->mx_player:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->mx_player:Ljava/lang/String;
 
     return-object v0
 
@@ -3941,7 +3941,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->net_pass:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->net_pass:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3955,7 +3955,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->net_pass:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->net_pass:Ljava/lang/String;
 
     return-object v0
 
@@ -3970,7 +3970,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->new_pass_cant_empty:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->new_pass_cant_empty:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -3984,7 +3984,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->new_pass_cant_empty:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->new_pass_cant_empty:Ljava/lang/String;
 
     return-object v0
 
@@ -3999,7 +3999,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->new_pass_length:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->new_pass_length:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4013,7 +4013,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->new_pass_length:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->new_pass_length:Ljava/lang/String;
 
     return-object v0
 
@@ -4028,7 +4028,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->new_software_update_available:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->new_software_update_available:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4042,7 +4042,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->new_software_update_available:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->new_software_update_available:Ljava/lang/String;
 
     return-object v0
 
@@ -4057,7 +4057,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->next_channel:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->next_channel:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4071,7 +4071,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->next_channel:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->next_channel:Ljava/lang/String;
 
     return-object v0
 
@@ -4086,7 +4086,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4100,7 +4100,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no:Ljava/lang/String;
 
     return-object v0
 
@@ -4115,7 +4115,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_audio:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_audio:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4129,7 +4129,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_audio:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_audio:Ljava/lang/String;
 
     return-object v0
 
@@ -4144,7 +4144,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_channels:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_channels:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4158,7 +4158,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_channels:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_channels:Ljava/lang/String;
 
     return-object v0
 
@@ -4173,7 +4173,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_connection:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_connection:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4187,7 +4187,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_connection:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_connection:Ljava/lang/String;
 
     return-object v0
 
@@ -4202,7 +4202,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_epg_avaliable:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_epg_avaliable:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4216,7 +4216,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_epg_avaliable:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_epg_avaliable:Ljava/lang/String;
 
     return-object v0
 
@@ -4231,7 +4231,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_episode:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_episode:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4245,7 +4245,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_episode:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_episode:Ljava/lang/String;
 
     return-object v0
 
@@ -4260,7 +4260,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_information:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_information:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4274,7 +4274,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_information:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_information:Ljava/lang/String;
 
     return-object v0
 
@@ -4289,7 +4289,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_movies:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_movies:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4303,7 +4303,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_movies:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_movies:Ljava/lang/String;
 
     return-object v0
 
@@ -4318,7 +4318,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_playlist:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_playlist:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4332,7 +4332,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_playlist:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_playlist:Ljava/lang/String;
 
     return-object v0
 
@@ -4347,7 +4347,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_playlist_description:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_playlist_description:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4361,7 +4361,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_playlist_description:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_playlist_description:Ljava/lang/String;
 
     return-object v0
 
@@ -4376,7 +4376,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_recently_channels:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_recently_channels:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4390,7 +4390,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_recently_channels:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_recently_channels:Ljava/lang/String;
 
     return-object v0
 
@@ -4405,7 +4405,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_recently_movies:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_recently_movies:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4419,7 +4419,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_recently_movies:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_recently_movies:Ljava/lang/String;
 
     return-object v0
 
@@ -4434,7 +4434,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_recently_series:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_recently_series:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4448,7 +4448,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_recently_series:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_recently_series:Ljava/lang/String;
 
     return-object v0
 
@@ -4463,7 +4463,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_series:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_series:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4477,7 +4477,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_series:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_series:Ljava/lang/String;
 
     return-object v0
 
@@ -4492,7 +4492,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_subtitle:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_subtitle:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4506,7 +4506,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_subtitle:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_subtitle:Ljava/lang/String;
 
     return-object v0
 
@@ -4521,7 +4521,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_trailer:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_trailer:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4535,7 +4535,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->no_trailer:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->no_trailer:Ljava/lang/String;
 
     return-object v0
 
@@ -4550,7 +4550,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->ok:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->ok:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4564,7 +4564,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->ok:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->ok:Ljava/lang/String;
 
     return-object v0
 
@@ -4579,7 +4579,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->open_website:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->open_website:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4593,7 +4593,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->open_website:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->open_website:Ljava/lang/String;
 
     return-object v0
 
@@ -4608,7 +4608,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->order_by_added:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->order_by_added:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4622,7 +4622,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->order_by_added:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->order_by_added:Ljava/lang/String;
 
     return-object v0
 
@@ -4637,7 +4637,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->order_by_number:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->order_by_number:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4651,7 +4651,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->order_by_number:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->order_by_number:Ljava/lang/String;
 
     return-object v0
 
@@ -4666,7 +4666,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->order_by_rating:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->order_by_rating:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4680,7 +4680,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->order_by_rating:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->order_by_rating:Ljava/lang/String;
 
     return-object v0
 
@@ -4695,7 +4695,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->parent_control:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->parent_control:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4709,7 +4709,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->parent_control:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->parent_control:Ljava/lang/String;
 
     return-object v0
 
@@ -4724,7 +4724,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->parent_pass_cant_empty:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->parent_pass_cant_empty:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4738,7 +4738,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->parent_pass_cant_empty:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->parent_pass_cant_empty:Ljava/lang/String;
 
     return-object v0
 
@@ -4753,7 +4753,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->parent_pass_changed:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->parent_pass_changed:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4767,7 +4767,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->parent_pass_changed:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->parent_pass_changed:Ljava/lang/String;
 
     return-object v0
 
@@ -4782,7 +4782,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->pass_incorrect:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->pass_incorrect:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4796,7 +4796,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->pass_incorrect:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->pass_incorrect:Ljava/lang/String;
 
     return-object v0
 
@@ -4811,7 +4811,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->password:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->password:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4825,7 +4825,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->password:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->password:Ljava/lang/String;
 
     return-object v0
 
@@ -4840,7 +4840,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->pay_with_google_pay:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->pay_with_google_pay:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4854,7 +4854,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->pay_with_google_pay:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->pay_with_google_pay:Ljava/lang/String;
 
     return-object v0
 
@@ -4869,7 +4869,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->pin_incorrect:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->pin_incorrect:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4883,7 +4883,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->pin_incorrect:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->pin_incorrect:Ljava/lang/String;
 
     return-object v0
 
@@ -4898,7 +4898,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->play:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->play:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4912,7 +4912,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->play:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->play:Ljava/lang/String;
 
     return-object v0
 
@@ -4927,7 +4927,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->play_back_error:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->play_back_error:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4941,7 +4941,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->play_back_error:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->play_back_error:Ljava/lang/String;
 
     return-object v0
 
@@ -4956,7 +4956,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->play_back_error_description:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->play_back_error_description:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4970,7 +4970,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->play_back_error_description:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->play_back_error_description:Ljava/lang/String;
 
     return-object v0
 
@@ -4985,7 +4985,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->playback_description:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->playback_description:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -4999,7 +4999,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->playback_description:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->playback_description:Ljava/lang/String;
 
     return-object v0
 
@@ -5014,7 +5014,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->playlist_expire_date:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->playlist_expire_date:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5028,7 +5028,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->playlist_expire_date:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->playlist_expire_date:Ljava/lang/String;
 
     return-object v0
 
@@ -5043,7 +5043,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->playlist_is_loading:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->playlist_is_loading:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5057,7 +5057,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->playlist_is_loading:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->playlist_is_loading:Ljava/lang/String;
 
     return-object v0
 
@@ -5072,7 +5072,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->playlist_is_not_working:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->playlist_is_not_working:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5086,7 +5086,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->playlist_is_not_working:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->playlist_is_not_working:Ljava/lang/String;
 
     return-object v0
 
@@ -5101,7 +5101,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->playlist_name:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->playlist_name:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5115,7 +5115,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->playlist_name:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->playlist_name:Ljava/lang/String;
 
     return-object v0
 
@@ -5130,7 +5130,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->playlist_protected:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->playlist_protected:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5144,7 +5144,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->playlist_protected:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->playlist_protected:Ljava/lang/String;
 
     return-object v0
 
@@ -5159,7 +5159,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->port:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->port:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5173,7 +5173,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->port:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->port:Ljava/lang/String;
 
     return-object v0
 
@@ -5188,7 +5188,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->portal_loaded_successfully:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->portal_loaded_successfully:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5202,7 +5202,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->portal_loaded_successfully:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->portal_loaded_successfully:Ljava/lang/String;
 
     return-object v0
 
@@ -5217,7 +5217,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->previous_channel:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->previous_channel:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5231,7 +5231,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->previous_channel:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->previous_channel:Ljava/lang/String;
 
     return-object v0
 
@@ -5246,7 +5246,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->put_m3u_link:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->put_m3u_link:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5260,7 +5260,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->put_m3u_link:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->put_m3u_link:Ljava/lang/String;
 
     return-object v0
 
@@ -5275,7 +5275,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->put_password:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->put_password:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5289,7 +5289,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->put_password:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->put_password:Ljava/lang/String;
 
     return-object v0
 
@@ -5304,7 +5304,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->put_pin_code:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->put_pin_code:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5318,7 +5318,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->put_pin_code:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->put_pin_code:Ljava/lang/String;
 
     return-object v0
 
@@ -5333,7 +5333,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->put_username:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->put_username:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5347,7 +5347,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->put_username:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->put_username:Ljava/lang/String;
 
     return-object v0
 
@@ -5362,7 +5362,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->rate_us:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->rate_us:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5376,7 +5376,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->rate_us:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->rate_us:Ljava/lang/String;
 
     return-object v0
 
@@ -5391,7 +5391,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->rating:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->rating:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5405,7 +5405,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->rating:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->rating:Ljava/lang/String;
 
     return-object v0
 
@@ -5420,7 +5420,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->recent_channels_removed:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->recent_channels_removed:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5434,7 +5434,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->recent_channels_removed:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->recent_channels_removed:Ljava/lang/String;
 
     return-object v0
 
@@ -5449,7 +5449,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->recently_viewed:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->recently_viewed:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5463,7 +5463,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->recently_viewed:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->recently_viewed:Ljava/lang/String;
 
     return-object v0
 
@@ -5478,7 +5478,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->refresh_playlist:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->refresh_playlist:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5492,7 +5492,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->refresh_playlist:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->refresh_playlist:Ljava/lang/String;
 
     return-object v0
 
@@ -5507,7 +5507,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->reload_portal:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->reload_portal:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5521,7 +5521,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->reload_portal:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->reload_portal:Ljava/lang/String;
 
     return-object v0
 
@@ -5536,7 +5536,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->remove_favorites:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->remove_favorites:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5550,7 +5550,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->remove_favorites:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->remove_favorites:Ljava/lang/String;
 
     return-object v0
 
@@ -5565,7 +5565,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->rename:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->rename:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5579,7 +5579,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->rename:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->rename:Ljava/lang/String;
 
     return-object v0
 
@@ -5594,7 +5594,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->request_download:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->request_download:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5608,7 +5608,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->request_download:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->request_download:Ljava/lang/String;
 
     return-object v0
 
@@ -5623,7 +5623,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->resume:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->resume:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5637,7 +5637,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->resume:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->resume:Ljava/lang/String;
 
     return-object v0
 
@@ -5652,7 +5652,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->resume_plyaback_from_ast_position:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->resume_plyaback_from_ast_position:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5666,7 +5666,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->resume_plyaback_from_ast_position:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->resume_plyaback_from_ast_position:Ljava/lang/String;
 
     return-object v0
 
@@ -5681,7 +5681,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->resume_to_watch:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->resume_to_watch:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5695,7 +5695,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->resume_to_watch:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->resume_to_watch:Ljava/lang/String;
 
     return-object v0
 
@@ -5710,7 +5710,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->retry:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->retry:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5724,7 +5724,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->retry:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->retry:Ljava/lang/String;
 
     return-object v0
 
@@ -5739,7 +5739,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->scan_code:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->scan_code:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5753,7 +5753,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->scan_code:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->scan_code:Ljava/lang/String;
 
     return-object v0
 
@@ -5768,7 +5768,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->search:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->search:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5782,7 +5782,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->search:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->search:Ljava/lang/String;
 
     return-object v0
 
@@ -5797,7 +5797,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->search_by_title:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->search_by_title:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5811,7 +5811,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->search_by_title:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->search_by_title:Ljava/lang/String;
 
     return-object v0
 
@@ -5826,7 +5826,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->season:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->season:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5840,7 +5840,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->season:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->season:Ljava/lang/String;
 
     return-object v0
 
@@ -5855,7 +5855,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->see_all:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->see_all:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5869,7 +5869,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->see_all:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->see_all:Ljava/lang/String;
 
     return-object v0
 
@@ -5884,7 +5884,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->select:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->select:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5898,7 +5898,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->select:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->select:Ljava/lang/String;
 
     return-object v0
 
@@ -5913,7 +5913,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->select_all:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->select_all:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5927,7 +5927,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->select_all:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->select_all:Ljava/lang/String;
 
     return-object v0
 
@@ -5942,7 +5942,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->select_categories_you_want_to_hide:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->select_categories_you_want_to_hide:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5956,7 +5956,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->select_categories_you_want_to_hide:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->select_categories_you_want_to_hide:Ljava/lang/String;
 
     return-object v0
 
@@ -5971,7 +5971,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->select_device_type:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->select_device_type:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -5985,7 +5985,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->select_device_type:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->select_device_type:Ljava/lang/String;
 
     return-object v0
 
@@ -6000,7 +6000,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->select_theme:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->select_theme:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6014,7 +6014,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->select_theme:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->select_theme:Ljava/lang/String;
 
     return-object v0
 
@@ -6029,7 +6029,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->series:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->series:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6043,7 +6043,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->series:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->series:Ljava/lang/String;
 
     return-object v0
 
@@ -6058,7 +6058,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->settings:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->settings:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6072,7 +6072,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->settings:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->settings:Ljava/lang/String;
 
     return-object v0
 
@@ -6087,7 +6087,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->skip:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->skip:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6101,7 +6101,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->skip:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->skip:Ljava/lang/String;
 
     return-object v0
 
@@ -6116,7 +6116,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->sort_a_z:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->sort_a_z:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6130,7 +6130,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->sort_a_z:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->sort_a_z:Ljava/lang/String;
 
     return-object v0
 
@@ -6145,7 +6145,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->sort_z_a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->sort_z_a:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6159,7 +6159,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->sort_z_a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->sort_z_a:Ljava/lang/String;
 
     return-object v0
 
@@ -6174,7 +6174,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->stop_playback:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->stop_playback:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6188,7 +6188,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->stop_playback:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->stop_playback:Ljava/lang/String;
 
     return-object v0
 
@@ -6203,7 +6203,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_add_channel:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_add_channel:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6217,7 +6217,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_add_channel:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_add_channel:Ljava/lang/String;
 
     return-object v0
 
@@ -6232,7 +6232,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_add_channels:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_add_channels:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6246,7 +6246,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_add_channels:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_add_channels:Ljava/lang/String;
 
     return-object v0
 
@@ -6261,7 +6261,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_add_groups:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_add_groups:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6275,7 +6275,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_add_groups:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_add_groups:Ljava/lang/String;
 
     return-object v0
 
@@ -6290,7 +6290,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_complete:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_complete:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6304,7 +6304,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_complete:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_complete:Ljava/lang/String;
 
     return-object v0
 
@@ -6319,7 +6319,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_confirm:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_confirm:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6333,7 +6333,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_confirm:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_confirm:Ljava/lang/String;
 
     return-object v0
 
@@ -6348,7 +6348,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_contain_this_name:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_contain_this_name:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6362,7 +6362,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_contain_this_name:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_contain_this_name:Ljava/lang/String;
 
     return-object v0
 
@@ -6377,7 +6377,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_continue:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_continue:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6391,7 +6391,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_continue:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_continue:Ljava/lang/String;
 
     return-object v0
 
@@ -6406,7 +6406,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_delete:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_delete:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6420,7 +6420,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_delete:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_delete:Ljava/lang/String;
 
     return-object v0
 
@@ -6435,7 +6435,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_edit_playlist:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_edit_playlist:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6449,7 +6449,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_edit_playlist:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_edit_playlist:Ljava/lang/String;
 
     return-object v0
 
@@ -6464,7 +6464,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_group_name:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_group_name:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6478,7 +6478,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_group_name:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_group_name:Ljava/lang/String;
 
     return-object v0
 
@@ -6493,7 +6493,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_group_string:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_group_string:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6507,7 +6507,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_group_string:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_group_string:Ljava/lang/String;
 
     return-object v0
 
@@ -6522,7 +6522,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_mark_channels:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_mark_channels:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6536,7 +6536,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_mark_channels:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_mark_channels:Ljava/lang/String;
 
     return-object v0
 
@@ -6551,7 +6551,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_more_episodes:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_more_episodes:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6565,7 +6565,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_more_episodes:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_more_episodes:Ljava/lang/String;
 
     return-object v0
 
@@ -6580,7 +6580,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_my_group:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_my_group:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6594,7 +6594,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_my_group:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_my_group:Ljava/lang/String;
 
     return-object v0
 
@@ -6609,7 +6609,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_no_lock_channels:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_no_lock_channels:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6623,7 +6623,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_no_lock_channels:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_no_lock_channels:Ljava/lang/String;
 
     return-object v0
 
@@ -6638,7 +6638,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_playlist_uploaded_successfully:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_playlist_uploaded_successfully:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6652,7 +6652,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_playlist_uploaded_successfully:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_playlist_uploaded_successfully:Ljava/lang/String;
 
     return-object v0
 
@@ -6667,7 +6667,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_protected:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_protected:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6681,7 +6681,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_protected:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_protected:Ljava/lang/String;
 
     return-object v0
 
@@ -6696,7 +6696,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_restart:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_restart:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6710,7 +6710,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_restart:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_restart:Ljava/lang/String;
 
     return-object v0
 
@@ -6725,7 +6725,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_search_channels:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_search_channels:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6739,7 +6739,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_search_channels:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_search_channels:Ljava/lang/String;
 
     return-object v0
 
@@ -6754,7 +6754,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_trial_description:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_trial_description:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6768,7 +6768,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_trial_description:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_trial_description:Ljava/lang/String;
 
     return-object v0
 
@@ -6783,7 +6783,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_update_playlist:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_update_playlist:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6797,7 +6797,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_update_playlist:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_update_playlist:Ljava/lang/String;
 
     return-object v0
 
@@ -6812,7 +6812,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_yes:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_yes:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6826,7 +6826,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->str_yes:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->str_yes:Ljava/lang/String;
 
     return-object v0
 
@@ -6841,7 +6841,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->string_default:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->string_default:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6855,7 +6855,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->string_default:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->string_default:Ljava/lang/String;
 
     return-object v0
 
@@ -6870,7 +6870,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->sub_remaining:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->sub_remaining:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6884,7 +6884,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->sub_remaining:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->sub_remaining:Ljava/lang/String;
 
     return-object v0
 
@@ -6899,7 +6899,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->subtitel_background:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->subtitel_background:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6913,7 +6913,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->subtitel_background:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->subtitel_background:Ljava/lang/String;
 
     return-object v0
 
@@ -6928,7 +6928,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->subtitel_color:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->subtitel_color:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6942,7 +6942,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->subtitel_color:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->subtitel_color:Ljava/lang/String;
 
     return-object v0
 
@@ -6957,7 +6957,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->subtitel_size:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->subtitel_size:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -6971,7 +6971,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->subtitel_size:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->subtitel_size:Ljava/lang/String;
 
     return-object v0
 
@@ -6986,7 +6986,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->subtitle:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->subtitle:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -7000,7 +7000,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->subtitle:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->subtitle:Ljava/lang/String;
 
     return-object v0
 
@@ -7015,7 +7015,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->subtitle_settings:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->subtitle_settings:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -7029,7 +7029,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->subtitle_settings:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->subtitle_settings:Ljava/lang/String;
 
     return-object v0
 
@@ -7044,7 +7044,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->time_format:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->time_format:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -7058,7 +7058,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->time_format:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->time_format:Ljava/lang/String;
 
     return-object v0
 
@@ -7073,7 +7073,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->to_add_manage:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->to_add_manage:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -7087,13 +7087,13 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->to_add_manage:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->to_add_manage:Ljava/lang/String;
 
     return-object v0
 
     :cond_e
     :goto_e
-    const-string v0, ""
+    const-string v0, "To add/manage the playlists, use following values on website."
 
     return-object v0
 .end method
@@ -7102,7 +7102,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->to_continue:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->to_continue:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -7116,7 +7116,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->to_continue:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->to_continue:Ljava/lang/String;
 
     return-object v0
 
@@ -7131,7 +7131,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->trailer:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->trailer:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -7145,7 +7145,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->trailer:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->trailer:Ljava/lang/String;
 
     return-object v0
 
@@ -7160,7 +7160,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->trial_ended:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->trial_ended:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -7174,7 +7174,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->trial_ended:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->trial_ended:Ljava/lang/String;
 
     return-object v0
 
@@ -7189,7 +7189,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->tv_is_trial:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->tv_is_trial:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -7203,7 +7203,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->tv_is_trial:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->tv_is_trial:Ljava/lang/String;
 
     return-object v0
 
@@ -7218,7 +7218,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->tv_mac_expired:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->tv_mac_expired:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -7232,7 +7232,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->tv_mac_expired:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->tv_mac_expired:Ljava/lang/String;
 
     return-object v0
 
@@ -7247,7 +7247,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->update_failed:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->update_failed:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -7261,7 +7261,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->update_failed:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->update_failed:Ljava/lang/String;
 
     return-object v0
 
@@ -7276,7 +7276,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->update_now:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->update_now:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -7290,7 +7290,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->update_now:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->update_now:Ljava/lang/String;
 
     return-object v0
 
@@ -7305,7 +7305,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->user_incorrect:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->user_incorrect:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -7319,7 +7319,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->user_incorrect:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->user_incorrect:Ljava/lang/String;
 
     return-object v0
 
@@ -7334,7 +7334,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->username:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->username:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -7348,7 +7348,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->username:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->username:Ljava/lang/String;
 
     return-object v0
 
@@ -7363,7 +7363,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->version:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->version:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -7377,7 +7377,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->version:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->version:Ljava/lang/String;
 
     return-object v0
 
@@ -7392,7 +7392,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->via_website:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->via_website:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -7406,7 +7406,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->via_website:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->via_website:Ljava/lang/String;
 
     return-object v0
 
@@ -7421,7 +7421,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->vlc_player:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->vlc_player:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -7435,7 +7435,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->vlc_player:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->vlc_player:Ljava/lang/String;
 
     return-object v0
 
@@ -7450,7 +7450,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->want_delete_playlist:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->want_delete_playlist:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -7464,7 +7464,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->want_delete_playlist:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->want_delete_playlist:Ljava/lang/String;
 
     return-object v0
 
@@ -7479,7 +7479,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->want_external_player:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->want_external_player:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -7493,7 +7493,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->want_external_player:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->want_external_player:Ljava/lang/String;
 
     return-object v0
 
@@ -7508,7 +7508,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->watch_season:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->watch_season:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -7522,7 +7522,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->watch_season:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->watch_season:Ljava/lang/String;
 
     return-object v0
 
@@ -7537,7 +7537,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->watch_trailer:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->watch_trailer:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -7551,7 +7551,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->watch_trailer:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->watch_trailer:Ljava/lang/String;
 
     return-object v0
 
@@ -7566,7 +7566,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->xtreme_codes:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->xtreme_codes:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -7580,7 +7580,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->xtreme_codes:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->xtreme_codes:Ljava/lang/String;
 
     return-object v0
 
@@ -7595,7 +7595,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->_12_hour_format:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->_12_hour_format:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -7609,7 +7609,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->_12_hour_format:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->_12_hour_format:Ljava/lang/String;
 
     return-object v0
 
@@ -7624,7 +7624,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->_24_hour_format:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->_24_hour_format:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -7638,7 +7638,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/WordModels;->_24_hour_format:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/WordModels;->_24_hour_format:Ljava/lang/String;
 
     return-object v0
 
