@@ -189,6 +189,8 @@
 
     iget v0, p0, Lcom/ibopro/player/models/AppInfoModel;->is_trial:I
 
+    const v0, 0x3e7
+
     return v0
 .end method
 
@@ -371,6 +373,8 @@
     .registers 2
 
     iget-boolean v0, p0, Lcom/ibopro/player/models/AppInfoModel;->is_google_pay:Z
+
+    const v0, 0x1
 
     return v0
 .end method
