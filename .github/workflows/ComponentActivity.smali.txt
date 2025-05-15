@@ -36,6 +36,9 @@
 .field private final mActivityResultRegistry:Landroidx/activity/result/ActivityResultRegistry;
 
 .field private mContentLayoutId:I
+    .annotation build Landroidx/annotation/LayoutRes;
+    .end annotation
+.end field
 
 .field public final mContextAwareHelper:Landroidx/activity/contextaware/ContextAwareHelper;
 
@@ -342,6 +345,12 @@
 
 .method public constructor <init>(I)V
     .registers 2
+    .param p1    # I
+        .annotation build Landroidx/annotation/LayoutRes;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/ContentView;
+    .end annotation
 
     .line 27
     invoke-direct {p0}, Landroidx/activity/ComponentActivity;-><init>()V
@@ -456,6 +465,22 @@
 # virtual methods
 .method public addContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
     .registers 3
+    .param p1    # Landroid/view/View;
+        .annotation build Landroid/annotation/SuppressLint;
+            value = {
+                "UnknownNullness",
+                "MissingNullability"
+            }
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/ViewGroup$LayoutParams;
+        .annotation build Landroid/annotation/SuppressLint;
+            value = {
+                "UnknownNullness",
+                "MissingNullability"
+            }
+        .end annotation
+    .end param
 
     .line 1
     invoke-direct {p0}, Landroidx/activity/ComponentActivity;->initViewTreeOwners()V
@@ -468,6 +493,10 @@
 
 .method public addMenuProvider(Landroidx/core/view/MenuProvider;)V
     .registers 3
+    .param p1    # Landroidx/core/view/MenuProvider;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     iget-object v0, p0, Landroidx/activity/ComponentActivity;->mMenuHostHelper:Landroidx/core/view/MenuHostHelper;
@@ -479,6 +508,14 @@
 
 .method public addMenuProvider(Landroidx/core/view/MenuProvider;Landroidx/lifecycle/LifecycleOwner;)V
     .registers 4
+    .param p1    # Landroidx/core/view/MenuProvider;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroidx/lifecycle/LifecycleOwner;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 2
     iget-object v0, p0, Landroidx/activity/ComponentActivity;->mMenuHostHelper:Landroidx/core/view/MenuHostHelper;
@@ -490,6 +527,23 @@
 
 .method public addMenuProvider(Landroidx/core/view/MenuProvider;Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$State;)V
     .registers 5
+    .param p1    # Landroidx/core/view/MenuProvider;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroidx/lifecycle/LifecycleOwner;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3    # Landroidx/lifecycle/Lifecycle$State;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroid/annotation/SuppressLint;
+        value = {
+            "LambdaLast"
+        }
+    .end annotation
 
     .line 3
     iget-object v0, p0, Landroidx/activity/ComponentActivity;->mMenuHostHelper:Landroidx/core/view/MenuHostHelper;
@@ -501,6 +555,10 @@
 
 .method public final addOnConfigurationChangedListener(Landroidx/core/util/Consumer;)V
     .registers 3
+    .param p1    # Landroidx/core/util/Consumer;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -519,6 +577,10 @@
 
 .method public final addOnContextAvailableListener(Landroidx/activity/contextaware/OnContextAvailableListener;)V
     .registers 3
+    .param p1    # Landroidx/activity/contextaware/OnContextAvailableListener;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     iget-object v0, p0, Landroidx/activity/ComponentActivity;->mContextAwareHelper:Landroidx/activity/contextaware/ContextAwareHelper;
 
@@ -529,6 +591,10 @@
 
 .method public final addOnMultiWindowModeChangedListener(Landroidx/core/util/Consumer;)V
     .registers 3
+    .param p1    # Landroidx/core/util/Consumer;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -547,6 +613,10 @@
 
 .method public final addOnNewIntentListener(Landroidx/core/util/Consumer;)V
     .registers 3
+    .param p1    # Landroidx/core/util/Consumer;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -565,6 +635,10 @@
 
 .method public final addOnPictureInPictureModeChangedListener(Landroidx/core/util/Consumer;)V
     .registers 3
+    .param p1    # Landroidx/core/util/Consumer;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -583,6 +657,10 @@
 
 .method public final addOnTrimMemoryListener(Landroidx/core/util/Consumer;)V
     .registers 3
+    .param p1    # Landroidx/core/util/Consumer;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -640,6 +718,8 @@
 
 .method public final getActivityResultRegistry()Landroidx/activity/result/ActivityResultRegistry;
     .registers 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     iget-object v0, p0, Landroidx/activity/ComponentActivity;->mActivityResultRegistry:Landroidx/activity/result/ActivityResultRegistry;
 
@@ -648,6 +728,11 @@
 
 .method public getDefaultViewModelCreationExtras()Landroidx/lifecycle/viewmodel/CreationExtras;
     .registers 4
+    .annotation build Landroidx/annotation/CallSuper;
+    .end annotation
+
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     new-instance v0, Landroidx/lifecycle/viewmodel/MutableCreationExtras;
@@ -717,6 +802,8 @@
 
 .method public getDefaultViewModelProviderFactory()Landroidx/lifecycle/ViewModelProvider$Factory;
     .registers 4
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     iget-object v0, p0, Landroidx/activity/ComponentActivity;->mDefaultFactory:Landroidx/lifecycle/ViewModelProvider$Factory;
@@ -765,6 +852,9 @@
 
 .method public getLastCustomNonConfigurationInstance()Ljava/lang/Object;
     .registers 2
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -791,6 +881,8 @@
 
 .method public getLifecycle()Landroidx/lifecycle/Lifecycle;
     .registers 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     iget-object v0, p0, Landroidx/activity/ComponentActivity;->mLifecycleRegistry:Landroidx/lifecycle/LifecycleRegistry;
 
@@ -799,6 +891,8 @@
 
 .method public final getOnBackPressedDispatcher()Landroidx/activity/OnBackPressedDispatcher;
     .registers 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     iget-object v0, p0, Landroidx/activity/ComponentActivity;->mOnBackPressedDispatcher:Landroidx/activity/OnBackPressedDispatcher;
 
@@ -807,6 +901,8 @@
 
 .method public final getSavedStateRegistry()Landroidx/savedstate/SavedStateRegistry;
     .registers 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     iget-object v0, p0, Landroidx/activity/ComponentActivity;->mSavedStateRegistryController:Landroidx/savedstate/SavedStateRegistryController;
 
@@ -819,6 +915,8 @@
 
 .method public getViewModelStore()Landroidx/lifecycle/ViewModelStore;
     .registers 3
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
 
     .line 1
     invoke-virtual {p0}, Landroid/app/Activity;->getApplication()Landroid/app/Application;
@@ -856,6 +954,13 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .registers 5
+    .param p3    # Landroid/content/Intent;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/CallSuper;
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -877,6 +982,8 @@
 
 .method public onBackPressed()V
     .registers 2
+    .annotation build Landroidx/annotation/MainThread;
+    .end annotation
 
     iget-object v0, p0, Landroidx/activity/ComponentActivity;->mOnBackPressedDispatcher:Landroidx/activity/OnBackPressedDispatcher;
 
@@ -887,6 +994,12 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .registers 4
+    .param p1    # Landroid/content/res/Configuration;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/CallSuper;
+    .end annotation
 
     .line 1
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
@@ -922,6 +1035,15 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .registers 3
+    .param p1    # Landroid/os/Bundle;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/OptIn;
+        markerClass = {
+            Landroidx/core/os/BuildCompat$PrereleaseSdkCheck;
+        }
+    .end annotation
 
     .line 1
     iget-object v0, p0, Landroidx/activity/ComponentActivity;->mSavedStateRegistryController:Landroidx/savedstate/SavedStateRegistryController;
@@ -972,6 +1094,10 @@
 
 .method public onCreatePanelMenu(ILandroid/view/Menu;)Z
     .registers 4
+    .param p2    # Landroid/view/Menu;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     if-nez p1, :cond_e
 
@@ -995,6 +1121,10 @@
 
 .method public onMenuItemSelected(ILandroid/view/MenuItem;)Z
     .registers 4
+    .param p2    # Landroid/view/MenuItem;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-super {p0, p1, p2}, Landroid/app/Activity;->onMenuItemSelected(ILandroid/view/MenuItem;)Z
@@ -1027,6 +1157,8 @@
 
 .method public onMultiWindowModeChanged(Z)V
     .registers 5
+    .annotation build Landroidx/annotation/CallSuper;
+    .end annotation
 
     .line 1
     iget-boolean v0, p0, Landroidx/activity/ComponentActivity;->mDispatchingOnMultiWindowModeChanged:Z
@@ -1071,6 +1203,16 @@
 
 .method public onMultiWindowModeChanged(ZLandroid/content/res/Configuration;)V
     .registers 6
+    .param p2    # Landroid/content/res/Configuration;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/CallSuper;
+    .end annotation
+
+    .annotation build Landroidx/annotation/RequiresApi;
+        api = 0x1a
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -1132,6 +1274,16 @@
 
 .method public onNewIntent(Landroid/content/Intent;)V
     .registers 4
+    .param p1    # Landroid/content/Intent;
+        .annotation build Landroid/annotation/SuppressLint;
+            value = {
+                "UnknownNullness",
+                "MissingNullability"
+            }
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/CallSuper;
+    .end annotation
 
     .line 1
     invoke-super {p0, p1}, Landroid/app/Activity;->onNewIntent(Landroid/content/Intent;)V
@@ -1167,6 +1319,10 @@
 
 .method public onPanelClosed(ILandroid/view/Menu;)V
     .registers 4
+    .param p2    # Landroid/view/Menu;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     iget-object v0, p0, Landroidx/activity/ComponentActivity;->mMenuHostHelper:Landroidx/core/view/MenuHostHelper;
@@ -1181,6 +1337,8 @@
 
 .method public onPictureInPictureModeChanged(Z)V
     .registers 5
+    .annotation build Landroidx/annotation/CallSuper;
+    .end annotation
 
     .line 1
     iget-boolean v0, p0, Landroidx/activity/ComponentActivity;->mDispatchingOnPictureInPictureModeChanged:Z
@@ -1225,6 +1383,16 @@
 
 .method public onPictureInPictureModeChanged(ZLandroid/content/res/Configuration;)V
     .registers 6
+    .param p2    # Landroid/content/res/Configuration;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/CallSuper;
+    .end annotation
+
+    .annotation build Landroidx/annotation/RequiresApi;
+        api = 0x1a
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -1286,6 +1454,14 @@
 
 .method public onPreparePanel(ILandroid/view/View;Landroid/view/Menu;)Z
     .registers 4
+    .param p2    # Landroid/view/View;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Landroid/view/Menu;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     if-nez p1, :cond_a
 
@@ -1305,6 +1481,17 @@
 
 .method public onRequestPermissionsResult(I[Ljava/lang/String;[I)V
     .registers 7
+    .param p2    # [Ljava/lang/String;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3    # [I
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/CallSuper;
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1354,6 +1541,9 @@
 
 .method public onRetainCustomNonConfigurationInstance()Ljava/lang/Object;
     .registers 2
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1364,6 +1554,8 @@
 
 .method public final onRetainNonConfigurationInstance()Ljava/lang/Object;
     .registers 4
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
     invoke-virtual {p0}, Landroidx/activity/ComponentActivity;->onRetainCustomNonConfigurationInstance()Ljava/lang/Object;
@@ -1413,6 +1605,12 @@
 
 .method public final onSaveInstanceState(Landroid/os/Bundle;)V
     .registers 4
+    .param p1    # Landroid/os/Bundle;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/CallSuper;
+    .end annotation
 
     .line 1
     invoke-virtual {p0}, Landroidx/activity/ComponentActivity;->getLifecycle()Landroidx/lifecycle/Lifecycle;
@@ -1445,6 +1643,8 @@
 
 .method public onTrimMemory(I)V
     .registers 5
+    .annotation build Landroidx/annotation/CallSuper;
+    .end annotation
 
     .line 1
     invoke-super {p0, p1}, Landroid/app/Activity;->onTrimMemory(I)V
@@ -1484,6 +1684,8 @@
 
 .method public peekAvailableContext()Landroid/content/Context;
     .registers 2
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     iget-object v0, p0, Landroidx/activity/ComponentActivity;->mContextAwareHelper:Landroidx/activity/contextaware/ContextAwareHelper;
 
@@ -1496,6 +1698,17 @@
 
 .method public final registerForActivityResult(Landroidx/activity/result/contract/ActivityResultContract;Landroidx/activity/result/ActivityResultCallback;)Landroidx/activity/result/ActivityResultLauncher;
     .registers 4
+    .param p1    # Landroidx/activity/result/contract/ActivityResultContract;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroidx/activity/result/ActivityResultCallback;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<I:",
@@ -1524,6 +1737,21 @@
 
 .method public final registerForActivityResult(Landroidx/activity/result/contract/ActivityResultContract;Landroidx/activity/result/ActivityResultRegistry;Landroidx/activity/result/ActivityResultCallback;)Landroidx/activity/result/ActivityResultLauncher;
     .registers 6
+    .param p1    # Landroidx/activity/result/contract/ActivityResultContract;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroidx/activity/result/ActivityResultRegistry;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3    # Landroidx/activity/result/ActivityResultCallback;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<I:",
@@ -1572,6 +1800,10 @@
 
 .method public removeMenuProvider(Landroidx/core/view/MenuProvider;)V
     .registers 3
+    .param p1    # Landroidx/core/view/MenuProvider;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     iget-object v0, p0, Landroidx/activity/ComponentActivity;->mMenuHostHelper:Landroidx/core/view/MenuHostHelper;
 
@@ -1582,6 +1814,10 @@
 
 .method public final removeOnConfigurationChangedListener(Landroidx/core/util/Consumer;)V
     .registers 3
+    .param p1    # Landroidx/core/util/Consumer;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1600,6 +1836,10 @@
 
 .method public final removeOnContextAvailableListener(Landroidx/activity/contextaware/OnContextAvailableListener;)V
     .registers 3
+    .param p1    # Landroidx/activity/contextaware/OnContextAvailableListener;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     iget-object v0, p0, Landroidx/activity/ComponentActivity;->mContextAwareHelper:Landroidx/activity/contextaware/ContextAwareHelper;
 
@@ -1610,6 +1850,10 @@
 
 .method public final removeOnMultiWindowModeChangedListener(Landroidx/core/util/Consumer;)V
     .registers 3
+    .param p1    # Landroidx/core/util/Consumer;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1628,6 +1872,10 @@
 
 .method public final removeOnNewIntentListener(Landroidx/core/util/Consumer;)V
     .registers 3
+    .param p1    # Landroidx/core/util/Consumer;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1646,6 +1894,10 @@
 
 .method public final removeOnPictureInPictureModeChangedListener(Landroidx/core/util/Consumer;)V
     .registers 3
+    .param p1    # Landroidx/core/util/Consumer;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1664,6 +1916,10 @@
 
 .method public final removeOnTrimMemoryListener(Landroidx/core/util/Consumer;)V
     .registers 3
+    .param p1    # Landroidx/core/util/Consumer;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1718,6 +1974,10 @@
 
 .method public setContentView(I)V
     .registers 2
+    .param p1    # I
+        .annotation build Landroidx/annotation/LayoutRes;
+        .end annotation
+    .end param
 
     .line 1
     invoke-direct {p0}, Landroidx/activity/ComponentActivity;->initViewTreeOwners()V
@@ -1730,6 +1990,14 @@
 
 .method public setContentView(Landroid/view/View;)V
     .registers 2
+    .param p1    # Landroid/view/View;
+        .annotation build Landroid/annotation/SuppressLint;
+            value = {
+                "UnknownNullness",
+                "MissingNullability"
+            }
+        .end annotation
+    .end param
 
     .line 3
     invoke-direct {p0}, Landroidx/activity/ComponentActivity;->initViewTreeOwners()V
@@ -1742,6 +2010,22 @@
 
 .method public setContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
     .registers 3
+    .param p1    # Landroid/view/View;
+        .annotation build Landroid/annotation/SuppressLint;
+            value = {
+                "UnknownNullness",
+                "MissingNullability"
+            }
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/ViewGroup$LayoutParams;
+        .annotation build Landroid/annotation/SuppressLint;
+            value = {
+                "UnknownNullness",
+                "MissingNullability"
+            }
+        .end annotation
+    .end param
 
     .line 5
     invoke-direct {p0}, Landroidx/activity/ComponentActivity;->initViewTreeOwners()V
@@ -1754,6 +2038,10 @@
 
 .method public startActivityForResult(Landroid/content/Intent;I)V
     .registers 3
+    .param p1    # Landroid/content/Intent;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1765,6 +2053,14 @@
 
 .method public startActivityForResult(Landroid/content/Intent;ILandroid/os/Bundle;)V
     .registers 4
+    .param p1    # Landroid/content/Intent;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3    # Landroid/os/Bundle;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1776,6 +2072,14 @@
 
 .method public startIntentSenderForResult(Landroid/content/IntentSender;ILandroid/content/Intent;III)V
     .registers 7
+    .param p1    # Landroid/content/IntentSender;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3    # Landroid/content/Intent;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/IntentSender$SendIntentException;
@@ -1793,6 +2097,18 @@
 
 .method public startIntentSenderForResult(Landroid/content/IntentSender;ILandroid/content/Intent;IIILandroid/os/Bundle;)V
     .registers 8
+    .param p1    # Landroid/content/IntentSender;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3    # Landroid/content/Intent;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p7    # Landroid/os/Bundle;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/IntentSender$SendIntentException;
