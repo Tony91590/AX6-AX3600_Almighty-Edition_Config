@@ -1,4 +1,4 @@
-.class public Lcom/ibopro/player/models/AppInfoModel;
+.class public Lcom/ibopro/ultra/models/AppInfoModel;
 .super Ljava/lang/Object;
 .source "AppInfoModel.java"
 
@@ -9,8 +9,8 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/ibopro/player/models/AppInfoModel$AndroidTestingModel;,
-        Lcom/ibopro/player/models/AppInfoModel$UrlModel;
+        Lcom/ibopro/ultra/models/AppInfoModel$AndroidTestingModel;,
+        Lcom/ibopro/ultra/models/AppInfoModel$UrlModel;
     }
 .end annotation
 
@@ -19,6 +19,12 @@
 .field private apk_link:Ljava/lang/String;
     .annotation runtime Lcom/google/gson/annotations/SerializedName;
         value = "apk_link"
+    .end annotation
+.end field
+
+.field private app_themes:Ljava/lang/String;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "app_themes"
     .end annotation
 .end field
 
@@ -56,9 +62,15 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lcom/ibopro/player/models/LanguageModel;",
+            "Lcom/ibopro/ultra/models/LanguageModel;",
             ">;"
         }
+    .end annotation
+.end field
+
+.field private licen_key:Ljava/lang/String;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "licen_key"
     .end annotation
 .end field
 
@@ -71,6 +83,18 @@
 .field private mac_address:Ljava/lang/String;
     .annotation runtime Lcom/google/gson/annotations/SerializedName;
         value = "mac_address"
+    .end annotation
+.end field
+
+.field private notification_content:Ljava/lang/String;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "notification_content"
+    .end annotation
+.end field
+
+.field private notification_tital:Ljava/lang/String;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "notification_tital"
     .end annotation
 .end field
 
@@ -112,7 +136,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lcom/ibopro/player/models/AppInfoModel$UrlModel;",
+            "Lcom/ibopro/ultra/models/AppInfoModel$UrlModel;",
             ">;"
         }
     .end annotation
@@ -124,7 +148,7 @@
     .end annotation
 .end field
 
-.field private testingModel:Lcom/ibopro/player/models/AppInfoModel$AndroidTestingModel;
+.field private testingModel:Lcom/ibopro/ultra/models/AppInfoModel$AndroidTestingModel;
     .annotation runtime Lcom/google/gson/annotations/SerializedName;
         value = "android_testing"
     .end annotation
@@ -145,7 +169,7 @@
 .method public getApk_link()Ljava/lang/String;
     .registers 2
 
-    iget-object v0, p0, Lcom/ibopro/player/models/AppInfoModel;->apk_link:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/AppInfoModel;->apk_link:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -153,7 +177,7 @@
 .method public getApp_version()Ljava/lang/String;
     .registers 2
 
-    iget-object v0, p0, Lcom/ibopro/player/models/AppInfoModel;->app_version:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/AppInfoModel;->app_version:Ljava/lang/String;
 
     if-nez v0, :cond_6
 
@@ -166,7 +190,7 @@
 .method public getDevice_key()Ljava/lang/String;
     .registers 2
 
-    iget-object v0, p0, Lcom/ibopro/player/models/AppInfoModel;->device_key:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/AppInfoModel;->device_key:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -174,7 +198,7 @@
 .method public getExpiredDate()Ljava/lang/String;
     .registers 2
 
-    iget-object v0, p0, Lcom/ibopro/player/models/AppInfoModel;->expiredDate:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/AppInfoModel;->expiredDate:Ljava/lang/String;
 
     if-nez v0, :cond_6
 
@@ -187,9 +211,7 @@
 .method public getIs_trial()I
     .registers 2
 
-    iget v0, p0, Lcom/ibopro/player/models/AppInfoModel;->is_trial:I
-
-    const v0, 0x3e7
+    iget v0, p0, Lcom/ibopro/ultra/models/AppInfoModel;->is_trial:I
 
     return v0
 .end method
@@ -200,13 +222,13 @@
         value = {
             "()",
             "Ljava/util/List<",
-            "Lcom/ibopro/player/models/LanguageModel;",
+            "Lcom/ibopro/ultra/models/LanguageModel;",
             ">;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/AppInfoModel;->languageModels:Ljava/util/List;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/AppInfoModel;->languageModels:Ljava/util/List;
 
     if-nez v0, :cond_9
 
@@ -222,7 +244,7 @@
 .method public getLock()I
     .registers 2
 
-    iget v0, p0, Lcom/ibopro/player/models/AppInfoModel;->lock:I
+    iget v0, p0, Lcom/ibopro/ultra/models/AppInfoModel;->lock:I
 
     return v0
 .end method
@@ -230,7 +252,23 @@
 .method public getMac_address()Ljava/lang/String;
     .registers 2
 
-    iget-object v0, p0, Lcom/ibopro/player/models/AppInfoModel;->mac_address:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/AppInfoModel;->mac_address:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getNoti_content()Ljava/lang/String;
+    .registers 2
+
+    iget-object v0, p0, Lcom/ibopro/ultra/models/AppInfoModel;->notification_content:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getNoti_tital()Ljava/lang/String;
+    .registers 2
+
+    iget-object v0, p0, Lcom/ibopro/ultra/models/AppInfoModel;->notification_tital:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -239,7 +277,7 @@
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/AppInfoModel;->parent_control:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/AppInfoModel;->parent_control:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -253,7 +291,7 @@
 
     .line 2
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/AppInfoModel;->parent_control:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/AppInfoModel;->parent_control:Ljava/lang/String;
 
     return-object v0
 
@@ -267,7 +305,7 @@
 .method public getParent_synced()I
     .registers 2
 
-    iget v0, p0, Lcom/ibopro/player/models/AppInfoModel;->parent_synced:I
+    iget v0, p0, Lcom/ibopro/ultra/models/AppInfoModel;->parent_synced:I
 
     return v0
 .end method
@@ -275,7 +313,7 @@
 .method public getPin_code()Ljava/lang/String;
     .registers 2
 
-    iget-object v0, p0, Lcom/ibopro/player/models/AppInfoModel;->pin_code:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/AppInfoModel;->pin_code:Ljava/lang/String;
 
     if-nez v0, :cond_6
 
@@ -288,7 +326,7 @@
 .method public getPlan_id()Ljava/lang/String;
     .registers 2
 
-    iget-object v0, p0, Lcom/ibopro/player/models/AppInfoModel;->plan_id:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/AppInfoModel;->plan_id:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -296,7 +334,7 @@
 .method public getPrice()Ljava/lang/String;
     .registers 2
 
-    iget-object v0, p0, Lcom/ibopro/player/models/AppInfoModel;->price:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/AppInfoModel;->price:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
@@ -309,7 +347,7 @@
     goto :goto_e
 
     :cond_b
-    iget-object v0, p0, Lcom/ibopro/player/models/AppInfoModel;->price:Ljava/lang/String;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/AppInfoModel;->price:Ljava/lang/String;
 
     goto :goto_10
 
@@ -327,12 +365,12 @@
         value = {
             "()",
             "Ljava/util/List<",
-            "Lcom/ibopro/player/models/AppInfoModel$UrlModel;",
+            "Lcom/ibopro/ultra/models/AppInfoModel$UrlModel;",
             ">;"
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/ibopro/player/models/AppInfoModel;->result:Ljava/util/List;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/AppInfoModel;->result:Ljava/util/List;
 
     if-nez v0, :cond_9
 
@@ -347,34 +385,48 @@
 .method public getSuccess()Z
     .registers 2
 
-    iget-boolean v0, p0, Lcom/ibopro/player/models/AppInfoModel;->success:Z
+    iget-boolean v0, p0, Lcom/ibopro/ultra/models/AppInfoModel;->success:Z
 
     return v0
 .end method
 
-.method public getTestingModel()Lcom/ibopro/player/models/AppInfoModel$AndroidTestingModel;
+.method public getTestingModel()Lcom/ibopro/ultra/models/AppInfoModel$AndroidTestingModel;
     .registers 2
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/player/models/AppInfoModel;->testingModel:Lcom/ibopro/player/models/AppInfoModel$AndroidTestingModel;
+    iget-object v0, p0, Lcom/ibopro/ultra/models/AppInfoModel;->testingModel:Lcom/ibopro/ultra/models/AppInfoModel$AndroidTestingModel;
 
     if-nez v0, :cond_9
 
     .line 2
-    new-instance v0, Lcom/ibopro/player/models/AppInfoModel$AndroidTestingModel;
+    new-instance v0, Lcom/ibopro/ultra/models/AppInfoModel$AndroidTestingModel;
 
-    invoke-direct {v0}, Lcom/ibopro/player/models/AppInfoModel$AndroidTestingModel;-><init>()V
+    invoke-direct {v0}, Lcom/ibopro/ultra/models/AppInfoModel$AndroidTestingModel;-><init>()V
 
     :cond_9
+    return-object v0
+.end method
+
+.method public get_app_theme()Ljava/lang/String;
+    .registers 2
+
+    iget-object v0, p0, Lcom/ibopro/ultra/models/AppInfoModel;->app_themes:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getkey_licen()Ljava/lang/String;
+    .registers 2
+
+    iget-object v0, p0, Lcom/ibopro/ultra/models/AppInfoModel;->licen_key:Ljava/lang/String;
+
     return-object v0
 .end method
 
 .method public isIs_google_pay()Z
     .registers 2
 
-    iget-boolean v0, p0, Lcom/ibopro/player/models/AppInfoModel;->is_google_pay:Z
-
-    const v0, 0x1
+    iget-boolean v0, p0, Lcom/ibopro/ultra/models/AppInfoModel;->is_google_pay:Z
 
     return v0
 .end method
@@ -382,7 +434,7 @@
 .method public setExpiredDate(Ljava/lang/String;)V
     .registers 2
 
-    iput-object p1, p0, Lcom/ibopro/player/models/AppInfoModel;->expiredDate:Ljava/lang/String;
+    iput-object p1, p0, Lcom/ibopro/ultra/models/AppInfoModel;->expiredDate:Ljava/lang/String;
 
     return-void
 .end method
@@ -390,7 +442,7 @@
 .method public setIs_google_pay(Z)V
     .registers 2
 
-    iput-boolean p1, p0, Lcom/ibopro/player/models/AppInfoModel;->is_google_pay:Z
+    iput-boolean p1, p0, Lcom/ibopro/ultra/models/AppInfoModel;->is_google_pay:Z
 
     return-void
 .end method
@@ -398,7 +450,7 @@
 .method public setIs_trial(I)V
     .registers 2
 
-    iput p1, p0, Lcom/ibopro/player/models/AppInfoModel;->is_trial:I
+    iput p1, p0, Lcom/ibopro/ultra/models/AppInfoModel;->is_trial:I
 
     return-void
 .end method
@@ -409,12 +461,12 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lcom/ibopro/player/models/LanguageModel;",
+            "Lcom/ibopro/ultra/models/LanguageModel;",
             ">;)V"
         }
     .end annotation
 
-    iput-object p1, p0, Lcom/ibopro/player/models/AppInfoModel;->languageModels:Ljava/util/List;
+    iput-object p1, p0, Lcom/ibopro/ultra/models/AppInfoModel;->languageModels:Ljava/util/List;
 
     return-void
 .end method
@@ -422,7 +474,7 @@
 .method public setLock(I)V
     .registers 2
 
-    iput p1, p0, Lcom/ibopro/player/models/AppInfoModel;->lock:I
+    iput p1, p0, Lcom/ibopro/ultra/models/AppInfoModel;->lock:I
 
     return-void
 .end method
@@ -430,7 +482,7 @@
 .method public setPin_code(Ljava/lang/String;)V
     .registers 2
 
-    iput-object p1, p0, Lcom/ibopro/player/models/AppInfoModel;->pin_code:Ljava/lang/String;
+    iput-object p1, p0, Lcom/ibopro/ultra/models/AppInfoModel;->pin_code:Ljava/lang/String;
 
     return-void
 .end method
@@ -441,12 +493,12 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lcom/ibopro/player/models/AppInfoModel$UrlModel;",
+            "Lcom/ibopro/ultra/models/AppInfoModel$UrlModel;",
             ">;)V"
         }
     .end annotation
 
-    iput-object p1, p0, Lcom/ibopro/player/models/AppInfoModel;->result:Ljava/util/List;
+    iput-object p1, p0, Lcom/ibopro/ultra/models/AppInfoModel;->result:Ljava/util/List;
 
     return-void
 .end method
