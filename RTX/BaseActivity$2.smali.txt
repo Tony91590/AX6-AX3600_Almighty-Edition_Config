@@ -1,4 +1,4 @@
-.class Lcom/ibopro/ultra/apps/BaseActivity$2;
+.class Lcom/ibopro/player/apps/BaseActivity$2;
 .super Ljava/lang/Object;
 .source "BaseActivity.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/ibopro/ultra/apps/BaseActivity;->getLiveCategory()V
+    value = Lcom/ibopro/player/apps/BaseActivity;->getLiveCategory()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,21 +21,21 @@
         "Ljava/lang/Object;",
         "Lretrofit2/Callback<",
         "Ljava/util/List<",
-        "Lcom/ibopro/ultra/models/CategoryModel;",
+        "Lcom/ibopro/player/models/CategoryModel;",
         ">;>;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/ibopro/ultra/apps/BaseActivity;
+.field public final synthetic this$0:Lcom/ibopro/player/apps/BaseActivity;
 
 
 # direct methods
-.method public constructor <init>(Lcom/ibopro/ultra/apps/BaseActivity;)V
+.method public constructor <init>(Lcom/ibopro/player/apps/BaseActivity;)V
     .registers 2
 
-    iput-object p1, p0, Lcom/ibopro/ultra/apps/BaseActivity$2;->this$0:Lcom/ibopro/ultra/apps/BaseActivity;
+    iput-object p1, p0, Lcom/ibopro/player/apps/BaseActivity$2;->this$0:Lcom/ibopro/player/apps/BaseActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,12 +46,20 @@
 # virtual methods
 .method public onFailure(Lretrofit2/Call;Ljava/lang/Throwable;)V
     .registers 4
+    .param p1    # Lretrofit2/Call;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Throwable;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lretrofit2/Call<",
             "Ljava/util/List<",
-            "Lcom/ibopro/ultra/models/CategoryModel;",
+            "Lcom/ibopro/player/models/CategoryModel;",
             ">;>;",
             "Ljava/lang/Throwable;",
             ")V"
@@ -59,14 +67,14 @@
     .end annotation
 
     .line 1
-    iget-object p1, p0, Lcom/ibopro/ultra/apps/BaseActivity$2;->this$0:Lcom/ibopro/ultra/apps/BaseActivity;
+    iget-object p1, p0, Lcom/ibopro/player/apps/BaseActivity$2;->this$0:Lcom/ibopro/player/apps/BaseActivity;
 
-    iget-boolean p2, p1, Lcom/ibopro/ultra/apps/BaseActivity;->is_stop:Z
+    iget-boolean p2, p1, Lcom/ibopro/player/apps/BaseActivity;->is_stop:Z
 
     if-nez p2, :cond_16
 
     .line 2
-    iget p2, p1, Lcom/ibopro/ultra/apps/BaseActivity;->error_account:I
+    iget p2, p1, Lcom/ibopro/player/apps/BaseActivity;->error_account:I
 
     const/4 v0, 0x2
 
@@ -75,16 +83,16 @@
     add-int/lit8 p2, p2, 0x1
 
     .line 3
-    iput p2, p1, Lcom/ibopro/ultra/apps/BaseActivity;->error_account:I
+    iput p2, p1, Lcom/ibopro/player/apps/BaseActivity;->error_account:I
 
     .line 4
-    invoke-static {p1}, Lcom/ibopro/ultra/apps/BaseActivity;->access$000(Lcom/ibopro/ultra/apps/BaseActivity;)V
+    invoke-static {p1}, Lcom/ibopro/player/apps/BaseActivity;->access$000(Lcom/ibopro/player/apps/BaseActivity;)V
 
     goto :goto_16
 
     .line 5
     :cond_13
-    invoke-static {p1}, Lcom/ibopro/ultra/apps/BaseActivity;->access$200(Lcom/ibopro/ultra/apps/BaseActivity;)V
+    invoke-static {p1}, Lcom/ibopro/player/apps/BaseActivity;->access$200(Lcom/ibopro/player/apps/BaseActivity;)V
 
     :cond_16
     :goto_16
@@ -93,26 +101,34 @@
 
 .method public onResponse(Lretrofit2/Call;Lretrofit2/Response;)V
     .registers 9
+    .param p1    # Lretrofit2/Call;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Lretrofit2/Response;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lretrofit2/Call<",
             "Ljava/util/List<",
-            "Lcom/ibopro/ultra/models/CategoryModel;",
+            "Lcom/ibopro/player/models/CategoryModel;",
             ">;>;",
             "Lretrofit2/Response<",
             "Ljava/util/List<",
-            "Lcom/ibopro/ultra/models/CategoryModel;",
+            "Lcom/ibopro/player/models/CategoryModel;",
             ">;>;)V"
         }
     .end annotation
 
     .line 1
-    iget-object p1, p0, Lcom/ibopro/ultra/apps/BaseActivity$2;->this$0:Lcom/ibopro/ultra/apps/BaseActivity;
+    iget-object p1, p0, Lcom/ibopro/player/apps/BaseActivity$2;->this$0:Lcom/ibopro/player/apps/BaseActivity;
 
     const/4 v0, 0x0
 
-    iput v0, p1, Lcom/ibopro/ultra/apps/BaseActivity;->error_account:I
+    iput v0, p1, Lcom/ibopro/player/apps/BaseActivity;->error_account:I
 
     .line 2
     invoke-virtual {p2}, Lretrofit2/Response;->body()Ljava/lang/Object;
@@ -130,36 +146,36 @@
 
     .line 4
     :cond_12
-    new-instance p2, Lcom/ibopro/ultra/models/CategoryModel;
+    new-instance p2, Lcom/ibopro/player/models/CategoryModel;
 
-    iget-object v1, p0, Lcom/ibopro/ultra/apps/BaseActivity$2;->this$0:Lcom/ibopro/ultra/apps/BaseActivity;
+    iget-object v1, p0, Lcom/ibopro/player/apps/BaseActivity$2;->this$0:Lcom/ibopro/player/apps/BaseActivity;
 
-    iget-object v1, v1, Lcom/ibopro/ultra/apps/BaseActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v1, v1, Lcom/ibopro/player/apps/BaseActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v1}, Lcom/ibopro/ultra/models/WordModels;->getAdd_group()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/ibopro/player/models/WordModels;->getAdd_group()Ljava/lang/String;
 
     move-result-object v1
 
     const-string v2, "add_group"
 
-    invoke-direct {p2, v2, v1}, Lcom/ibopro/ultra/models/CategoryModel;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p2, v2, v1}, Lcom/ibopro/player/models/CategoryModel;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-interface {p1, v0, p2}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
     .line 5
-    new-instance p2, Lcom/ibopro/ultra/models/CategoryModel;
+    new-instance p2, Lcom/ibopro/player/models/CategoryModel;
 
-    iget-object v1, p0, Lcom/ibopro/ultra/apps/BaseActivity$2;->this$0:Lcom/ibopro/ultra/apps/BaseActivity;
+    iget-object v1, p0, Lcom/ibopro/player/apps/BaseActivity$2;->this$0:Lcom/ibopro/player/apps/BaseActivity;
 
-    iget-object v1, v1, Lcom/ibopro/ultra/apps/BaseActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v1, v1, Lcom/ibopro/player/apps/BaseActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v1}, Lcom/ibopro/ultra/models/WordModels;->getRecently_viewed()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/ibopro/player/models/WordModels;->getRecently_viewed()Ljava/lang/String;
 
     move-result-object v1
 
     const-string v2, "resume_id"
 
-    invoke-direct {p2, v2, v1}, Lcom/ibopro/ultra/models/CategoryModel;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p2, v2, v1}, Lcom/ibopro/player/models/CategoryModel;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v1, 0x1
 
@@ -168,68 +184,68 @@
     const/4 p2, 0x2
 
     .line 6
-    new-instance v1, Lcom/ibopro/ultra/models/CategoryModel;
+    new-instance v1, Lcom/ibopro/player/models/CategoryModel;
 
-    iget-object v2, p0, Lcom/ibopro/ultra/apps/BaseActivity$2;->this$0:Lcom/ibopro/ultra/apps/BaseActivity;
+    iget-object v2, p0, Lcom/ibopro/player/apps/BaseActivity$2;->this$0:Lcom/ibopro/player/apps/BaseActivity;
 
-    iget-object v2, v2, Lcom/ibopro/ultra/apps/BaseActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v2, v2, Lcom/ibopro/player/apps/BaseActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v2}, Lcom/ibopro/ultra/models/WordModels;->getAll()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/ibopro/player/models/WordModels;->getAll()Ljava/lang/String;
 
     move-result-object v2
 
     const-string v3, "all_id"
 
-    invoke-direct {v1, v3, v2}, Lcom/ibopro/ultra/models/CategoryModel;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v1, v3, v2}, Lcom/ibopro/player/models/CategoryModel;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-interface {p1, p2, v1}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
     const/4 p2, 0x3
 
     .line 7
-    new-instance v1, Lcom/ibopro/ultra/models/CategoryModel;
+    new-instance v1, Lcom/ibopro/player/models/CategoryModel;
 
-    iget-object v2, p0, Lcom/ibopro/ultra/apps/BaseActivity$2;->this$0:Lcom/ibopro/ultra/apps/BaseActivity;
+    iget-object v2, p0, Lcom/ibopro/player/apps/BaseActivity$2;->this$0:Lcom/ibopro/player/apps/BaseActivity;
 
-    iget-object v2, v2, Lcom/ibopro/ultra/apps/BaseActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v2, v2, Lcom/ibopro/player/apps/BaseActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v2}, Lcom/ibopro/ultra/models/WordModels;->getFavorite()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/ibopro/player/models/WordModels;->getFavorite()Ljava/lang/String;
 
     move-result-object v2
 
     const-string v3, "fav_id"
 
-    invoke-direct {v1, v3, v2}, Lcom/ibopro/ultra/models/CategoryModel;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v1, v3, v2}, Lcom/ibopro/player/models/CategoryModel;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-interface {p1, p2, v1}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
     const/4 p2, 0x4
 
     .line 8
-    new-instance v1, Lcom/ibopro/ultra/models/CategoryModel;
+    new-instance v1, Lcom/ibopro/player/models/CategoryModel;
 
-    iget-object v2, p0, Lcom/ibopro/ultra/apps/BaseActivity$2;->this$0:Lcom/ibopro/ultra/apps/BaseActivity;
+    iget-object v2, p0, Lcom/ibopro/player/apps/BaseActivity$2;->this$0:Lcom/ibopro/player/apps/BaseActivity;
 
-    iget-object v2, v2, Lcom/ibopro/ultra/apps/BaseActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v2, v2, Lcom/ibopro/player/apps/BaseActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v2}, Lcom/ibopro/ultra/models/WordModels;->getLock()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/ibopro/player/models/WordModels;->getLock()Ljava/lang/String;
 
     move-result-object v2
 
     const-string v3, "lock_id"
 
-    invoke-direct {v1, v3, v2}, Lcom/ibopro/ultra/models/CategoryModel;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v1, v3, v2}, Lcom/ibopro/player/models/CategoryModel;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-interface {p1, p2, v1}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
     const/16 p2, 0x1770
 
     .line 9
-    iget-object v1, p0, Lcom/ibopro/ultra/apps/BaseActivity$2;->this$0:Lcom/ibopro/ultra/apps/BaseActivity;
+    iget-object v1, p0, Lcom/ibopro/player/apps/BaseActivity$2;->this$0:Lcom/ibopro/player/apps/BaseActivity;
 
-    iget-object v1, v1, Lcom/ibopro/ultra/apps/BaseActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object v1, v1, Lcom/ibopro/player/apps/BaseActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
-    invoke-virtual {v1}, Lcom/ibopro/ultra/helper/PreferenceHelper;->getSharedPreferenceMyGroupCategory()Ljava/util/List;
+    invoke-virtual {v1}, Lcom/ibopro/player/helper/PreferenceHelper;->getSharedPreferenceMyGroupCategory()Ljava/util/List;
 
     move-result-object v1
 
@@ -244,7 +260,7 @@
     add-int/lit8 v2, v0, 0x5
 
     .line 11
-    new-instance v3, Lcom/ibopro/ultra/models/CategoryModel;
+    new-instance v3, Lcom/ibopro/player/models/CategoryModel;
 
     invoke-static {p2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -256,7 +272,7 @@
 
     check-cast v5, Ljava/lang/String;
 
-    invoke-direct {v3, v4, v5}, Lcom/ibopro/ultra/models/CategoryModel;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v3, v4, v5}, Lcom/ibopro/player/models/CategoryModel;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-interface {p1, v2, v3}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
@@ -278,16 +294,16 @@
 
     move-result v0
 
-    if-eqz v0, :cond_df
+    if-eqz v0, :cond_d3
 
     invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/ibopro/ultra/models/CategoryModel;
+    check-cast v0, Lcom/ibopro/player/models/CategoryModel;
 
     .line 13
-    invoke-virtual {v0}, Lcom/ibopro/ultra/models/CategoryModel;->getName()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/ibopro/player/models/CategoryModel;->getName()Ljava/lang/String;
 
     move-result-object v1
 
@@ -322,50 +338,34 @@
 
     .line 15
     :cond_c9
-    invoke-static {}, Lcom/rtx/niceibo/library/appulits/ulits;->parentinfo()Ljava/lang/String;
+    sget-object v1, Lcom/ibopro/player/apps/Constants;->xxx_live_categories:Ljava/util/List;
 
-    move-result-object v4
-
-    .line 346
-    .local v4, "infomation":Ljava/lang/String;
-    const-string v1, "ON"
-
-    invoke-virtual {v4, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_de
-
-    sget-object v1, Lcom/ibopro/ultra/apps/Constants;->xxx_live_categories:Ljava/util/List;
-
-    invoke-virtual {v0}, Lcom/ibopro/ultra/models/CategoryModel;->getId()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/ibopro/player/models/CategoryModel;->getId()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 349
-    :cond_de
     goto :goto_9d
 
     .line 16
-    :cond_df
-    iget-object p2, p0, Lcom/ibopro/ultra/apps/BaseActivity$2;->this$0:Lcom/ibopro/ultra/apps/BaseActivity;
+    :cond_d3
+    iget-object p2, p0, Lcom/ibopro/player/apps/BaseActivity$2;->this$0:Lcom/ibopro/player/apps/BaseActivity;
 
-    iget-object p2, p2, Lcom/ibopro/ultra/apps/BaseActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object p2, p2, Lcom/ibopro/player/apps/BaseActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
-    invoke-virtual {p2, p1}, Lcom/ibopro/ultra/helper/PreferenceHelper;->setSharedPreferenceLiveCategory(Ljava/util/List;)V
+    invoke-virtual {p2, p1}, Lcom/ibopro/player/helper/PreferenceHelper;->setSharedPreferenceLiveCategory(Ljava/util/List;)V
 
     .line 17
-    iget-object p1, p0, Lcom/ibopro/ultra/apps/BaseActivity$2;->this$0:Lcom/ibopro/ultra/apps/BaseActivity;
+    iget-object p1, p0, Lcom/ibopro/player/apps/BaseActivity$2;->this$0:Lcom/ibopro/player/apps/BaseActivity;
 
-    iget-boolean p2, p1, Lcom/ibopro/ultra/apps/BaseActivity;->is_stop:Z
+    iget-boolean p2, p1, Lcom/ibopro/player/apps/BaseActivity;->is_stop:Z
 
-    if-nez p2, :cond_ef
+    if-nez p2, :cond_e3
 
     .line 18
-    invoke-static {p1}, Lcom/ibopro/ultra/apps/BaseActivity;->access$200(Lcom/ibopro/ultra/apps/BaseActivity;)V
+    invoke-static {p1}, Lcom/ibopro/player/apps/BaseActivity;->access$200(Lcom/ibopro/player/apps/BaseActivity;)V
 
-    :cond_ef
+    :cond_e3
     return-void
 .end method

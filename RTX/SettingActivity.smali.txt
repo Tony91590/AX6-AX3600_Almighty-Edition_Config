@@ -1,28 +1,28 @@
-.class public Lcom/ibopro/ultra/activities/SettingActivity;
-.super Lcom/ibopro/ultra/apps/BaseActivity;
+.class public Lcom/ibopro/player/activities/SettingActivity;
+.super Lcom/ibopro/player/apps/BaseActivity;
 .source "SettingActivity.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
-.implements Lcom/ibopro/ultra/remote/GetDataRequest$OnGetResponseListener;
+.implements Lcom/ibopro/player/remote/GetDataRequest$OnGetResponseListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/ibopro/ultra/activities/SettingActivity$versionUpdate;
+        Lcom/ibopro/player/activities/SettingActivity$versionUpdate;
     }
 .end annotation
 
 
 # instance fields
-.field public adapter:Lcom/ibopro/ultra/adapter/SettingRecyclerAdapter;
+.field public adapter:Lcom/ibopro/player/adapter/SettingRecyclerAdapter;
 
-.field public addPlaylistDlgFragment:Lcom/ibopro/ultra/dlgfragment/AddPlaylistDlgFragment;
+.field public addPlaylistDlgFragment:Lcom/ibopro/player/dlgfragment/AddPlaylistDlgFragment;
 
 .field public api_version:D
 
-.field public appInfoModel:Lcom/ibopro/ultra/models/AppInfoModel;
+.field public appInfoModel:Lcom/ibopro/player/models/AppInfoModel;
 
 .field public btn_back:Landroid/widget/ImageButton;
 
@@ -36,11 +36,11 @@
 
 .field public expired_mils:J
 
-.field public hideCategoryDlgFragment:Lcom/ibopro/ultra/dlgfragment/HideCategoryDlgFragment;
+.field public hideCategoryDlgFragment:Lcom/ibopro/player/dlgfragment/HideCategoryDlgFragment;
 
-.field public noConnectionDlgFragment:Lcom/ibopro/ultra/dlgfragment/NoConnectionDlgFragment;
+.field public noConnectionDlgFragment:Lcom/ibopro/player/dlgfragment/NoConnectionDlgFragment;
 
-.field public preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+.field public preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
 .field public progress_bar:Lpl/droidsonroids/gif/GifImageView;
 
@@ -54,7 +54,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lcom/ibopro/ultra/apps/SideMenu;",
+            "Lcom/ibopro/player/apps/SideMenu;",
             ">;"
         }
     .end annotation
@@ -68,16 +68,16 @@
 
 .field public txt_setting:Landroid/widget/TextView;
 
-.field public updateDlgFragment:Lcom/ibopro/ultra/dlgfragment/UpdateDlgFragment;
+.field public updateDlgFragment:Lcom/ibopro/player/dlgfragment/UpdateDlgFragment;
 
-.field public wordModels:Lcom/ibopro/ultra/models/WordModels;
+.field public wordModels:Lcom/ibopro/player/models/WordModels;
 
 
 # direct methods
-.method public static synthetic $r8$lambda$31MdL45ELjdrXsiUSWLSTy42Zio(Lcom/ibopro/ultra/activities/SettingActivity;I)V
+.method public static synthetic $r8$lambda$31MdL45ELjdrXsiUSWLSTy42Zio(Lcom/ibopro/player/activities/SettingActivity;I)V
     .registers 2
 
-    invoke-direct {p0, p1}, Lcom/ibopro/ultra/activities/SettingActivity;->lambda$showChangeLayoutDlgFragment$3(I)V
+    invoke-direct {p0, p1}, Lcom/ibopro/player/activities/SettingActivity;->lambda$showChangeLayoutDlgFragment$3(I)V
 
     return-void
 .end method
@@ -85,7 +85,7 @@
 .method public static synthetic $r8$lambda$3PDCPYjUMEtKMsSscmg5tGjs1zY()V
     .registers 0
 
-    invoke-static {}, Lcom/ibopro/ultra/activities/SettingActivity;->lambda$ClearHistoryChannels$5()V
+    invoke-static {}, Lcom/ibopro/player/activities/SettingActivity;->lambda$ClearHistoryChannels$5()V
 
     return-void
 .end method
@@ -93,113 +93,113 @@
 .method public static synthetic $r8$lambda$6AkMGERz8DAHVoBxdfg6BLo3K0Q()V
     .registers 0
 
-    invoke-static {}, Lcom/ibopro/ultra/activities/SettingActivity;->lambda$showHideCategoryDlgFragment$4()V
+    invoke-static {}, Lcom/ibopro/player/activities/SettingActivity;->lambda$showHideCategoryDlgFragment$4()V
 
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$9p4ov9hy2UORgdj051nmrpFRQ7Q(Lcom/ibopro/ultra/activities/SettingActivity;I)V
+.method public static synthetic $r8$lambda$9p4ov9hy2UORgdj051nmrpFRQ7Q(Lcom/ibopro/player/activities/SettingActivity;I)V
     .registers 2
 
-    invoke-direct {p0, p1}, Lcom/ibopro/ultra/activities/SettingActivity;->lambda$showExternalDlgFragment$11(I)V
+    invoke-direct {p0, p1}, Lcom/ibopro/player/activities/SettingActivity;->lambda$showExternalDlgFragment$11(I)V
 
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$AdDr9Qc0aEBCC3Jytu6KGN79mKQ(Lcom/ibopro/ultra/activities/SettingActivity;I)V
+.method public static synthetic $r8$lambda$AdDr9Qc0aEBCC3Jytu6KGN79mKQ(Lcom/ibopro/player/activities/SettingActivity;I)V
     .registers 2
 
-    invoke-direct {p0, p1}, Lcom/ibopro/ultra/activities/SettingActivity;->lambda$showAutomationDlgFragment$12(I)V
+    invoke-direct {p0, p1}, Lcom/ibopro/player/activities/SettingActivity;->lambda$showAutomationDlgFragment$12(I)V
 
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$AhrzoDt8VFQ5qhR6wj3obMn1ZX8(Lcom/ibopro/ultra/activities/SettingActivity;I)V
+.method public static synthetic $r8$lambda$AhrzoDt8VFQ5qhR6wj3obMn1ZX8(Lcom/ibopro/player/activities/SettingActivity;I)V
     .registers 2
 
-    invoke-direct {p0, p1}, Lcom/ibopro/ultra/activities/SettingActivity;->lambda$showSelectPlayerDlgFragment$10(I)V
+    invoke-direct {p0, p1}, Lcom/ibopro/player/activities/SettingActivity;->lambda$showSelectPlayerDlgFragment$10(I)V
 
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$Sx0JZ6oknIEIf88R9GmOt8aeXt4(Lcom/ibopro/ultra/activities/SettingActivity;I)V
+.method public static synthetic $r8$lambda$Sx0JZ6oknIEIf88R9GmOt8aeXt4(Lcom/ibopro/player/activities/SettingActivity;I)V
     .registers 2
 
-    invoke-direct {p0, p1}, Lcom/ibopro/ultra/activities/SettingActivity;->lambda$showDeviceTypeDlgFragment$9(I)V
+    invoke-direct {p0, p1}, Lcom/ibopro/player/activities/SettingActivity;->lambda$showDeviceTypeDlgFragment$9(I)V
 
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$VnvQD6yIv-1BuI4gyGEpMrvbHpE(Lcom/ibopro/ultra/activities/SettingActivity;Ljava/util/List;I)V
+.method public static synthetic $r8$lambda$VnvQD6yIv-1BuI4gyGEpMrvbHpE(Lcom/ibopro/player/activities/SettingActivity;Ljava/util/List;I)V
     .registers 3
 
-    invoke-direct {p0, p1, p2}, Lcom/ibopro/ultra/activities/SettingActivity;->lambda$showChangeLangDlgFragment$2(Ljava/util/List;I)V
+    invoke-direct {p0, p1, p2}, Lcom/ibopro/player/activities/SettingActivity;->lambda$showChangeLangDlgFragment$2(Ljava/util/List;I)V
 
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$Z18gUOnEFQOK4YpKXBDDO-N85xs(Lcom/ibopro/ultra/activities/SettingActivity;I)V
+.method public static synthetic $r8$lambda$Z18gUOnEFQOK4YpKXBDDO-N85xs(Lcom/ibopro/player/activities/SettingActivity;I)V
     .registers 2
 
-    invoke-direct {p0, p1}, Lcom/ibopro/ultra/activities/SettingActivity;->lambda$showLiveStreamFormatDlgFragment$8(I)V
+    invoke-direct {p0, p1}, Lcom/ibopro/player/activities/SettingActivity;->lambda$showLiveStreamFormatDlgFragment$8(I)V
 
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$aQa2AIGcbWdkc8ebjIHuieYaQMo(Lcom/ibopro/ultra/activities/SettingActivity;Lcom/google/android/play/core/tasks/Task;)V
+.method public static synthetic $r8$lambda$aQa2AIGcbWdkc8ebjIHuieYaQMo(Lcom/ibopro/player/activities/SettingActivity;Lcom/google/android/play/core/tasks/Task;)V
     .registers 2
 
-    invoke-direct {p0, p1}, Lcom/ibopro/ultra/activities/SettingActivity;->lambda$activateReviewInfo$1(Lcom/google/android/play/core/tasks/Task;)V
+    invoke-direct {p0, p1}, Lcom/ibopro/player/activities/SettingActivity;->lambda$activateReviewInfo$1(Lcom/google/android/play/core/tasks/Task;)V
 
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$f06_6Rnk5-cjalgG0oVUKiabt2s(Lcom/ibopro/ultra/activities/SettingActivity;)V
+.method public static synthetic $r8$lambda$f06_6Rnk5-cjalgG0oVUKiabt2s(Lcom/ibopro/player/activities/SettingActivity;)V
     .registers 1
 
-    invoke-direct {p0}, Lcom/ibopro/ultra/activities/SettingActivity;->lambda$showNoConnectionDlgFragment$14()V
+    invoke-direct {p0}, Lcom/ibopro/player/activities/SettingActivity;->lambda$showNoConnectionDlgFragment$14()V
 
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$mljSJl9NADG-j8ED-f4zGidtP2I(Lcom/ibopro/ultra/activities/SettingActivity;I)V
+.method public static synthetic $r8$lambda$mljSJl9NADG-j8ED-f4zGidtP2I(Lcom/ibopro/player/activities/SettingActivity;I)V
     .registers 2
 
-    invoke-direct {p0, p1}, Lcom/ibopro/ultra/activities/SettingActivity;->lambda$showLiveChannelSortDlgFragment$7(I)V
+    invoke-direct {p0, p1}, Lcom/ibopro/player/activities/SettingActivity;->lambda$showLiveChannelSortDlgFragment$7(I)V
 
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$n3dxtQCNTbaxjuahF9Q_PbN7o6o(Lcom/ibopro/ultra/activities/SettingActivity;)V
+.method public static synthetic $r8$lambda$n3dxtQCNTbaxjuahF9Q_PbN7o6o(Lcom/ibopro/player/activities/SettingActivity;)V
     .registers 1
 
-    invoke-direct {p0}, Lcom/ibopro/ultra/activities/SettingActivity;->goToUpdate()V
+    invoke-direct {p0}, Lcom/ibopro/player/activities/SettingActivity;->goToUpdate()V
 
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$nnzlDy-gRaLbP9dWCzEb7YWtLOQ(Lcom/ibopro/ultra/activities/SettingActivity;Lcom/ibopro/ultra/apps/SideMenu;Ljava/lang/Integer;Ljava/lang/Boolean;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$nnzlDy-gRaLbP9dWCzEb7YWtLOQ(Lcom/ibopro/player/activities/SettingActivity;Lcom/ibopro/player/apps/SideMenu;Ljava/lang/Integer;Ljava/lang/Boolean;)Lkotlin/Unit;
     .registers 4
 
-    invoke-direct {p0, p1, p2, p3}, Lcom/ibopro/ultra/activities/SettingActivity;->lambda$onCreate$0(Lcom/ibopro/ultra/apps/SideMenu;Ljava/lang/Integer;Ljava/lang/Boolean;)Lkotlin/Unit;
+    invoke-direct {p0, p1, p2, p3}, Lcom/ibopro/player/activities/SettingActivity;->lambda$onCreate$0(Lcom/ibopro/player/apps/SideMenu;Ljava/lang/Integer;Ljava/lang/Boolean;)Lkotlin/Unit;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$qycEmFCBFtVXRgwl5qQfax9YphI(Lcom/ibopro/ultra/activities/SettingActivity;I)V
+.method public static synthetic $r8$lambda$qycEmFCBFtVXRgwl5qQfax9YphI(Lcom/ibopro/player/activities/SettingActivity;I)V
     .registers 2
 
-    invoke-direct {p0, p1}, Lcom/ibopro/ultra/activities/SettingActivity;->lambda$showChangeTimeFormatDlgFragment$6(I)V
+    invoke-direct {p0, p1}, Lcom/ibopro/player/activities/SettingActivity;->lambda$showChangeTimeFormatDlgFragment$6(I)V
 
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$uZvzxDUIei4tBfmrNH0XAPn7VLw(Lcom/ibopro/ultra/activities/SettingActivity;Lcom/google/android/play/core/tasks/Task;)V
+.method public static synthetic $r8$lambda$uZvzxDUIei4tBfmrNH0XAPn7VLw(Lcom/ibopro/player/activities/SettingActivity;Lcom/google/android/play/core/tasks/Task;)V
     .registers 2
 
-    invoke-direct {p0, p1}, Lcom/ibopro/ultra/activities/SettingActivity;->lambda$startReviewFlow$13(Lcom/google/android/play/core/tasks/Task;)V
+    invoke-direct {p0, p1}, Lcom/ibopro/player/activities/SettingActivity;->lambda$startReviewFlow$13(Lcom/google/android/play/core/tasks/Task;)V
 
     return-void
 .end method
@@ -207,7 +207,7 @@
 .method public static constructor <clinit>()V
     .registers 1
 
-    const-class v0, Lcom/ibopro/ultra/activities/SettingActivity;
+    const-class v0, Lcom/ibopro/player/activities/SettingActivity;
 
     return-void
 .end method
@@ -216,24 +216,24 @@
     .registers 3
 
     .line 1
-    invoke-direct {p0}, Lcom/ibopro/ultra/apps/BaseActivity;-><init>()V
+    invoke-direct {p0}, Lcom/ibopro/player/apps/BaseActivity;-><init>()V
 
     .line 2
-    new-instance v0, Lcom/ibopro/ultra/models/WordModels;
+    new-instance v0, Lcom/ibopro/player/models/WordModels;
 
-    invoke-direct {v0}, Lcom/ibopro/ultra/models/WordModels;-><init>()V
+    invoke-direct {v0}, Lcom/ibopro/player/models/WordModels;-><init>()V
 
-    iput-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iput-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
     const/4 v0, 0x0
 
     .line 3
-    iput v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->setting_pos:I
+    iput v0, p0, Lcom/ibopro/player/activities/SettingActivity;->setting_pos:I
 
     const-string v0, ""
 
     .line 4
-    iput-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->tv_mac_address:Ljava/lang/String;
+    iput-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->tv_mac_address:Ljava/lang/String;
 
     .line 5
     new-instance v0, Ljava/text/SimpleDateFormat;
@@ -242,12 +242,12 @@
 
     invoke-direct {v0, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->expire_format:Ljava/text/SimpleDateFormat;
+    iput-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->expire_format:Ljava/text/SimpleDateFormat;
 
     const-wide/16 v0, 0x0
 
     .line 6
-    iput-wide v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->expired_mils:J
+    iput-wide v0, p0, Lcom/ibopro/player/activities/SettingActivity;->expired_mils:J
 
     return-void
 .end method
@@ -256,11 +256,11 @@
     .registers 6
 
     .line 1
-    invoke-static {}, Lcom/ibopro/ultra/helper/RealmController;->with()Lcom/ibopro/ultra/helper/RealmController;
+    invoke-static {}, Lcom/ibopro/player/helper/RealmController;->with()Lcom/ibopro/player/helper/RealmController;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/ibopro/ultra/helper/RealmController;->getRecentChannelNames()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/ibopro/player/helper/RealmController;->getRecentChannelNames()Ljava/util/List;
 
     move-result-object v0
 
@@ -285,21 +285,21 @@
     check-cast v1, Ljava/lang/String;
 
     .line 3
-    invoke-static {}, Lcom/ibopro/ultra/helper/RealmController;->with()Lcom/ibopro/ultra/helper/RealmController;
+    invoke-static {}, Lcom/ibopro/player/helper/RealmController;->with()Lcom/ibopro/player/helper/RealmController;
 
     move-result-object v3
 
     sget-object v4, Lio/realm/Realm$$ExternalSyntheticLambda0;->INSTANCE$20:Lio/realm/Realm$$ExternalSyntheticLambda0;
 
-    invoke-virtual {v3, v1, v2, v4}, Lcom/ibopro/ultra/helper/RealmController;->addToRecentChannels(Ljava/lang/String;ZLcom/ibopro/ultra/helper/RealmChangeItemListener;)V
+    invoke-virtual {v3, v1, v2, v4}, Lcom/ibopro/player/helper/RealmController;->addToRecentChannels(Ljava/lang/String;ZLcom/ibopro/player/helper/RealmChangeItemListener;)V
 
     goto :goto_c
 
     .line 4
     :cond_23
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v0}, Lcom/ibopro/ultra/models/WordModels;->getRecent_channels_removed()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/ibopro/player/models/WordModels;->getRecent_channels_removed()Ljava/lang/String;
 
     move-result-object v0
 
@@ -312,18 +312,18 @@
     return-void
 .end method
 
-.method public static synthetic access$000(Lcom/ibopro/ultra/activities/SettingActivity;Ljava/io/File;)V
+.method public static synthetic access$000(Lcom/ibopro/player/activities/SettingActivity;Ljava/io/File;)V
     .registers 2
 
-    invoke-direct {p0, p1}, Lcom/ibopro/ultra/activities/SettingActivity;->startInstall(Ljava/io/File;)V
+    invoke-direct {p0, p1}, Lcom/ibopro/player/activities/SettingActivity;->startInstall(Ljava/io/File;)V
 
     return-void
 .end method
 
-.method public static synthetic access$102(Lcom/ibopro/ultra/activities/SettingActivity;Ljava/lang/String;)Ljava/lang/String;
+.method public static synthetic access$102(Lcom/ibopro/player/activities/SettingActivity;Ljava/lang/String;)Ljava/lang/String;
     .registers 2
 
-    iput-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->tv_mac_address:Ljava/lang/String;
+    iput-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->tv_mac_address:Ljava/lang/String;
 
     return-object p1
 .end method
@@ -336,7 +336,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->reviewManager:Lcom/google/android/play/core/review/ReviewManager;
+    iput-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->reviewManager:Lcom/google/android/play/core/review/ReviewManager;
 
     .line 2
     invoke-interface {v0}, Lcom/google/android/play/core/review/ReviewManager;->requestReviewFlow()Lcom/google/android/play/core/tasks/Task;
@@ -344,47 +344,47 @@
     move-result-object v0
 
     .line 3
-    new-instance v1, Lcom/ibopro/ultra/activities/SettingActivity$$ExternalSyntheticLambda0;
+    new-instance v1, Lcom/ibopro/player/activities/SettingActivity$$ExternalSyntheticLambda0;
 
     const/16 v2, 0xb
 
-    invoke-direct {v1, p0, v2}, Lcom/ibopro/ultra/activities/SettingActivity$$ExternalSyntheticLambda0;-><init>(Lcom/ibopro/ultra/activities/SettingActivity;I)V
+    invoke-direct {v1, p0, v2}, Lcom/ibopro/player/activities/SettingActivity$$ExternalSyntheticLambda0;-><init>(Lcom/ibopro/player/activities/SettingActivity;I)V
 
     invoke-virtual {v0, v1}, Lcom/google/android/play/core/tasks/Task;->addOnCompleteListener(Lcom/google/android/play/core/tasks/OnCompleteListener;)Lcom/google/android/play/core/tasks/Task;
 
     return-void
 .end method
 
-.method private getSettingLists(Lcom/ibopro/ultra/models/WordModels;)Ljava/util/List;
+.method private getSettingLists(Lcom/ibopro/player/models/WordModels;)Ljava/util/List;
     .registers 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/ibopro/ultra/models/WordModels;",
+            "Lcom/ibopro/player/models/WordModels;",
             ")",
             "Ljava/util/List<",
-            "Lcom/ibopro/ultra/apps/SideMenu;",
+            "Lcom/ibopro/player/apps/SideMenu;",
             ">;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->txt_setting:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->txt_setting:Landroid/widget/TextView;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getSettings()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getSettings()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 2
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->btn_pay:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->btn_pay:Landroid/widget/Button;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getPay_with_google_pay()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getPay_with_google_pay()Ljava/lang/String;
 
     move-result-object v2
 
@@ -394,9 +394,9 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/ibopro/ultra/activities/SettingActivity;->appInfoModel:Lcom/ibopro/ultra/models/AppInfoModel;
+    iget-object v2, p0, Lcom/ibopro/player/activities/SettingActivity;->appInfoModel:Lcom/ibopro/player/models/AppInfoModel;
 
-    invoke-virtual {v2}, Lcom/ibopro/ultra/models/AppInfoModel;->getPrice()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/ibopro/player/models/AppInfoModel;->getPrice()Ljava/lang/String;
 
     move-result-object v2
 
@@ -418,9 +418,9 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 4
-    new-instance v1, Lcom/ibopro/ultra/apps/SideMenu;
+    new-instance v1, Lcom/ibopro/player/apps/SideMenu;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getAdd_playlist()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getAdd_playlist()Ljava/lang/String;
 
     move-result-object v2
 
@@ -428,14 +428,14 @@
 
     const v4, 0x7f080152
 
-    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/ultra/apps/SideMenu;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/player/apps/SideMenu;-><init>(Ljava/lang/String;II)V
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 5
-    new-instance v1, Lcom/ibopro/ultra/apps/SideMenu;
+    new-instance v1, Lcom/ibopro/player/apps/SideMenu;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getParent_control()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getParent_control()Ljava/lang/String;
 
     move-result-object v2
 
@@ -443,27 +443,27 @@
 
     const v5, 0x7f080127
 
-    invoke-direct {v1, v2, v3, v5}, Lcom/ibopro/ultra/apps/SideMenu;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v2, v3, v5}, Lcom/ibopro/player/apps/SideMenu;-><init>(Ljava/lang/String;II)V
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 6
-    new-instance v1, Lcom/ibopro/ultra/apps/SideMenu;
+    new-instance v1, Lcom/ibopro/player/apps/SideMenu;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getChange_playlist()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getChange_playlist()Ljava/lang/String;
 
     move-result-object v2
 
     const/4 v3, 0x2
 
-    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/ultra/apps/SideMenu;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/player/apps/SideMenu;-><init>(Ljava/lang/String;II)V
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 7
-    new-instance v1, Lcom/ibopro/ultra/apps/SideMenu;
+    new-instance v1, Lcom/ibopro/player/apps/SideMenu;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getChange_language()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getChange_language()Ljava/lang/String;
 
     move-result-object v2
 
@@ -471,14 +471,14 @@
 
     const v4, 0x7f080151
 
-    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/ultra/apps/SideMenu;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/player/apps/SideMenu;-><init>(Ljava/lang/String;II)V
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 8
-    new-instance v1, Lcom/ibopro/ultra/apps/SideMenu;
+    new-instance v1, Lcom/ibopro/player/apps/SideMenu;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getChangeLayout()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getChangeLayout()Ljava/lang/String;
 
     move-result-object v2
 
@@ -486,14 +486,14 @@
 
     const v4, 0x7f080148
 
-    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/ultra/apps/SideMenu;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/player/apps/SideMenu;-><init>(Ljava/lang/String;II)V
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 9
-    new-instance v1, Lcom/ibopro/ultra/apps/SideMenu;
+    new-instance v1, Lcom/ibopro/player/apps/SideMenu;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getHide_live_category()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getHide_live_category()Ljava/lang/String;
 
     move-result-object v2
 
@@ -501,40 +501,40 @@
 
     const v4, 0x7f080150
 
-    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/ultra/apps/SideMenu;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/player/apps/SideMenu;-><init>(Ljava/lang/String;II)V
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 10
-    new-instance v1, Lcom/ibopro/ultra/apps/SideMenu;
+    new-instance v1, Lcom/ibopro/player/apps/SideMenu;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getHide_vod_category()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getHide_vod_category()Ljava/lang/String;
 
     move-result-object v2
 
     const/4 v3, 0x6
 
-    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/ultra/apps/SideMenu;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/player/apps/SideMenu;-><init>(Ljava/lang/String;II)V
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 11
-    new-instance v1, Lcom/ibopro/ultra/apps/SideMenu;
+    new-instance v1, Lcom/ibopro/player/apps/SideMenu;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getHide_series_category()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getHide_series_category()Ljava/lang/String;
 
     move-result-object v2
 
     const/4 v3, 0x7
 
-    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/ultra/apps/SideMenu;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/player/apps/SideMenu;-><init>(Ljava/lang/String;II)V
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 12
-    new-instance v1, Lcom/ibopro/ultra/apps/SideMenu;
+    new-instance v1, Lcom/ibopro/player/apps/SideMenu;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getClear_history_channels()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getClear_history_channels()Ljava/lang/String;
 
     move-result-object v2
 
@@ -542,40 +542,40 @@
 
     const v4, 0x7f08011a
 
-    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/ultra/apps/SideMenu;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/player/apps/SideMenu;-><init>(Ljava/lang/String;II)V
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 13
-    new-instance v1, Lcom/ibopro/ultra/apps/SideMenu;
+    new-instance v1, Lcom/ibopro/player/apps/SideMenu;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getClear_history_movies()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getClear_history_movies()Ljava/lang/String;
 
     move-result-object v2
 
     const/16 v3, 0x9
 
-    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/ultra/apps/SideMenu;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/player/apps/SideMenu;-><init>(Ljava/lang/String;II)V
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 14
-    new-instance v1, Lcom/ibopro/ultra/apps/SideMenu;
+    new-instance v1, Lcom/ibopro/player/apps/SideMenu;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getClear_history_series()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getClear_history_series()Ljava/lang/String;
 
     move-result-object v2
 
     const/16 v3, 0xa
 
-    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/ultra/apps/SideMenu;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/player/apps/SideMenu;-><init>(Ljava/lang/String;II)V
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 15
-    new-instance v1, Lcom/ibopro/ultra/apps/SideMenu;
+    new-instance v1, Lcom/ibopro/player/apps/SideMenu;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getLive_sort()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getLive_sort()Ljava/lang/String;
 
     move-result-object v2
 
@@ -583,14 +583,14 @@
 
     const v4, 0x7f080155
 
-    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/ultra/apps/SideMenu;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/player/apps/SideMenu;-><init>(Ljava/lang/String;II)V
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 16
-    new-instance v1, Lcom/ibopro/ultra/apps/SideMenu;
+    new-instance v1, Lcom/ibopro/player/apps/SideMenu;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getLive_stream_format()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getLive_stream_format()Ljava/lang/String;
 
     move-result-object v2
 
@@ -598,14 +598,14 @@
 
     const v4, 0x7f08014a
 
-    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/ultra/apps/SideMenu;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/player/apps/SideMenu;-><init>(Ljava/lang/String;II)V
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 17
-    new-instance v1, Lcom/ibopro/ultra/apps/SideMenu;
+    new-instance v1, Lcom/ibopro/player/apps/SideMenu;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getChange_player()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getChange_player()Ljava/lang/String;
 
     move-result-object v2
 
@@ -613,14 +613,14 @@
 
     const v4, 0x7f080135
 
-    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/ultra/apps/SideMenu;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/player/apps/SideMenu;-><init>(Ljava/lang/String;II)V
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 18
-    new-instance v1, Lcom/ibopro/ultra/apps/SideMenu;
+    new-instance v1, Lcom/ibopro/player/apps/SideMenu;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getExternal_player()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getExternal_player()Ljava/lang/String;
 
     move-result-object v2
 
@@ -628,14 +628,14 @@
 
     const v4, 0x7f08011d
 
-    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/ultra/apps/SideMenu;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/player/apps/SideMenu;-><init>(Ljava/lang/String;II)V
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 19
-    new-instance v1, Lcom/ibopro/ultra/apps/SideMenu;
+    new-instance v1, Lcom/ibopro/player/apps/SideMenu;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getAutomatic()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getAutomatic()Ljava/lang/String;
 
     move-result-object v2
 
@@ -643,14 +643,14 @@
 
     const v4, 0x7f080113
 
-    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/ultra/apps/SideMenu;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/player/apps/SideMenu;-><init>(Ljava/lang/String;II)V
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 20
-    new-instance v1, Lcom/ibopro/ultra/apps/SideMenu;
+    new-instance v1, Lcom/ibopro/player/apps/SideMenu;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getTime_format()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getTime_format()Ljava/lang/String;
 
     move-result-object v2
 
@@ -658,14 +658,14 @@
 
     const v4, 0x7f080144
 
-    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/ultra/apps/SideMenu;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/player/apps/SideMenu;-><init>(Ljava/lang/String;II)V
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 21
-    new-instance v1, Lcom/ibopro/ultra/apps/SideMenu;
+    new-instance v1, Lcom/ibopro/player/apps/SideMenu;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getSubtitle_settings()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getSubtitle_settings()Ljava/lang/String;
 
     move-result-object v2
 
@@ -673,14 +673,14 @@
 
     const v4, 0x7f080156
 
-    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/ultra/apps/SideMenu;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/player/apps/SideMenu;-><init>(Ljava/lang/String;II)V
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 22
-    new-instance v1, Lcom/ibopro/ultra/apps/SideMenu;
+    new-instance v1, Lcom/ibopro/player/apps/SideMenu;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getSelect_device_type()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getSelect_device_type()Ljava/lang/String;
 
     move-result-object v2
 
@@ -688,14 +688,14 @@
 
     const v4, 0x7f08011b
 
-    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/ultra/apps/SideMenu;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v2, v3, v4}, Lcom/ibopro/player/apps/SideMenu;-><init>(Ljava/lang/String;II)V
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 23
-    new-instance v1, Lcom/ibopro/ultra/apps/SideMenu;
+    new-instance v1, Lcom/ibopro/player/apps/SideMenu;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getUpdate_now()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getUpdate_now()Ljava/lang/String;
 
     move-result-object p1
 
@@ -703,20 +703,7 @@
 
     const v3, 0x7f080145
 
-    invoke-direct {v1, p1, v2, v3}, Lcom/ibopro/ultra/apps/SideMenu;-><init>(Ljava/lang/String;II)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 22
-    new-instance v1, Lcom/ibopro/ultra/apps/SideMenu;
-
-    const-string p1, "Parental Control ON/OFF"
-
-    const/16 v2, 0x14
-
-    const v3, 0x7f080127
-
-    invoke-direct {v1, p1, v2, v3}, Lcom/ibopro/ultra/apps/SideMenu;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, p1, v2, v3}, Lcom/ibopro/player/apps/SideMenu;-><init>(Ljava/lang/String;II)V
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -729,7 +716,7 @@
     .line 1
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/ibopro/ultra/activities/ChangePlaylistActivity;
+    const-class v1, Lcom/ibopro/player/activities/ChangePlaylistActivity;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -760,16 +747,16 @@
     const-string v0, "android.intent.action.VIEW"
 
     .line 1
-    invoke-static {}, Lcom/ibopro/ultra/utils/Utils;->IsAmazonDevice()Z
+    invoke-static {}, Lcom/ibopro/player/utils/Utils;->IsAmazonDevice()Z
 
     move-result v1
 
     if-eqz v1, :cond_1d
 
     .line 2
-    new-instance v0, Lcom/ibopro/ultra/activities/SettingActivity$versionUpdate;
+    new-instance v0, Lcom/ibopro/player/activities/SettingActivity$versionUpdate;
 
-    invoke-direct {v0, p0}, Lcom/ibopro/ultra/activities/SettingActivity$versionUpdate;-><init>(Lcom/ibopro/ultra/activities/SettingActivity;)V
+    invoke-direct {v0, p0}, Lcom/ibopro/player/activities/SettingActivity$versionUpdate;-><init>(Lcom/ibopro/player/activities/SettingActivity;)V
 
     const/4 v1, 0x1
 
@@ -777,9 +764,9 @@
 
     const/4 v2, 0x0
 
-    iget-object v3, p0, Lcom/ibopro/ultra/activities/SettingActivity;->appInfoModel:Lcom/ibopro/ultra/models/AppInfoModel;
+    iget-object v3, p0, Lcom/ibopro/player/activities/SettingActivity;->appInfoModel:Lcom/ibopro/player/models/AppInfoModel;
 
-    invoke-virtual {v3}, Lcom/ibopro/ultra/models/AppInfoModel;->getApk_link()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/ibopro/player/models/AppInfoModel;->getApk_link()Ljava/lang/String;
 
     move-result-object v3
 
@@ -787,31 +774,71 @@
 
     invoke-virtual {v0, v1}, Landroid/os/AsyncTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    goto :goto_31
+    goto :goto_5c
 
     .line 3
     :cond_1d
-    new-instance v0, Lcom/ibopro/ultra/activities/SettingActivity$versionUpdate;
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
-    invoke-direct {v0, p0}, Lcom/ibopro/ultra/activities/SettingActivity$versionUpdate;-><init>(Lcom/ibopro/ultra/activities/SettingActivity;)V
+    move-result-object v1
 
-    const/4 v1, 0x1
+    .line 4
+    :try_start_21
+    new-instance v2, Landroid/content/Intent;
 
-    new-array v1, v1, [Ljava/lang/String;
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    const/4 v2, 0x0
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v3, p0, Lcom/ibopro/ultra/activities/SettingActivity;->appInfoModel:Lcom/ibopro/ultra/models/AppInfoModel;
+    const-string v4, "market://details?id="
 
-    invoke-virtual {v3}, Lcom/ibopro/ultra/models/AppInfoModel;->getApk_link()Ljava/lang/String;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v3
 
-    aput-object v3, v1, v2
+    invoke-static {v3}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
-    invoke-virtual {v0, v1}, Landroid/os/AsyncTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    move-result-object v3
 
-    :goto_31
+    invoke-direct {v2, v0, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
+
+    invoke-virtual {p0, v2}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+    :try_end_3e
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_21 .. :try_end_3e} :catch_3f
+
+    goto :goto_5c
+
+    .line 5
+    :catch_3f
+    new-instance v2, Landroid/content/Intent;
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "https://play.google.com/store/apps/details?id="
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v1
+
+    invoke-direct {v2, v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
+
+    invoke-virtual {p0, v2}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+
+    :goto_5c
     return-void
 .end method
 
@@ -827,7 +854,7 @@
 
     check-cast v0, Landroid/widget/ImageButton;
 
-    iput-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->btn_back:Landroid/widget/ImageButton;
+    iput-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->btn_back:Landroid/widget/ImageButton;
 
     const v0, 0x7f0b03f8
 
@@ -838,7 +865,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->txt_setting:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->txt_setting:Landroid/widget/TextView;
 
     const v0, 0x7f0b03df
 
@@ -849,7 +876,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->txt_mac_address:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->txt_mac_address:Landroid/widget/TextView;
 
     const v0, 0x7f0b0097
 
@@ -860,7 +887,7 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->btn_pay:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->btn_pay:Landroid/widget/Button;
 
     const v0, 0x7f0b00a4
 
@@ -871,7 +898,7 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->btn_tv_pay:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->btn_tv_pay:Landroid/widget/Button;
 
     const v0, 0x7f0b02e2
 
@@ -882,20 +909,20 @@
 
     check-cast v0, Lpl/droidsonroids/gif/GifImageView;
 
-    iput-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->progress_bar:Lpl/droidsonroids/gif/GifImageView;
+    iput-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->progress_bar:Lpl/droidsonroids/gif/GifImageView;
 
     .line 7
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->btn_pay:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->btn_pay:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 8
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->btn_tv_pay:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->btn_tv_pay:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 9
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->btn_back:Landroid/widget/ImageButton;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->btn_back:Landroid/widget/ImageButton;
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -908,7 +935,7 @@
 
     check-cast v0, Landroidx/recyclerview/widget/RecyclerView;
 
-    iput-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->recycler_setting:Landroidx/recyclerview/widget/RecyclerView;
+    iput-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->recycler_setting:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 11
     new-instance v1, Landroidx/recyclerview/widget/GridLayoutManager;
@@ -920,7 +947,7 @@
     invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)V
 
     .line 12
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->recycler_setting:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->recycler_setting:Landroidx/recyclerview/widget/RecyclerView;
 
     const/4 v1, 0x1
 
@@ -952,7 +979,7 @@
 
     check-cast p1, Lcom/google/android/play/core/review/ReviewInfo;
 
-    iput-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->reviewInfo:Lcom/google/android/play/core/review/ReviewInfo;
+    iput-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->reviewInfo:Lcom/google/android/play/core/review/ReviewInfo;
 
     goto :goto_19
 
@@ -972,7 +999,7 @@
     return-void
 .end method
 
-.method private synthetic lambda$onCreate$0(Lcom/ibopro/ultra/apps/SideMenu;Ljava/lang/Integer;Ljava/lang/Boolean;)Lkotlin/Unit;
+.method private synthetic lambda$onCreate$0(Lcom/ibopro/player/apps/SideMenu;Ljava/lang/Integer;Ljava/lang/Boolean;)Lkotlin/Unit;
     .registers 5
 
     .line 1
@@ -980,17 +1007,17 @@
 
     move-result p2
 
-    iput p2, p0, Lcom/ibopro/ultra/activities/SettingActivity;->setting_pos:I
+    iput p2, p0, Lcom/ibopro/player/activities/SettingActivity;->setting_pos:I
 
     .line 2
     invoke-virtual {p3}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p2
 
-    if-eqz p2, :cond_c6
+    if-eqz p2, :cond_c1
 
     .line 3
-    invoke-virtual {p1}, Lcom/ibopro/ultra/apps/SideMenu;->getPosition()I
+    invoke-virtual {p1}, Lcom/ibopro/player/apps/SideMenu;->getPosition()I
 
     move-result p1
 
@@ -1000,75 +1027,69 @@
 
     const/4 v0, 0x0
 
-    packed-switch p1, :pswitch_data_c8
+    packed-switch p1, :pswitch_data_c4
 
-    goto/16 :goto_c6
+    goto/16 :goto_c1
 
     .line 4
     :pswitch_18
-    invoke-direct {p0}, Lcom/ibopro/ultra/activities/SettingActivity;->paranteloffrtx()V
+    invoke-direct {p0}, Lcom/ibopro/player/activities/SettingActivity;->showUpdateDlgFragment()V
 
-    goto/16 :goto_c6
-
-    .line 4
-    :pswitch_1d
-    invoke-direct {p0}, Lcom/ibopro/ultra/activities/SettingActivity;->showUpdateDlgFragment()V
-
-    goto/16 :goto_c6
+    goto/16 :goto_c1
 
     .line 5
-    :pswitch_22
-    invoke-direct {p0}, Lcom/ibopro/ultra/activities/SettingActivity;->showDeviceTypeDlgFragment()V
+    :pswitch_1d
+    invoke-direct {p0}, Lcom/ibopro/player/activities/SettingActivity;->showDeviceTypeDlgFragment()V
 
-    goto/16 :goto_c6
+    goto/16 :goto_c1
 
     .line 6
-    :pswitch_27
-    invoke-direct {p0}, Lcom/ibopro/ultra/activities/SettingActivity;->showSubTitleSettingDlgFragment()V
+    :pswitch_22
+    invoke-direct {p0}, Lcom/ibopro/player/activities/SettingActivity;->showSubTitleSettingDlgFragment()V
 
-    goto/16 :goto_c6
+    goto/16 :goto_c1
 
     .line 7
-    :pswitch_2c
-    invoke-direct {p0}, Lcom/ibopro/ultra/activities/SettingActivity;->showChangeTimeFormatDlgFragment()V
+    :pswitch_27
+    invoke-direct {p0}, Lcom/ibopro/player/activities/SettingActivity;->showChangeTimeFormatDlgFragment()V
 
-    goto/16 :goto_c6
+    goto/16 :goto_c1
 
     .line 8
-    :pswitch_31
-    invoke-direct {p0}, Lcom/ibopro/ultra/activities/SettingActivity;->showAutomationDlgFragment()V
+    :pswitch_2c
+    invoke-direct {p0}, Lcom/ibopro/player/activities/SettingActivity;->showAutomationDlgFragment()V
 
-    goto/16 :goto_c6
+    goto/16 :goto_c1
 
     .line 9
-    :pswitch_36
-    invoke-direct {p0}, Lcom/ibopro/ultra/activities/SettingActivity;->showExternalDlgFragment()V
+    :pswitch_31
+    invoke-direct {p0}, Lcom/ibopro/player/activities/SettingActivity;->showExternalDlgFragment()V
 
-    goto/16 :goto_c6
+    goto/16 :goto_c1
 
     .line 10
-    :pswitch_3b
-    invoke-direct {p0}, Lcom/ibopro/ultra/activities/SettingActivity;->showSelectPlayerDlgFragment()V
+    :pswitch_36
+    invoke-direct {p0}, Lcom/ibopro/player/activities/SettingActivity;->showSelectPlayerDlgFragment()V
 
-    goto/16 :goto_c6
+    goto/16 :goto_c1
 
     .line 11
-    :pswitch_40
-    invoke-direct {p0}, Lcom/ibopro/ultra/activities/SettingActivity;->showLiveStreamFormatDlgFragment()V
+    :pswitch_3b
+    invoke-direct {p0}, Lcom/ibopro/player/activities/SettingActivity;->showLiveStreamFormatDlgFragment()V
 
-    goto/16 :goto_c6
+    goto/16 :goto_c1
 
     .line 12
-    :pswitch_45
-    invoke-direct {p0}, Lcom/ibopro/ultra/activities/SettingActivity;->showLiveChannelSortDlgFragment()V
+    :pswitch_40
+    invoke-direct {p0}, Lcom/ibopro/player/activities/SettingActivity;->showLiveChannelSortDlgFragment()V
 
-    goto/16 :goto_c6
+    goto/16 :goto_c1
 
     .line 13
-    :pswitch_4a
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    :pswitch_45
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/helper/PreferenceHelper;->getSharedPreferenceRecentSeriesNames()Ljava/util/List;
+    invoke-virtual {p1}, Lcom/ibopro/player/helper/PreferenceHelper;->getSharedPreferenceRecentSeriesNames()Ljava/util/List;
 
     move-result-object p1
 
@@ -1076,18 +1097,18 @@
 
     move-result p1
 
-    if-lez p1, :cond_5b
+    if-lez p1, :cond_56
 
     .line 14
-    invoke-direct {p0, p2}, Lcom/ibopro/ultra/activities/SettingActivity;->showClearHistoryDlgFragment(I)V
+    invoke-direct {p0, p2}, Lcom/ibopro/player/activities/SettingActivity;->showClearHistoryDlgFragment(I)V
 
-    goto/16 :goto_c6
+    goto/16 :goto_c1
 
     .line 15
-    :cond_5b
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    :cond_56
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getNo_recently_series()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getNo_recently_series()Ljava/lang/String;
 
     move-result-object p1
 
@@ -1097,13 +1118,13 @@
 
     invoke-virtual {p1}, Landroid/widget/Toast;->show()V
 
-    goto :goto_c6
+    goto :goto_c1
 
     .line 16
-    :pswitch_69
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    :pswitch_64
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/helper/PreferenceHelper;->getSharedPreferenceResumeModel()Ljava/util/List;
+    invoke-virtual {p1}, Lcom/ibopro/player/helper/PreferenceHelper;->getSharedPreferenceResumeModel()Ljava/util/List;
 
     move-result-object p1
 
@@ -1111,18 +1132,18 @@
 
     move-result p1
 
-    if-lez p1, :cond_79
+    if-lez p1, :cond_74
 
     .line 17
-    invoke-direct {p0, p3}, Lcom/ibopro/ultra/activities/SettingActivity;->showClearHistoryDlgFragment(I)V
+    invoke-direct {p0, p3}, Lcom/ibopro/player/activities/SettingActivity;->showClearHistoryDlgFragment(I)V
 
-    goto :goto_c6
+    goto :goto_c1
 
     .line 18
-    :cond_79
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    :cond_74
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getNo_recently_movies()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getNo_recently_movies()Ljava/lang/String;
 
     move-result-object p1
 
@@ -1132,15 +1153,15 @@
 
     invoke-virtual {p1}, Landroid/widget/Toast;->show()V
 
-    goto :goto_c6
+    goto :goto_c1
 
     .line 19
-    :pswitch_87
-    invoke-static {}, Lcom/ibopro/ultra/helper/RealmController;->with()Lcom/ibopro/ultra/helper/RealmController;
+    :pswitch_82
+    invoke-static {}, Lcom/ibopro/player/helper/RealmController;->with()Lcom/ibopro/player/helper/RealmController;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/helper/RealmController;->getRecentChannelNames()Ljava/util/List;
+    invoke-virtual {p1}, Lcom/ibopro/player/helper/RealmController;->getRecentChannelNames()Ljava/util/List;
 
     move-result-object p1
 
@@ -1148,18 +1169,18 @@
 
     move-result p1
 
-    if-lez p1, :cond_99
+    if-lez p1, :cond_94
 
     .line 20
-    invoke-direct {p0}, Lcom/ibopro/ultra/activities/SettingActivity;->ClearHistoryChannels()V
+    invoke-direct {p0}, Lcom/ibopro/player/activities/SettingActivity;->ClearHistoryChannels()V
 
-    goto :goto_c6
+    goto :goto_c1
 
     .line 21
-    :cond_99
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    :cond_94
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getNo_recently_channels()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getNo_recently_channels()Ljava/lang/String;
 
     move-result-object p1
 
@@ -1169,73 +1190,74 @@
 
     invoke-virtual {p1}, Landroid/widget/Toast;->show()V
 
-    goto :goto_c6
+    goto :goto_c1
 
     .line 22
-    :pswitch_a7
-    invoke-direct {p0, p2}, Lcom/ibopro/ultra/activities/SettingActivity;->showHideCategoryDlgFragment(I)V
+    :pswitch_a2
+    invoke-direct {p0, p2}, Lcom/ibopro/player/activities/SettingActivity;->showHideCategoryDlgFragment(I)V
 
-    goto :goto_c6
+    goto :goto_c1
 
     .line 23
-    :pswitch_ab
-    invoke-direct {p0, p3}, Lcom/ibopro/ultra/activities/SettingActivity;->showHideCategoryDlgFragment(I)V
+    :pswitch_a6
+    invoke-direct {p0, p3}, Lcom/ibopro/player/activities/SettingActivity;->showHideCategoryDlgFragment(I)V
 
-    goto :goto_c6
+    goto :goto_c1
 
     .line 24
-    :pswitch_af
-    invoke-direct {p0, v0}, Lcom/ibopro/ultra/activities/SettingActivity;->showHideCategoryDlgFragment(I)V
+    :pswitch_aa
+    invoke-direct {p0, v0}, Lcom/ibopro/player/activities/SettingActivity;->showHideCategoryDlgFragment(I)V
 
-    goto :goto_c6
+    goto :goto_c1
 
     .line 25
-    :pswitch_b3
-    invoke-direct {p0}, Lcom/ibopro/ultra/activities/SettingActivity;->showChangeLayoutDlgFragment()V
+    :pswitch_ae
+    invoke-direct {p0}, Lcom/ibopro/player/activities/SettingActivity;->showChangeLayoutDlgFragment()V
 
-    goto :goto_c6
+    goto :goto_c1
 
     .line 26
-    :pswitch_b7
-    invoke-direct {p0}, Lcom/ibopro/ultra/activities/SettingActivity;->showChangeLangDlgFragment()V
+    :pswitch_b2
+    invoke-direct {p0}, Lcom/ibopro/player/activities/SettingActivity;->showChangeLangDlgFragment()V
 
-    goto :goto_c6
+    goto :goto_c1
 
     .line 27
-    :pswitch_bb
-    invoke-direct {p0}, Lcom/ibopro/ultra/activities/SettingActivity;->goToChangePlaylist()V
+    :pswitch_b6
+    invoke-direct {p0}, Lcom/ibopro/player/activities/SettingActivity;->goToChangePlaylist()V
 
-    goto :goto_c6
+    goto :goto_c1
 
     .line 28
-    :pswitch_bf
-    invoke-direct {p0}, Lcom/ibopro/ultra/activities/SettingActivity;->showParentalControlDlgFragment()V
+    :pswitch_ba
+    invoke-direct {p0}, Lcom/ibopro/player/activities/SettingActivity;->showParentalControlDlgFragment()V
 
-    goto :goto_c6
+    goto :goto_c1
 
     .line 29
-    :pswitch_c3
-    invoke-direct {p0}, Lcom/ibopro/ultra/activities/SettingActivity;->showAddPlaylistDlgFragment()V
+    :pswitch_be
+    invoke-direct {p0}, Lcom/ibopro/player/activities/SettingActivity;->showAddPlaylistDlgFragment()V
 
-    :cond_c6
-    :goto_c6
+    :cond_c1
+    :goto_c1
     const/4 p1, 0x0
 
     return-object p1
 
-    :pswitch_data_c8
+    nop
+
+    :pswitch_data_c4
     .packed-switch 0x0
-        :pswitch_c3
-        :pswitch_bf
-        :pswitch_bb
-        :pswitch_b7
-        :pswitch_b3
-        :pswitch_af
-        :pswitch_ab
-        :pswitch_a7
-        :pswitch_87
-        :pswitch_69
-        :pswitch_4a
+        :pswitch_be
+        :pswitch_ba
+        :pswitch_b6
+        :pswitch_b2
+        :pswitch_ae
+        :pswitch_aa
+        :pswitch_a6
+        :pswitch_a2
+        :pswitch_82
+        :pswitch_64
         :pswitch_45
         :pswitch_40
         :pswitch_3b
@@ -1252,9 +1274,9 @@
 .method private synthetic lambda$showAutomationDlgFragment$12(I)V
     .registers 3
 
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
-    invoke-virtual {v0, p1}, Lcom/ibopro/ultra/helper/PreferenceHelper;->setSharedPreferenceUpdatePeriod(I)V
+    invoke-virtual {v0, p1}, Lcom/ibopro/player/helper/PreferenceHelper;->setSharedPreferenceUpdatePeriod(I)V
 
     return-void
 .end method
@@ -1263,38 +1285,38 @@
     .registers 4
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
     invoke-interface {p1, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Lcom/ibopro/ultra/models/LanguageModel;
+    check-cast p1, Lcom/ibopro/player/models/LanguageModel;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/LanguageModel;->getCode()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/LanguageModel;->getCode()Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-virtual {v0, p1}, Lcom/ibopro/ultra/helper/PreferenceHelper;->setSharedPreferenceLanguageCode(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Lcom/ibopro/player/helper/PreferenceHelper;->setSharedPreferenceLanguageCode(Ljava/lang/String;)V
 
     .line 2
-    invoke-static {p0}, Lcom/ibopro/ultra/helper/GetSharedInfo;->getWordModel(Landroid/content/Context;)Lcom/ibopro/ultra/models/WordModels;
+    invoke-static {p0}, Lcom/ibopro/player/helper/GetSharedInfo;->getWordModel(Landroid/content/Context;)Lcom/ibopro/player/models/WordModels;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iput-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
     .line 3
-    invoke-direct {p0, p1}, Lcom/ibopro/ultra/activities/SettingActivity;->getSettingLists(Lcom/ibopro/ultra/models/WordModels;)Ljava/util/List;
+    invoke-direct {p0, p1}, Lcom/ibopro/player/activities/SettingActivity;->getSettingLists(Lcom/ibopro/player/models/WordModels;)Ljava/util/List;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->settingLists:Ljava/util/List;
+    iput-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->settingLists:Ljava/util/List;
 
     .line 4
-    iget-object p2, p0, Lcom/ibopro/ultra/activities/SettingActivity;->adapter:Lcom/ibopro/ultra/adapter/SettingRecyclerAdapter;
+    iget-object p2, p0, Lcom/ibopro/player/activities/SettingActivity;->adapter:Lcom/ibopro/player/adapter/SettingRecyclerAdapter;
 
-    invoke-virtual {p2, p1}, Lcom/ibopro/ultra/adapter/SettingRecyclerAdapter;->setSettingData(Ljava/util/List;)V
+    invoke-virtual {p2, p1}, Lcom/ibopro/player/adapter/SettingRecyclerAdapter;->setSettingData(Ljava/util/List;)V
 
     return-void
 .end method
@@ -1302,7 +1324,7 @@
 .method private synthetic lambda$showChangeLayoutDlgFragment$3(I)V
     .registers 3
 
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
     if-eqz p1, :cond_6
 
@@ -1314,7 +1336,7 @@
     const/4 p1, 0x0
 
     :goto_7
-    invoke-virtual {v0, p1}, Lcom/ibopro/ultra/helper/PreferenceHelper;->setSharedPreferenceIsGrid(Z)V
+    invoke-virtual {v0, p1}, Lcom/ibopro/player/helper/PreferenceHelper;->setSharedPreferenceIsGrid(Z)V
 
     return-void
 .end method
@@ -1322,9 +1344,9 @@
 .method private synthetic lambda$showChangeTimeFormatDlgFragment$6(I)V
     .registers 3
 
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
-    invoke-virtual {v0, p1}, Lcom/ibopro/ultra/helper/PreferenceHelper;->setSharedPreferenceTimeFormat(I)V
+    invoke-virtual {v0, p1}, Lcom/ibopro/player/helper/PreferenceHelper;->setSharedPreferenceTimeFormat(I)V
 
     return-void
 .end method
@@ -1335,38 +1357,38 @@
     if-nez p1, :cond_18
 
     .line 1
-    invoke-static {}, Lcom/ibopro/ultra/utils/Utils;->IsAmazonDevice()Z
+    invoke-static {}, Lcom/ibopro/player/utils/Utils;->IsAmazonDevice()Z
 
     move-result p1
 
     if-eqz p1, :cond_10
 
     .line 2
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
     const-string v0, "amazon"
 
-    invoke-virtual {p1, v0}, Lcom/ibopro/ultra/helper/PreferenceHelper;->setSharedPreferenceDeviceType(Ljava/lang/String;)V
+    invoke-virtual {p1, v0}, Lcom/ibopro/player/helper/PreferenceHelper;->setSharedPreferenceDeviceType(Ljava/lang/String;)V
 
     goto :goto_1f
 
     .line 3
     :cond_10
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
     const-string v0, "tv"
 
-    invoke-virtual {p1, v0}, Lcom/ibopro/ultra/helper/PreferenceHelper;->setSharedPreferenceDeviceType(Ljava/lang/String;)V
+    invoke-virtual {p1, v0}, Lcom/ibopro/player/helper/PreferenceHelper;->setSharedPreferenceDeviceType(Ljava/lang/String;)V
 
     goto :goto_1f
 
     .line 4
     :cond_18
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
     const-string v0, "mobile"
 
-    invoke-virtual {p1, v0}, Lcom/ibopro/ultra/helper/PreferenceHelper;->setSharedPreferenceDeviceType(Ljava/lang/String;)V
+    invoke-virtual {p1, v0}, Lcom/ibopro/player/helper/PreferenceHelper;->setSharedPreferenceDeviceType(Ljava/lang/String;)V
 
     :goto_1f
     return-void
@@ -1375,9 +1397,9 @@
 .method private synthetic lambda$showExternalDlgFragment$11(I)V
     .registers 3
 
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
-    invoke-virtual {v0, p1}, Lcom/ibopro/ultra/helper/PreferenceHelper;->setSharedPreferenceExternalPlayer(I)V
+    invoke-virtual {v0, p1}, Lcom/ibopro/player/helper/PreferenceHelper;->setSharedPreferenceExternalPlayer(I)V
 
     return-void
 .end method
@@ -1391,9 +1413,9 @@
 .method private synthetic lambda$showLiveChannelSortDlgFragment$7(I)V
     .registers 3
 
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
-    invoke-virtual {v0, p1}, Lcom/ibopro/ultra/helper/PreferenceHelper;->setSharedPreferenceLiveOrder(I)V
+    invoke-virtual {v0, p1}, Lcom/ibopro/player/helper/PreferenceHelper;->setSharedPreferenceLiveOrder(I)V
 
     return-void
 .end method
@@ -1401,7 +1423,7 @@
 .method private synthetic lambda$showLiveStreamFormatDlgFragment$8(I)V
     .registers 3
 
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
     if-nez p1, :cond_7
 
@@ -1413,7 +1435,7 @@
     const-string p1, "m3u8"
 
     :goto_9
-    invoke-virtual {v0, p1}, Lcom/ibopro/ultra/helper/PreferenceHelper;->setSharedPreferenceLiveStreamFormat(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Lcom/ibopro/player/helper/PreferenceHelper;->setSharedPreferenceLiveStreamFormat(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -1424,7 +1446,7 @@
     .line 1
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/ibopro/ultra/activities/ChangePlaylistActivity;
+    const-class v1, Lcom/ibopro/player/activities/ChangePlaylistActivity;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -1445,7 +1467,7 @@
 .method private synthetic lambda$showSelectPlayerDlgFragment$10(I)V
     .registers 4
 
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
     const/4 v1, 0x1
 
@@ -1457,7 +1479,7 @@
     const/4 v1, 0x0
 
     :goto_7
-    invoke-virtual {v0, v1}, Lcom/ibopro/ultra/helper/PreferenceHelper;->setSharedPreferenceIsProtocol(Z)V
+    invoke-virtual {v0, v1}, Lcom/ibopro/player/helper/PreferenceHelper;->setSharedPreferenceIsProtocol(Z)V
 
     return-void
 .end method
@@ -1494,34 +1516,7 @@
     return-void
 .end method
 
-.method private paranteloffrtx()V
-    .registers 9
-
-    invoke-static {p0}, Lcom/rtx/niceibo/library/appulits/ulits;->perantalDialog(Landroid/app/Activity;)V
-
-    return-void
-.end method
-
 .method private showAddPlaylistDlgFragment()V
-    .registers 5
-
-    .prologue
-    .line 56
-    new-instance v0, Landroid/content/Intent;
-
-    const-class v1, Lcom/rtx/niceibo/activity/aaaaaaaaaaLogin;
-
-    invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
-
-    .line 57
-    .local v0, "intent":Landroid/content/Intent;
-    invoke-virtual {p0, v0}, Lcom/ibopro/ultra/activities/SettingActivity;->startActivity(Landroid/content/Intent;)V
-
-    .line 58
-    return-void
-.end method
-
-.method private showAddPlaylistDlgFragment_backup()V
     .registers 5
 
     .line 1
@@ -1546,7 +1541,7 @@
     const/4 v0, 0x0
 
     .line 4
-    invoke-static {v1, v3, v0}, Lcom/ibopro/ultra/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
+    invoke-static {v1, v3, v0}, Lcom/ibopro/player/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
 
     return-void
 
@@ -1554,15 +1549,15 @@
     const/4 v1, -0x1
 
     .line 5
-    new-instance v3, Lcom/ibopro/ultra/activities/SettingActivity$1;
+    new-instance v3, Lcom/ibopro/player/activities/SettingActivity$1;
 
-    invoke-direct {v3, p0}, Lcom/ibopro/ultra/activities/SettingActivity$1;-><init>(Lcom/ibopro/ultra/activities/SettingActivity;)V
+    invoke-direct {v3, p0}, Lcom/ibopro/player/activities/SettingActivity$1;-><init>(Lcom/ibopro/player/activities/SettingActivity;)V
 
-    invoke-static {p0, v1, v3}, Lcom/ibopro/ultra/dlgfragment/AddPlaylistDlgFragment;->newInstance(Landroid/content/Context;ILcom/ibopro/ultra/dlgfragment/AddPlaylistDlgFragment$SuccessAddedListener;)Lcom/ibopro/ultra/dlgfragment/AddPlaylistDlgFragment;
+    invoke-static {p0, v1, v3}, Lcom/ibopro/player/dlgfragment/AddPlaylistDlgFragment;->newInstance(Landroid/content/Context;ILcom/ibopro/player/dlgfragment/AddPlaylistDlgFragment$SuccessAddedListener;)Lcom/ibopro/player/dlgfragment/AddPlaylistDlgFragment;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->addPlaylistDlgFragment:Lcom/ibopro/ultra/dlgfragment/AddPlaylistDlgFragment;
+    iput-object v1, p0, Lcom/ibopro/player/activities/SettingActivity;->addPlaylistDlgFragment:Lcom/ibopro/player/dlgfragment/AddPlaylistDlgFragment;
 
     .line 6
     invoke-virtual {v1, v0, v2}, Landroidx/fragment/app/DialogFragment;->show(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
@@ -1574,9 +1569,9 @@
     .registers 8
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
-    invoke-virtual {v0}, Lcom/ibopro/ultra/helper/PreferenceHelper;->getSharedPreferenceUpdatePeriod()I
+    invoke-virtual {v0}, Lcom/ibopro/player/helper/PreferenceHelper;->getSharedPreferenceUpdatePeriod()I
 
     move-result v0
 
@@ -1586,27 +1581,27 @@
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 3
-    iget-object v2, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v2, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v2}, Lcom/ibopro/ultra/models/WordModels;->getAuto_update_everytime()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/ibopro/player/models/WordModels;->getAuto_update_everytime()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 4
-    iget-object v2, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v2, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v2}, Lcom/ibopro/ultra/models/WordModels;->getAuto_update_everyday()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/ibopro/player/models/WordModels;->getAuto_update_everyday()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 5
-    iget-object v2, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v2, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v2}, Lcom/ibopro/ultra/models/WordModels;->getAuto_update_2day()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/ibopro/player/models/WordModels;->getAuto_update_2day()Ljava/lang/String;
 
     move-result-object v2
 
@@ -1634,25 +1629,25 @@
     const/4 v0, 0x0
 
     .line 9
-    invoke-static {v3, v5, v0}, Lcom/ibopro/ultra/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
+    invoke-static {v3, v5, v0}, Lcom/ibopro/player/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
 
     return-void
 
     .line 10
     :cond_3b
-    iget-object v3, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v3, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v3}, Lcom/ibopro/ultra/models/WordModels;->getAutomatic()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/ibopro/player/models/WordModels;->getAutomatic()Ljava/lang/String;
 
     move-result-object v3
 
-    new-instance v5, Lcom/ibopro/ultra/activities/SettingActivity$$ExternalSyntheticLambda0;
+    new-instance v5, Lcom/ibopro/player/activities/SettingActivity$$ExternalSyntheticLambda0;
 
     const/16 v6, 0x9
 
-    invoke-direct {v5, p0, v6}, Lcom/ibopro/ultra/activities/SettingActivity$$ExternalSyntheticLambda0;-><init>(Lcom/ibopro/ultra/activities/SettingActivity;I)V
+    invoke-direct {v5, p0, v6}, Lcom/ibopro/player/activities/SettingActivity$$ExternalSyntheticLambda0;-><init>(Lcom/ibopro/player/activities/SettingActivity;I)V
 
-    invoke-static {p0, v1, v3, v0, v5}, Lcom/ibopro/ultra/dlgfragment/ExternalPlayerDlgFragment;->newInstance(Landroid/content/Context;Ljava/util/List;Ljava/lang/String;ILcom/ibopro/ultra/dlgfragment/ExternalPlayerDlgFragment$ItemPositionListener;)Lcom/ibopro/ultra/dlgfragment/ExternalPlayerDlgFragment;
+    invoke-static {p0, v1, v3, v0, v5}, Lcom/ibopro/player/dlgfragment/ExternalPlayerDlgFragment;->newInstance(Landroid/content/Context;Ljava/util/List;Ljava/lang/String;ILcom/ibopro/player/dlgfragment/ExternalPlayerDlgFragment$ItemPositionListener;)Lcom/ibopro/player/dlgfragment/ExternalPlayerDlgFragment;
 
     move-result-object v0
 
@@ -1666,14 +1661,14 @@
     .registers 7
 
     .line 1
-    invoke-static {p0}, Lcom/ibopro/ultra/helper/GetSharedInfo;->getLanguagePosition(Landroid/content/Context;)I
+    invoke-static {p0}, Lcom/ibopro/player/helper/GetSharedInfo;->getLanguagePosition(Landroid/content/Context;)I
 
     move-result v0
 
     .line 2
-    iget-object v1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->appInfoModel:Lcom/ibopro/ultra/models/AppInfoModel;
+    iget-object v1, p0, Lcom/ibopro/player/activities/SettingActivity;->appInfoModel:Lcom/ibopro/player/models/AppInfoModel;
 
-    invoke-virtual {v1}, Lcom/ibopro/ultra/models/AppInfoModel;->getLanguageModels()Ljava/util/List;
+    invoke-virtual {v1}, Lcom/ibopro/player/models/AppInfoModel;->getLanguageModels()Ljava/util/List;
 
     move-result-object v1
 
@@ -1699,19 +1694,19 @@
     const/4 v0, 0x0
 
     .line 6
-    invoke-static {v3, v5, v0}, Lcom/ibopro/ultra/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
+    invoke-static {v3, v5, v0}, Lcom/ibopro/player/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
 
     return-void
 
     .line 7
     :cond_1f
-    new-instance v3, Lcom/ibopro/ultra/apps/BaseActivity$$ExternalSyntheticLambda0;
+    new-instance v3, Lcom/ibopro/player/apps/BaseActivity$$ExternalSyntheticLambda0;
 
     const/16 v5, 0xe
 
-    invoke-direct {v3, p0, v1, v5}, Lcom/ibopro/ultra/apps/BaseActivity$$ExternalSyntheticLambda0;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
+    invoke-direct {v3, p0, v1, v5}, Lcom/ibopro/player/apps/BaseActivity$$ExternalSyntheticLambda0;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
 
-    invoke-static {p0, v1, v0, v3}, Lcom/ibopro/ultra/dlgfragment/LanguageDlgFragment;->newInstance(Landroid/content/Context;Ljava/util/List;ILcom/ibopro/ultra/dlgfragment/LanguageDlgFragment$ItemPositionListener;)Lcom/ibopro/ultra/dlgfragment/LanguageDlgFragment;
+    invoke-static {p0, v1, v0, v3}, Lcom/ibopro/player/dlgfragment/LanguageDlgFragment;->newInstance(Landroid/content/Context;Ljava/util/List;ILcom/ibopro/player/dlgfragment/LanguageDlgFragment$ItemPositionListener;)Lcom/ibopro/player/dlgfragment/LanguageDlgFragment;
 
     move-result-object v0
 
@@ -1725,9 +1720,9 @@
     .registers 8
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
-    invoke-virtual {v0}, Lcom/ibopro/ultra/helper/PreferenceHelper;->getSharedPreferenceIsGrid()Z
+    invoke-virtual {v0}, Lcom/ibopro/player/helper/PreferenceHelper;->getSharedPreferenceIsGrid()Z
 
     move-result v0
 
@@ -1737,18 +1732,18 @@
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 3
-    iget-object v2, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v2, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v2}, Lcom/ibopro/ultra/models/WordModels;->getList_layout()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/ibopro/player/models/WordModels;->getList_layout()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 4
-    iget-object v2, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v2, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v2}, Lcom/ibopro/ultra/models/WordModels;->getGrid_layout()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/ibopro/player/models/WordModels;->getGrid_layout()Ljava/lang/String;
 
     move-result-object v2
 
@@ -1776,25 +1771,25 @@
     const/4 v0, 0x0
 
     .line 8
-    invoke-static {v3, v5, v0}, Lcom/ibopro/ultra/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
+    invoke-static {v3, v5, v0}, Lcom/ibopro/player/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
 
     return-void
 
     .line 9
     :cond_32
-    iget-object v3, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v3, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v3}, Lcom/ibopro/ultra/models/WordModels;->getChangeLayout()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/ibopro/player/models/WordModels;->getChangeLayout()Ljava/lang/String;
 
     move-result-object v3
 
-    new-instance v5, Lcom/ibopro/ultra/activities/SettingActivity$$ExternalSyntheticLambda0;
+    new-instance v5, Lcom/ibopro/player/activities/SettingActivity$$ExternalSyntheticLambda0;
 
     const/4 v6, 0x6
 
-    invoke-direct {v5, p0, v6}, Lcom/ibopro/ultra/activities/SettingActivity$$ExternalSyntheticLambda0;-><init>(Lcom/ibopro/ultra/activities/SettingActivity;I)V
+    invoke-direct {v5, p0, v6}, Lcom/ibopro/player/activities/SettingActivity$$ExternalSyntheticLambda0;-><init>(Lcom/ibopro/player/activities/SettingActivity;I)V
 
-    invoke-static {p0, v1, v0, v3, v5}, Lcom/ibopro/ultra/dlgfragment/LiveSortDlgFragment;->newInstance(Landroid/content/Context;Ljava/util/List;ILjava/lang/String;Lcom/ibopro/ultra/dlgfragment/LiveSortDlgFragment$ItemPositionListener;)Lcom/ibopro/ultra/dlgfragment/LiveSortDlgFragment;
+    invoke-static {p0, v1, v0, v3, v5}, Lcom/ibopro/player/dlgfragment/LiveSortDlgFragment;->newInstance(Landroid/content/Context;Ljava/util/List;ILjava/lang/String;Lcom/ibopro/player/dlgfragment/LiveSortDlgFragment$ItemPositionListener;)Lcom/ibopro/player/dlgfragment/LiveSortDlgFragment;
 
     move-result-object v0
 
@@ -1808,9 +1803,9 @@
     .registers 8
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
-    invoke-virtual {v0}, Lcom/ibopro/ultra/helper/PreferenceHelper;->getSharedPreferenceTimeFormat()I
+    invoke-virtual {v0}, Lcom/ibopro/player/helper/PreferenceHelper;->getSharedPreferenceTimeFormat()I
 
     move-result v0
 
@@ -1820,18 +1815,18 @@
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 3
-    iget-object v2, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v2, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v2}, Lcom/ibopro/ultra/models/WordModels;->get_12_hour_format()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/ibopro/player/models/WordModels;->get_12_hour_format()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 4
-    iget-object v2, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v2, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v2}, Lcom/ibopro/ultra/models/WordModels;->get_24_hour_format()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/ibopro/player/models/WordModels;->get_24_hour_format()Ljava/lang/String;
 
     move-result-object v2
 
@@ -1859,25 +1854,25 @@
     const/4 v0, 0x0
 
     .line 8
-    invoke-static {v3, v5, v0}, Lcom/ibopro/ultra/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
+    invoke-static {v3, v5, v0}, Lcom/ibopro/player/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
 
     return-void
 
     .line 9
     :cond_32
-    iget-object v3, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v3, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v3}, Lcom/ibopro/ultra/models/WordModels;->getTime_format()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/ibopro/player/models/WordModels;->getTime_format()Ljava/lang/String;
 
     move-result-object v3
 
-    new-instance v5, Lcom/ibopro/ultra/activities/SettingActivity$$ExternalSyntheticLambda0;
+    new-instance v5, Lcom/ibopro/player/activities/SettingActivity$$ExternalSyntheticLambda0;
 
     const/4 v6, 0x2
 
-    invoke-direct {v5, p0, v6}, Lcom/ibopro/ultra/activities/SettingActivity$$ExternalSyntheticLambda0;-><init>(Lcom/ibopro/ultra/activities/SettingActivity;I)V
+    invoke-direct {v5, p0, v6}, Lcom/ibopro/player/activities/SettingActivity$$ExternalSyntheticLambda0;-><init>(Lcom/ibopro/player/activities/SettingActivity;I)V
 
-    invoke-static {p0, v1, v0, v3, v5}, Lcom/ibopro/ultra/dlgfragment/LiveSortDlgFragment;->newInstance(Landroid/content/Context;Ljava/util/List;ILjava/lang/String;Lcom/ibopro/ultra/dlgfragment/LiveSortDlgFragment$ItemPositionListener;)Lcom/ibopro/ultra/dlgfragment/LiveSortDlgFragment;
+    invoke-static {p0, v1, v0, v3, v5}, Lcom/ibopro/player/dlgfragment/LiveSortDlgFragment;->newInstance(Landroid/content/Context;Ljava/util/List;ILjava/lang/String;Lcom/ibopro/player/dlgfragment/LiveSortDlgFragment$ItemPositionListener;)Lcom/ibopro/player/dlgfragment/LiveSortDlgFragment;
 
     move-result-object v0
 
@@ -1912,13 +1907,13 @@
     const/4 p1, 0x0
 
     .line 4
-    invoke-static {v1, v3, p1}, Lcom/ibopro/ultra/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
+    invoke-static {v1, v3, p1}, Lcom/ibopro/player/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
 
     return-void
 
     .line 5
     :cond_15
-    invoke-static {p0, p1}, Lcom/ibopro/ultra/dlgfragment/ClearHistoryDlgFragment;->newInstance(Landroid/content/Context;I)Lcom/ibopro/ultra/dlgfragment/ClearHistoryDlgFragment;
+    invoke-static {p0, p1}, Lcom/ibopro/player/dlgfragment/ClearHistoryDlgFragment;->newInstance(Landroid/content/Context;I)Lcom/ibopro/player/dlgfragment/ClearHistoryDlgFragment;
 
     move-result-object p1
 
@@ -1932,7 +1927,7 @@
     .registers 8
 
     .line 1
-    invoke-static {p0}, Lcom/ibopro/ultra/helper/GetSharedInfo;->isTVDevice(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/ibopro/player/helper/GetSharedInfo;->isTVDevice(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -1949,7 +1944,7 @@
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 4
-    invoke-static {}, Lcom/ibopro/ultra/utils/Utils;->IsAmazonDevice()Z
+    invoke-static {}, Lcom/ibopro/player/utils/Utils;->IsAmazonDevice()Z
 
     move-result v2
 
@@ -1983,25 +1978,25 @@
     const/4 v0, 0x0
 
     .line 9
-    invoke-static {v3, v5, v0}, Lcom/ibopro/ultra/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
+    invoke-static {v3, v5, v0}, Lcom/ibopro/player/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
 
     return-void
 
     .line 10
     :cond_30
-    iget-object v3, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v3, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v3}, Lcom/ibopro/ultra/models/WordModels;->getSelect_device_type()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/ibopro/player/models/WordModels;->getSelect_device_type()Ljava/lang/String;
 
     move-result-object v3
 
-    new-instance v5, Lcom/ibopro/ultra/activities/SettingActivity$$ExternalSyntheticLambda0;
+    new-instance v5, Lcom/ibopro/player/activities/SettingActivity$$ExternalSyntheticLambda0;
 
     const/4 v6, 0x7
 
-    invoke-direct {v5, p0, v6}, Lcom/ibopro/ultra/activities/SettingActivity$$ExternalSyntheticLambda0;-><init>(Lcom/ibopro/ultra/activities/SettingActivity;I)V
+    invoke-direct {v5, p0, v6}, Lcom/ibopro/player/activities/SettingActivity$$ExternalSyntheticLambda0;-><init>(Lcom/ibopro/player/activities/SettingActivity;I)V
 
-    invoke-static {p0, v1, v0, v3, v5}, Lcom/ibopro/ultra/dlgfragment/LiveSortDlgFragment;->newInstance(Landroid/content/Context;Ljava/util/List;ILjava/lang/String;Lcom/ibopro/ultra/dlgfragment/LiveSortDlgFragment$ItemPositionListener;)Lcom/ibopro/ultra/dlgfragment/LiveSortDlgFragment;
+    invoke-static {p0, v1, v0, v3, v5}, Lcom/ibopro/player/dlgfragment/LiveSortDlgFragment;->newInstance(Landroid/content/Context;Ljava/util/List;ILjava/lang/String;Lcom/ibopro/player/dlgfragment/LiveSortDlgFragment$ItemPositionListener;)Lcom/ibopro/player/dlgfragment/LiveSortDlgFragment;
 
     move-result-object v0
 
@@ -2015,9 +2010,9 @@
     .registers 8
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
-    invoke-virtual {v0}, Lcom/ibopro/ultra/helper/PreferenceHelper;->getSharedPreferenceExternalPlayer()I
+    invoke-virtual {v0}, Lcom/ibopro/player/helper/PreferenceHelper;->getSharedPreferenceExternalPlayer()I
 
     move-result v0
 
@@ -2027,27 +2022,27 @@
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 3
-    iget-object v2, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v2, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v2}, Lcom/ibopro/ultra/models/WordModels;->getString_default()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/ibopro/player/models/WordModels;->getString_default()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 4
-    iget-object v2, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v2, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v2}, Lcom/ibopro/ultra/models/WordModels;->getVlc_player()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/ibopro/player/models/WordModels;->getVlc_player()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 5
-    iget-object v2, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v2, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v2}, Lcom/ibopro/ultra/models/WordModels;->getMx_player()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/ibopro/player/models/WordModels;->getMx_player()Ljava/lang/String;
 
     move-result-object v2
 
@@ -2075,25 +2070,25 @@
     const/4 v0, 0x0
 
     .line 9
-    invoke-static {v3, v5, v0}, Lcom/ibopro/ultra/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
+    invoke-static {v3, v5, v0}, Lcom/ibopro/player/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
 
     return-void
 
     .line 10
     :cond_3b
-    iget-object v3, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v3, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v3}, Lcom/ibopro/ultra/models/WordModels;->getExternal_player()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/ibopro/player/models/WordModels;->getExternal_player()Ljava/lang/String;
 
     move-result-object v3
 
-    new-instance v5, Lcom/ibopro/ultra/activities/SettingActivity$$ExternalSyntheticLambda0;
+    new-instance v5, Lcom/ibopro/player/activities/SettingActivity$$ExternalSyntheticLambda0;
 
     const/4 v6, 0x1
 
-    invoke-direct {v5, p0, v6}, Lcom/ibopro/ultra/activities/SettingActivity$$ExternalSyntheticLambda0;-><init>(Lcom/ibopro/ultra/activities/SettingActivity;I)V
+    invoke-direct {v5, p0, v6}, Lcom/ibopro/player/activities/SettingActivity$$ExternalSyntheticLambda0;-><init>(Lcom/ibopro/player/activities/SettingActivity;I)V
 
-    invoke-static {p0, v1, v3, v0, v5}, Lcom/ibopro/ultra/dlgfragment/ExternalPlayerDlgFragment;->newInstance(Landroid/content/Context;Ljava/util/List;Ljava/lang/String;ILcom/ibopro/ultra/dlgfragment/ExternalPlayerDlgFragment$ItemPositionListener;)Lcom/ibopro/ultra/dlgfragment/ExternalPlayerDlgFragment;
+    invoke-static {p0, v1, v3, v0, v5}, Lcom/ibopro/player/dlgfragment/ExternalPlayerDlgFragment;->newInstance(Landroid/content/Context;Ljava/util/List;Ljava/lang/String;ILcom/ibopro/player/dlgfragment/ExternalPlayerDlgFragment$ItemPositionListener;)Lcom/ibopro/player/dlgfragment/ExternalPlayerDlgFragment;
 
     move-result-object v0
 
@@ -2128,25 +2123,25 @@
     const/4 p1, 0x0
 
     .line 4
-    invoke-static {v1, v3, p1}, Lcom/ibopro/ultra/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
+    invoke-static {v1, v3, p1}, Lcom/ibopro/player/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
 
     return-void
 
     .line 5
     :cond_15
-    invoke-static {p0, p1}, Lcom/ibopro/ultra/dlgfragment/HideCategoryDlgFragment;->newInstance(Landroid/content/Context;I)Lcom/ibopro/ultra/dlgfragment/HideCategoryDlgFragment;
+    invoke-static {p0, p1}, Lcom/ibopro/player/dlgfragment/HideCategoryDlgFragment;->newInstance(Landroid/content/Context;I)Lcom/ibopro/player/dlgfragment/HideCategoryDlgFragment;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->hideCategoryDlgFragment:Lcom/ibopro/ultra/dlgfragment/HideCategoryDlgFragment;
+    iput-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->hideCategoryDlgFragment:Lcom/ibopro/player/dlgfragment/HideCategoryDlgFragment;
 
     .line 6
     sget-object v1, Lio/realm/Realm$$ExternalSyntheticLambda0;->INSTANCE$19:Lio/realm/Realm$$ExternalSyntheticLambda0;
 
-    invoke-virtual {p1, v1}, Lcom/ibopro/ultra/dlgfragment/HideCategoryDlgFragment;->setOnCategoryChangedListener(Lcom/ibopro/ultra/dlgfragment/HideCategoryDlgFragment$OnCategoryChanged;)V
+    invoke-virtual {p1, v1}, Lcom/ibopro/player/dlgfragment/HideCategoryDlgFragment;->setOnCategoryChangedListener(Lcom/ibopro/player/dlgfragment/HideCategoryDlgFragment$OnCategoryChanged;)V
 
     .line 7
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->hideCategoryDlgFragment:Lcom/ibopro/ultra/dlgfragment/HideCategoryDlgFragment;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->hideCategoryDlgFragment:Lcom/ibopro/player/dlgfragment/HideCategoryDlgFragment;
 
     invoke-virtual {p1, v0, v2}, Landroidx/fragment/app/DialogFragment;->show(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
 
@@ -2157,9 +2152,9 @@
     .registers 8
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
-    invoke-virtual {v0}, Lcom/ibopro/ultra/helper/PreferenceHelper;->getSharedPreferenceLiveOrder()I
+    invoke-virtual {v0}, Lcom/ibopro/player/helper/PreferenceHelper;->getSharedPreferenceLiveOrder()I
 
     move-result v0
 
@@ -2169,27 +2164,27 @@
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 3
-    iget-object v2, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v2, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v2}, Lcom/ibopro/ultra/models/WordModels;->getString_default()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/ibopro/player/models/WordModels;->getString_default()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 4
-    iget-object v2, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v2, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v2}, Lcom/ibopro/ultra/models/WordModels;->getSort_a_z()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/ibopro/player/models/WordModels;->getSort_a_z()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 5
-    iget-object v2, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v2, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v2}, Lcom/ibopro/ultra/models/WordModels;->getSort_z_a()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/ibopro/player/models/WordModels;->getSort_z_a()Ljava/lang/String;
 
     move-result-object v2
 
@@ -2217,25 +2212,25 @@
     const/4 v0, 0x0
 
     .line 9
-    invoke-static {v3, v5, v0}, Lcom/ibopro/ultra/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
+    invoke-static {v3, v5, v0}, Lcom/ibopro/player/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
 
     return-void
 
     .line 10
     :cond_3b
-    iget-object v3, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v3, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v3}, Lcom/ibopro/ultra/models/WordModels;->getLive_sort()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/ibopro/player/models/WordModels;->getLive_sort()Ljava/lang/String;
 
     move-result-object v3
 
-    new-instance v5, Lcom/ibopro/ultra/activities/SettingActivity$$ExternalSyntheticLambda0;
+    new-instance v5, Lcom/ibopro/player/activities/SettingActivity$$ExternalSyntheticLambda0;
 
     const/16 v6, 0xa
 
-    invoke-direct {v5, p0, v6}, Lcom/ibopro/ultra/activities/SettingActivity$$ExternalSyntheticLambda0;-><init>(Lcom/ibopro/ultra/activities/SettingActivity;I)V
+    invoke-direct {v5, p0, v6}, Lcom/ibopro/player/activities/SettingActivity$$ExternalSyntheticLambda0;-><init>(Lcom/ibopro/player/activities/SettingActivity;I)V
 
-    invoke-static {p0, v1, v0, v3, v5}, Lcom/ibopro/ultra/dlgfragment/LiveSortDlgFragment;->newInstance(Landroid/content/Context;Ljava/util/List;ILjava/lang/String;Lcom/ibopro/ultra/dlgfragment/LiveSortDlgFragment$ItemPositionListener;)Lcom/ibopro/ultra/dlgfragment/LiveSortDlgFragment;
+    invoke-static {p0, v1, v0, v3, v5}, Lcom/ibopro/player/dlgfragment/LiveSortDlgFragment;->newInstance(Landroid/content/Context;Ljava/util/List;ILjava/lang/String;Lcom/ibopro/player/dlgfragment/LiveSortDlgFragment$ItemPositionListener;)Lcom/ibopro/player/dlgfragment/LiveSortDlgFragment;
 
     move-result-object v0
 
@@ -2249,9 +2244,9 @@
     .registers 8
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
-    invoke-virtual {v0}, Lcom/ibopro/ultra/helper/PreferenceHelper;->getSharedPreferenceLiveStreamFormat()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/ibopro/player/helper/PreferenceHelper;->getSharedPreferenceLiveStreamFormat()Ljava/lang/String;
 
     move-result-object v0
 
@@ -2300,25 +2295,25 @@
     const/4 v0, 0x0
 
     .line 8
-    invoke-static {v3, v5, v0}, Lcom/ibopro/ultra/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
+    invoke-static {v3, v5, v0}, Lcom/ibopro/player/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
 
     return-void
 
     .line 9
     :cond_32
-    iget-object v3, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v3, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v3}, Lcom/ibopro/ultra/models/WordModels;->getLive_stream_format()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/ibopro/player/models/WordModels;->getLive_stream_format()Ljava/lang/String;
 
     move-result-object v3
 
-    new-instance v5, Lcom/ibopro/ultra/activities/SettingActivity$$ExternalSyntheticLambda0;
+    new-instance v5, Lcom/ibopro/player/activities/SettingActivity$$ExternalSyntheticLambda0;
 
     const/4 v6, 0x5
 
-    invoke-direct {v5, p0, v6}, Lcom/ibopro/ultra/activities/SettingActivity$$ExternalSyntheticLambda0;-><init>(Lcom/ibopro/ultra/activities/SettingActivity;I)V
+    invoke-direct {v5, p0, v6}, Lcom/ibopro/player/activities/SettingActivity$$ExternalSyntheticLambda0;-><init>(Lcom/ibopro/player/activities/SettingActivity;I)V
 
-    invoke-static {p0, v1, v0, v3, v5}, Lcom/ibopro/ultra/dlgfragment/LiveSortDlgFragment;->newInstance(Landroid/content/Context;Ljava/util/List;ILjava/lang/String;Lcom/ibopro/ultra/dlgfragment/LiveSortDlgFragment$ItemPositionListener;)Lcom/ibopro/ultra/dlgfragment/LiveSortDlgFragment;
+    invoke-static {p0, v1, v0, v3, v5}, Lcom/ibopro/player/dlgfragment/LiveSortDlgFragment;->newInstance(Landroid/content/Context;Ljava/util/List;ILjava/lang/String;Lcom/ibopro/player/dlgfragment/LiveSortDlgFragment$ItemPositionListener;)Lcom/ibopro/player/dlgfragment/LiveSortDlgFragment;
 
     move-result-object v0
 
@@ -2353,35 +2348,35 @@
     const/4 v0, 0x0
 
     .line 4
-    invoke-static {v1, v3, v0}, Lcom/ibopro/ultra/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
+    invoke-static {v1, v3, v0}, Lcom/ibopro/player/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
 
     return-void
 
     .line 5
     :cond_15
-    iget-object v1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v1, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v1}, Lcom/ibopro/ultra/models/WordModels;->getPlaylist_is_not_working()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {p0, v1}, Lcom/ibopro/ultra/dlgfragment/NoConnectionDlgFragment;->newInstance(Landroid/content/Context;Ljava/lang/String;)Lcom/ibopro/ultra/dlgfragment/NoConnectionDlgFragment;
+    invoke-virtual {v1}, Lcom/ibopro/player/models/WordModels;->getPlaylist_is_not_working()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->noConnectionDlgFragment:Lcom/ibopro/ultra/dlgfragment/NoConnectionDlgFragment;
+    invoke-static {p0, v1}, Lcom/ibopro/player/dlgfragment/NoConnectionDlgFragment;->newInstance(Landroid/content/Context;Ljava/lang/String;)Lcom/ibopro/player/dlgfragment/NoConnectionDlgFragment;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/ibopro/player/activities/SettingActivity;->noConnectionDlgFragment:Lcom/ibopro/player/dlgfragment/NoConnectionDlgFragment;
 
     .line 6
-    new-instance v3, Lcom/ibopro/ultra/activities/SettingActivity$$ExternalSyntheticLambda0;
+    new-instance v3, Lcom/ibopro/player/activities/SettingActivity$$ExternalSyntheticLambda0;
 
     const/4 v4, 0x0
 
-    invoke-direct {v3, p0, v4}, Lcom/ibopro/ultra/activities/SettingActivity$$ExternalSyntheticLambda0;-><init>(Lcom/ibopro/ultra/activities/SettingActivity;I)V
+    invoke-direct {v3, p0, v4}, Lcom/ibopro/player/activities/SettingActivity$$ExternalSyntheticLambda0;-><init>(Lcom/ibopro/player/activities/SettingActivity;I)V
 
-    invoke-virtual {v1, v3}, Lcom/ibopro/ultra/dlgfragment/NoConnectionDlgFragment;->setOnRetryClickListener(Lcom/ibopro/ultra/dlgfragment/NoConnectionDlgFragment$OnRetryClickListener;)V
+    invoke-virtual {v1, v3}, Lcom/ibopro/player/dlgfragment/NoConnectionDlgFragment;->setOnRetryClickListener(Lcom/ibopro/player/dlgfragment/NoConnectionDlgFragment$OnRetryClickListener;)V
 
     .line 7
-    iget-object v1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->noConnectionDlgFragment:Lcom/ibopro/ultra/dlgfragment/NoConnectionDlgFragment;
+    iget-object v1, p0, Lcom/ibopro/player/activities/SettingActivity;->noConnectionDlgFragment:Lcom/ibopro/player/dlgfragment/NoConnectionDlgFragment;
 
     invoke-virtual {v1, v0, v2}, Landroidx/fragment/app/DialogFragment;->show(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
 
@@ -2413,15 +2408,15 @@
     const/4 v0, 0x0
 
     .line 4
-    invoke-static {v1, v3, v0}, Lcom/ibopro/ultra/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
+    invoke-static {v1, v3, v0}, Lcom/ibopro/player/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
 
     return-void
 
     .line 5
     :cond_15
-    new-instance v1, Lcom/ibopro/ultra/dlgfragment/ParentControlDlgFragment;
+    new-instance v1, Lcom/ibopro/player/dlgfragment/ParentControlDlgFragment;
 
-    invoke-direct {v1}, Lcom/ibopro/ultra/dlgfragment/ParentControlDlgFragment;-><init>()V
+    invoke-direct {v1}, Lcom/ibopro/player/dlgfragment/ParentControlDlgFragment;-><init>()V
 
     .line 6
     invoke-virtual {v1, v0, v2}, Landroidx/fragment/app/DialogFragment;->show(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
@@ -2433,9 +2428,9 @@
     .registers 8
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
-    invoke-virtual {v0}, Lcom/ibopro/ultra/helper/PreferenceHelper;->getSharedPreferenceIsProtocol()Z
+    invoke-virtual {v0}, Lcom/ibopro/player/helper/PreferenceHelper;->getSharedPreferenceIsProtocol()Z
 
     move-result v0
 
@@ -2476,25 +2471,25 @@
     const/4 v0, 0x0
 
     .line 8
-    invoke-static {v3, v5, v0}, Lcom/ibopro/ultra/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
+    invoke-static {v3, v5, v0}, Lcom/ibopro/player/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
 
     return-void
 
     .line 9
     :cond_2a
-    iget-object v3, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v3, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v3}, Lcom/ibopro/ultra/models/WordModels;->getChange_player()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/ibopro/player/models/WordModels;->getChange_player()Ljava/lang/String;
 
     move-result-object v3
 
-    new-instance v5, Lcom/ibopro/ultra/activities/SettingActivity$$ExternalSyntheticLambda0;
+    new-instance v5, Lcom/ibopro/player/activities/SettingActivity$$ExternalSyntheticLambda0;
 
     const/16 v6, 0x8
 
-    invoke-direct {v5, p0, v6}, Lcom/ibopro/ultra/activities/SettingActivity$$ExternalSyntheticLambda0;-><init>(Lcom/ibopro/ultra/activities/SettingActivity;I)V
+    invoke-direct {v5, p0, v6}, Lcom/ibopro/player/activities/SettingActivity$$ExternalSyntheticLambda0;-><init>(Lcom/ibopro/player/activities/SettingActivity;I)V
 
-    invoke-static {p0, v1, v3, v0, v5}, Lcom/ibopro/ultra/dlgfragment/ExternalPlayerDlgFragment;->newInstance(Landroid/content/Context;Ljava/util/List;Ljava/lang/String;ILcom/ibopro/ultra/dlgfragment/ExternalPlayerDlgFragment$ItemPositionListener;)Lcom/ibopro/ultra/dlgfragment/ExternalPlayerDlgFragment;
+    invoke-static {p0, v1, v3, v0, v5}, Lcom/ibopro/player/dlgfragment/ExternalPlayerDlgFragment;->newInstance(Landroid/content/Context;Ljava/util/List;Ljava/lang/String;ILcom/ibopro/player/dlgfragment/ExternalPlayerDlgFragment$ItemPositionListener;)Lcom/ibopro/player/dlgfragment/ExternalPlayerDlgFragment;
 
     move-result-object v0
 
@@ -2529,13 +2524,13 @@
     const/4 v0, 0x0
 
     .line 4
-    invoke-static {v1, v3, v0}, Lcom/ibopro/ultra/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
+    invoke-static {v1, v3, v0}, Lcom/ibopro/player/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
 
     return-void
 
     .line 5
     :cond_15
-    invoke-static {p0}, Lcom/ibopro/ultra/dlgfragment/SubtitleSettingDlgFragment;->newInstance(Landroid/content/Context;)Lcom/ibopro/ultra/dlgfragment/SubtitleSettingDlgFragment;
+    invoke-static {p0}, Lcom/ibopro/player/dlgfragment/SubtitleSettingDlgFragment;->newInstance(Landroid/content/Context;)Lcom/ibopro/player/dlgfragment/SubtitleSettingDlgFragment;
 
     move-result-object v1
 
@@ -2570,22 +2565,22 @@
     const/4 v0, 0x0
 
     .line 4
-    invoke-static {v1, v3, v0}, Lcom/ibopro/ultra/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
+    invoke-static {v1, v3, v0}, Lcom/ibopro/player/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
 
     return-void
 
     .line 5
     :cond_15
-    new-instance v1, Lcom/ibopro/ultra/dlgfragment/PayForTvDlgFragment;
+    new-instance v1, Lcom/ibopro/player/dlgfragment/PayForTvDlgFragment;
 
-    invoke-direct {v1}, Lcom/ibopro/ultra/dlgfragment/PayForTvDlgFragment;-><init>()V
+    invoke-direct {v1}, Lcom/ibopro/player/dlgfragment/PayForTvDlgFragment;-><init>()V
 
     .line 6
-    new-instance v3, Lcom/ibopro/ultra/activities/SettingActivity$2;
+    new-instance v3, Lcom/ibopro/player/activities/SettingActivity$2;
 
-    invoke-direct {v3, p0}, Lcom/ibopro/ultra/activities/SettingActivity$2;-><init>(Lcom/ibopro/ultra/activities/SettingActivity;)V
+    invoke-direct {v3, p0}, Lcom/ibopro/player/activities/SettingActivity$2;-><init>(Lcom/ibopro/player/activities/SettingActivity;)V
 
-    invoke-virtual {v1, v3}, Lcom/ibopro/ultra/dlgfragment/PayForTvDlgFragment;->setOnButtonClickListener(Lcom/ibopro/ultra/dlgfragment/PayForTvDlgFragment$OnButtonClickListener;)V
+    invoke-virtual {v1, v3}, Lcom/ibopro/player/dlgfragment/PayForTvDlgFragment;->setOnButtonClickListener(Lcom/ibopro/player/dlgfragment/PayForTvDlgFragment$OnButtonClickListener;)V
 
     .line 7
     invoke-virtual {v1, v0, v2}, Landroidx/fragment/app/DialogFragment;->show(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
@@ -2597,19 +2592,19 @@
     .registers 9
 
     .line 1
-    sget-object v0, Lcom/ibopro/ultra/apps/LTVApp;->instance:Lcom/ibopro/ultra/apps/LTVApp;
+    sget-object v0, Lcom/ibopro/player/apps/LTVApp;->instance:Lcom/ibopro/player/apps/LTVApp;
 
-    invoke-virtual {v0}, Lcom/ibopro/ultra/apps/LTVApp;->versionCheck()V
+    invoke-virtual {v0}, Lcom/ibopro/player/apps/LTVApp;->versionCheck()V
 
     .line 2
-    sget-object v0, Lcom/ibopro/ultra/apps/LTVApp;->instance:Lcom/ibopro/ultra/apps/LTVApp;
+    sget-object v0, Lcom/ibopro/player/apps/LTVApp;->instance:Lcom/ibopro/player/apps/LTVApp;
 
-    invoke-virtual {v0}, Lcom/ibopro/ultra/apps/LTVApp;->loadVersion()V
+    invoke-virtual {v0}, Lcom/ibopro/player/apps/LTVApp;->loadVersion()V
 
     .line 3
-    iget-wide v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->api_version:D
+    iget-wide v0, p0, Lcom/ibopro/player/activities/SettingActivity;->api_version:D
 
-    iget-wide v2, p0, Lcom/ibopro/ultra/activities/SettingActivity;->current_version:D
+    iget-wide v2, p0, Lcom/ibopro/player/activities/SettingActivity;->current_version:D
 
     cmpl-double v4, v0, v2
 
@@ -2618,23 +2613,23 @@
     const/4 v0, 0x1
 
     .line 4
-    iget-object v1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v1, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v1}, Lcom/ibopro/ultra/models/WordModels;->getNew_software_update_available()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/ibopro/player/models/WordModels;->getNew_software_update_available()Ljava/lang/String;
 
     move-result-object v1
 
     .line 5
-    iget-object v2, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v2, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v2}, Lcom/ibopro/ultra/models/WordModels;->getUpdate_now()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/ibopro/player/models/WordModels;->getUpdate_now()Ljava/lang/String;
 
     move-result-object v2
 
     .line 6
-    iget-object v3, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v3, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v3}, Lcom/ibopro/ultra/models/WordModels;->getSkip()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/ibopro/player/models/WordModels;->getSkip()Ljava/lang/String;
 
     move-result-object v3
 
@@ -2642,23 +2637,23 @@
 
     .line 7
     :cond_26
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v0}, Lcom/ibopro/ultra/models/WordModels;->getApp_is_up_to_date()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/ibopro/player/models/WordModels;->getApp_is_up_to_date()Ljava/lang/String;
 
     move-result-object v1
 
     .line 8
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v0}, Lcom/ibopro/ultra/models/WordModels;->getOk()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/ibopro/player/models/WordModels;->getOk()Ljava/lang/String;
 
     move-result-object v2
 
     .line 9
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v0}, Lcom/ibopro/ultra/models/WordModels;->getCancel()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/ibopro/player/models/WordModels;->getCancel()Ljava/lang/String;
 
     move-result-object v3
 
@@ -2687,29 +2682,29 @@
     const/4 v0, 0x0
 
     .line 13
-    invoke-static {v5, v7, v0}, Lcom/ibopro/ultra/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
+    invoke-static {v5, v7, v0}, Lcom/ibopro/player/MainActivity$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
 
     return-void
 
     .line 14
     :cond_4e
-    invoke-static {p0, v1, v2, v3, v0}, Lcom/ibopro/ultra/dlgfragment/UpdateDlgFragment;->newInstance(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Lcom/ibopro/ultra/dlgfragment/UpdateDlgFragment;
+    invoke-static {p0, v1, v2, v3, v0}, Lcom/ibopro/player/dlgfragment/UpdateDlgFragment;->newInstance(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Lcom/ibopro/player/dlgfragment/UpdateDlgFragment;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->updateDlgFragment:Lcom/ibopro/ultra/dlgfragment/UpdateDlgFragment;
+    iput-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->updateDlgFragment:Lcom/ibopro/player/dlgfragment/UpdateDlgFragment;
 
     .line 15
-    new-instance v1, Lcom/ibopro/ultra/activities/SettingActivity$$ExternalSyntheticLambda0;
+    new-instance v1, Lcom/ibopro/player/activities/SettingActivity$$ExternalSyntheticLambda0;
 
     const/4 v2, 0x3
 
-    invoke-direct {v1, p0, v2}, Lcom/ibopro/ultra/activities/SettingActivity$$ExternalSyntheticLambda0;-><init>(Lcom/ibopro/ultra/activities/SettingActivity;I)V
+    invoke-direct {v1, p0, v2}, Lcom/ibopro/player/activities/SettingActivity$$ExternalSyntheticLambda0;-><init>(Lcom/ibopro/player/activities/SettingActivity;I)V
 
-    invoke-virtual {v0, v1}, Lcom/ibopro/ultra/dlgfragment/UpdateDlgFragment;->setOnUpdateAvailableListener(Lcom/ibopro/ultra/dlgfragment/UpdateDlgFragment$UpdateAvailableListener;)V
+    invoke-virtual {v0, v1}, Lcom/ibopro/player/dlgfragment/UpdateDlgFragment;->setOnUpdateAvailableListener(Lcom/ibopro/player/dlgfragment/UpdateDlgFragment$UpdateAvailableListener;)V
 
     .line 16
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->updateDlgFragment:Lcom/ibopro/ultra/dlgfragment/UpdateDlgFragment;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->updateDlgFragment:Lcom/ibopro/player/dlgfragment/UpdateDlgFragment;
 
     invoke-virtual {v0, v4, v6}, Landroidx/fragment/app/DialogFragment;->show(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
 
@@ -2737,7 +2732,7 @@
 
     if-le v1, v4, :cond_22
 
-    const-string v1, "com.ibopro.ultra.provider"
+    const-string v1, "com.ibopro.player.provider"
 
     .line 3
     invoke-static {p0, v1, p1}, Landroidx/core/content/FileProvider;->getUriForFile(Landroid/content/Context;Ljava/lang/String;Ljava/io/File;)Landroid/net/Uri;
@@ -2778,23 +2773,23 @@
     .registers 4
 
     .line 1
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->reviewInfo:Lcom/google/android/play/core/review/ReviewInfo;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->reviewInfo:Lcom/google/android/play/core/review/ReviewInfo;
 
     if-eqz v0, :cond_13
 
     .line 2
-    iget-object v1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->reviewManager:Lcom/google/android/play/core/review/ReviewManager;
+    iget-object v1, p0, Lcom/ibopro/player/activities/SettingActivity;->reviewManager:Lcom/google/android/play/core/review/ReviewManager;
 
     invoke-interface {v1, p0, v0}, Lcom/google/android/play/core/review/ReviewManager;->launchReviewFlow(Landroid/app/Activity;Lcom/google/android/play/core/review/ReviewInfo;)Lcom/google/android/play/core/tasks/Task;
 
     move-result-object v0
 
     .line 3
-    new-instance v1, Lcom/ibopro/ultra/activities/SettingActivity$$ExternalSyntheticLambda0;
+    new-instance v1, Lcom/ibopro/player/activities/SettingActivity$$ExternalSyntheticLambda0;
 
     const/4 v2, 0x4
 
-    invoke-direct {v1, p0, v2}, Lcom/ibopro/ultra/activities/SettingActivity$$ExternalSyntheticLambda0;-><init>(Lcom/ibopro/ultra/activities/SettingActivity;I)V
+    invoke-direct {v1, p0, v2}, Lcom/ibopro/player/activities/SettingActivity$$ExternalSyntheticLambda0;-><init>(Lcom/ibopro/player/activities/SettingActivity;I)V
 
     invoke-virtual {v0, v1}, Lcom/google/android/play/core/tasks/Task;->addOnCompleteListener(Lcom/google/android/play/core/tasks/OnCompleteListener;)Lcom/google/android/play/core/tasks/Task;
 
@@ -2830,9 +2825,9 @@
     if-eqz p1, :cond_6e
 
     .line 2
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getActivate_success()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getActivate_success()Ljava/lang/String;
 
     move-result-object p1
 
@@ -2845,41 +2840,41 @@
     invoke-virtual {p1}, Landroid/widget/Toast;->show()V
 
     .line 3
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->appInfoModel:Lcom/ibopro/ultra/models/AppInfoModel;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->appInfoModel:Lcom/ibopro/player/models/AppInfoModel;
 
-    invoke-virtual {p1, p2}, Lcom/ibopro/ultra/models/AppInfoModel;->setIs_trial(I)V
+    invoke-virtual {p1, p2}, Lcom/ibopro/player/models/AppInfoModel;->setIs_trial(I)V
 
     .line 4
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->appInfoModel:Lcom/ibopro/ultra/models/AppInfoModel;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->appInfoModel:Lcom/ibopro/player/models/AppInfoModel;
 
-    invoke-virtual {p1, v2}, Lcom/ibopro/ultra/models/AppInfoModel;->setIs_google_pay(Z)V
+    invoke-virtual {p1, v2}, Lcom/ibopro/player/models/AppInfoModel;->setIs_google_pay(Z)V
 
     .line 5
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
-    invoke-virtual {p1, v2}, Lcom/ibopro/ultra/helper/PreferenceHelper;->setSharedPreferenceIsPlaylistChanged(Z)V
+    invoke-virtual {p1, v2}, Lcom/ibopro/player/helper/PreferenceHelper;->setSharedPreferenceIsPlaylistChanged(Z)V
 
     .line 6
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
-    iget-object v1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->appInfoModel:Lcom/ibopro/ultra/models/AppInfoModel;
+    iget-object v1, p0, Lcom/ibopro/player/activities/SettingActivity;->appInfoModel:Lcom/ibopro/player/models/AppInfoModel;
 
-    invoke-virtual {p1, v1}, Lcom/ibopro/ultra/helper/PreferenceHelper;->setSharedPreferenceAppInfo(Lcom/ibopro/ultra/models/AppInfoModel;)V
+    invoke-virtual {p1, v1}, Lcom/ibopro/player/helper/PreferenceHelper;->setSharedPreferenceAppInfo(Lcom/ibopro/player/models/AppInfoModel;)V
 
     .line 7
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->btn_pay:Landroid/widget/Button;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->btn_pay:Landroid/widget/Button;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 8
-    invoke-static {p0}, Lcom/ibopro/ultra/helper/GetSharedInfo;->isTVDevice(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/ibopro/player/helper/GetSharedInfo;->isTVDevice(Landroid/content/Context;)Z
 
     move-result p1
 
     if-eqz p1, :cond_6e
 
     .line 9
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->btn_tv_pay:Landroid/widget/Button;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->btn_tv_pay:Landroid/widget/Button;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
     :try_end_46
@@ -2891,50 +2886,50 @@
     nop
 
     .line 10
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->appInfoModel:Lcom/ibopro/ultra/models/AppInfoModel;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->appInfoModel:Lcom/ibopro/player/models/AppInfoModel;
 
-    invoke-virtual {p1, p2}, Lcom/ibopro/ultra/models/AppInfoModel;->setIs_trial(I)V
+    invoke-virtual {p1, p2}, Lcom/ibopro/player/models/AppInfoModel;->setIs_trial(I)V
 
     .line 11
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->appInfoModel:Lcom/ibopro/ultra/models/AppInfoModel;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->appInfoModel:Lcom/ibopro/player/models/AppInfoModel;
 
-    invoke-virtual {p1, v2}, Lcom/ibopro/ultra/models/AppInfoModel;->setIs_google_pay(Z)V
+    invoke-virtual {p1, v2}, Lcom/ibopro/player/models/AppInfoModel;->setIs_google_pay(Z)V
 
     .line 12
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
-    invoke-virtual {p1, v2}, Lcom/ibopro/ultra/helper/PreferenceHelper;->setSharedPreferenceIsPlaylistChanged(Z)V
+    invoke-virtual {p1, v2}, Lcom/ibopro/player/helper/PreferenceHelper;->setSharedPreferenceIsPlaylistChanged(Z)V
 
     .line 13
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
-    iget-object p2, p0, Lcom/ibopro/ultra/activities/SettingActivity;->appInfoModel:Lcom/ibopro/ultra/models/AppInfoModel;
+    iget-object p2, p0, Lcom/ibopro/player/activities/SettingActivity;->appInfoModel:Lcom/ibopro/player/models/AppInfoModel;
 
-    invoke-virtual {p1, p2}, Lcom/ibopro/ultra/helper/PreferenceHelper;->setSharedPreferenceAppInfo(Lcom/ibopro/ultra/models/AppInfoModel;)V
+    invoke-virtual {p1, p2}, Lcom/ibopro/player/helper/PreferenceHelper;->setSharedPreferenceAppInfo(Lcom/ibopro/player/models/AppInfoModel;)V
 
     .line 14
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->btn_pay:Landroid/widget/Button;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->btn_pay:Landroid/widget/Button;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 15
-    invoke-static {p0}, Lcom/ibopro/ultra/helper/GetSharedInfo;->isTVDevice(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/ibopro/player/helper/GetSharedInfo;->isTVDevice(Landroid/content/Context;)Z
 
     move-result p1
 
     if-eqz p1, :cond_6e
 
     .line 16
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->btn_tv_pay:Landroid/widget/Button;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->btn_tv_pay:Landroid/widget/Button;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 17
     :cond_6e
     :goto_6e
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->appInfoModel:Lcom/ibopro/ultra/models/AppInfoModel;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->appInfoModel:Lcom/ibopro/player/models/AppInfoModel;
 
-    invoke-static {p1}, Lcom/ibopro/ultra/utils/Utils;->saveToFile(Lcom/ibopro/ultra/models/AppInfoModel;)V
+    invoke-static {p1}, Lcom/ibopro/player/utils/Utils;->saveToFile(Lcom/ibopro/player/models/AppInfoModel;)V
 
     goto :goto_8c
 
@@ -2954,7 +2949,7 @@
 
     move-result-object p2
 
-    invoke-static {p2}, Lcom/ibopro/ultra/utils/Security;->getDecodedString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2}, Lcom/ibopro/player/utils/Security;->getDecodedString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
@@ -3003,7 +2998,7 @@
 
     .line 3
     :pswitch_14
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->btn_back:Landroid/widget/ImageButton;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->btn_back:Landroid/widget/ImageButton;
 
     invoke-virtual {v0}, Landroid/view/View;->hasFocus()Z
 
@@ -3015,7 +3010,7 @@
 
     .line 4
     :pswitch_1d
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->recycler_setting:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->recycler_setting:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {v0}, Landroid/view/View;->hasFocus()Z
 
@@ -3023,7 +3018,7 @@
 
     if-eqz v0, :cond_92
 
-    iget v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->setting_pos:I
+    iget v0, p0, Lcom/ibopro/player/activities/SettingActivity;->setting_pos:I
 
     rem-int/2addr v0, v2
 
@@ -3033,7 +3028,7 @@
 
     .line 5
     :pswitch_2b
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->btn_back:Landroid/widget/ImageButton;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->btn_back:Landroid/widget/ImageButton;
 
     invoke-virtual {v0}, Landroid/view/View;->hasFocus()Z
 
@@ -3042,12 +3037,12 @@
     if-eqz v0, :cond_3e
 
     .line 6
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->btn_back:Landroid/widget/ImageButton;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->btn_back:Landroid/widget/ImageButton;
 
     invoke-virtual {p1, v1}, Landroid/view/View;->setFocusable(Z)V
 
     .line 7
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->recycler_setting:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->recycler_setting:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {p1}, Landroid/view/View;->requestFocus()Z
 
@@ -3055,9 +3050,9 @@
 
     .line 8
     :cond_3e
-    iget v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->setting_pos:I
+    iget v0, p0, Lcom/ibopro/player/activities/SettingActivity;->setting_pos:I
 
-    iget-object v1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->settingLists:Ljava/util/List;
+    iget-object v1, p0, Lcom/ibopro/player/activities/SettingActivity;->settingLists:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
 
@@ -3068,17 +3063,17 @@
     if-le v0, v1, :cond_92
 
     .line 9
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->btn_tv_pay:Landroid/widget/Button;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->btn_tv_pay:Landroid/widget/Button;
 
     invoke-virtual {p1, v3}, Landroid/view/View;->setFocusable(Z)V
 
     .line 10
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->btn_pay:Landroid/widget/Button;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->btn_pay:Landroid/widget/Button;
 
     invoke-virtual {p1, v3}, Landroid/view/View;->setFocusable(Z)V
 
     .line 11
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->btn_pay:Landroid/widget/Button;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->btn_pay:Landroid/widget/Button;
 
     invoke-virtual {p1}, Landroid/view/View;->requestFocus()Z
 
@@ -3086,19 +3081,19 @@
 
     .line 12
     :pswitch_59
-    iget v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->setting_pos:I
+    iget v0, p0, Lcom/ibopro/player/activities/SettingActivity;->setting_pos:I
 
     const/4 v1, 0x3
 
     if-ge v0, v1, :cond_92
 
     .line 13
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->btn_back:Landroid/widget/ImageButton;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->btn_back:Landroid/widget/ImageButton;
 
     invoke-virtual {p1, v3}, Landroid/view/View;->setFocusable(Z)V
 
     .line 14
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->btn_back:Landroid/widget/ImageButton;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->btn_back:Landroid/widget/ImageButton;
 
     invoke-virtual {p1}, Landroid/view/View;->requestFocus()Z
 
@@ -3106,7 +3101,7 @@
 
     .line 15
     :cond_69
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->progress_bar:Lpl/droidsonroids/gif/GifImageView;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->progress_bar:Lpl/droidsonroids/gif/GifImageView;
 
     invoke-virtual {v0}, Landroid/view/View;->getVisibility()I
 
@@ -3115,9 +3110,9 @@
     if-nez v0, :cond_7f
 
     .line 16
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v0}, Lcom/ibopro/ultra/models/WordModels;->getPlaylist_is_loading()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/ibopro/player/models/WordModels;->getPlaylist_is_loading()Ljava/lang/String;
 
     move-result-object v0
 
@@ -3178,21 +3173,21 @@
     if-eqz p1, :cond_1d
 
     .line 1
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->progress_bar:Lpl/droidsonroids/gif/GifImageView;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->progress_bar:Lpl/droidsonroids/gif/GifImageView;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 2
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0}, Lcom/ibopro/ultra/helper/PreferenceHelper;->setSharedPreferencePlaylistPosition(I)V
+    invoke-virtual {p1, v0}, Lcom/ibopro/player/helper/PreferenceHelper;->setSharedPreferencePlaylistPosition(I)V
 
     .line 3
     new-instance p1, Landroid/content/Intent;
 
-    const-class v0, Lcom/ibopro/ultra/activities/HomeActivity;
+    const-class v0, Lcom/ibopro/player/activities/HomeActivity;
 
     invoke-direct {p1, p0, v0}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -3206,12 +3201,12 @@
 
     .line 6
     :cond_1d
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->progress_bar:Lpl/droidsonroids/gif/GifImageView;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->progress_bar:Lpl/droidsonroids/gif/GifImageView;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 7
-    invoke-direct {p0}, Lcom/ibopro/ultra/activities/SettingActivity;->showNoConnectionDlgFragment()V
+    invoke-direct {p0}, Lcom/ibopro/player/activities/SettingActivity;->showNoConnectionDlgFragment()V
 
     :goto_25
     return-void
@@ -3237,13 +3232,13 @@
 
     .line 2
     :cond_f
-    invoke-direct {p0}, Lcom/ibopro/ultra/activities/SettingActivity;->showTVDeviceDlgFragment()V
+    invoke-direct {p0}, Lcom/ibopro/player/activities/SettingActivity;->showTVDeviceDlgFragment()V
 
     goto :goto_3d
 
     .line 3
     :cond_13
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->progress_bar:Lpl/droidsonroids/gif/GifImageView;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->progress_bar:Lpl/droidsonroids/gif/GifImageView;
 
     invoke-virtual {p1}, Landroid/view/View;->getVisibility()I
 
@@ -3252,9 +3247,9 @@
     if-nez p1, :cond_2a
 
     .line 4
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/WordModels;->getPlaylist_is_loading()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/WordModels;->getPlaylist_is_loading()Ljava/lang/String;
 
     move-result-object p1
 
@@ -3297,7 +3292,7 @@
     .registers 8
 
     .line 1
-    invoke-super {p0, p1}, Lcom/ibopro/ultra/apps/BaseActivity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/ibopro/player/apps/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     const p1, 0x7f0e0035
 
@@ -3305,42 +3300,42 @@
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->setContentView(I)V
 
     .line 3
-    invoke-static {p0}, Lcom/ibopro/ultra/utils/Utils;->FullScreenCall(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/ibopro/player/utils/Utils;->FullScreenCall(Landroid/app/Activity;)V
 
     .line 4
-    new-instance p1, Lcom/ibopro/ultra/helper/PreferenceHelper;
+    new-instance p1, Lcom/ibopro/player/helper/PreferenceHelper;
 
-    invoke-direct {p1, p0}, Lcom/ibopro/ultra/helper/PreferenceHelper;-><init>(Landroid/content/Context;)V
+    invoke-direct {p1, p0}, Lcom/ibopro/player/helper/PreferenceHelper;-><init>(Landroid/content/Context;)V
 
-    iput-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iput-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
     .line 5
-    invoke-virtual {p1}, Lcom/ibopro/ultra/helper/PreferenceHelper;->getSharedPreferenceAppInfo()Lcom/ibopro/ultra/models/AppInfoModel;
+    invoke-virtual {p1}, Lcom/ibopro/player/helper/PreferenceHelper;->getSharedPreferenceAppInfo()Lcom/ibopro/player/models/AppInfoModel;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->appInfoModel:Lcom/ibopro/ultra/models/AppInfoModel;
+    iput-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->appInfoModel:Lcom/ibopro/player/models/AppInfoModel;
 
     .line 6
-    invoke-static {p0}, Lcom/ibopro/ultra/helper/GetSharedInfo;->getWordModel(Landroid/content/Context;)Lcom/ibopro/ultra/models/WordModels;
+    invoke-static {p0}, Lcom/ibopro/player/helper/GetSharedInfo;->getWordModel(Landroid/content/Context;)Lcom/ibopro/player/models/WordModels;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iput-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
     .line 7
-    invoke-direct {p0}, Lcom/ibopro/ultra/activities/SettingActivity;->initView()V
+    invoke-direct {p0}, Lcom/ibopro/player/activities/SettingActivity;->initView()V
 
     .line 8
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->txt_mac_address:Landroid/widget/TextView;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->txt_mac_address:Landroid/widget/TextView;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v1, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v1}, Lcom/ibopro/ultra/models/WordModels;->getMac_address()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/ibopro/player/models/WordModels;->getMac_address()Ljava/lang/String;
 
     move-result-object v1
 
@@ -3350,9 +3345,9 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object v2, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
-    invoke-virtual {v2}, Lcom/ibopro/ultra/helper/PreferenceHelper;->getSharedPreferenceMacAddress()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/ibopro/player/helper/PreferenceHelper;->getSharedPreferenceMacAddress()Ljava/lang/String;
 
     move-result-object v2
 
@@ -3362,9 +3357,9 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object v2, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-virtual {v2}, Lcom/ibopro/ultra/models/WordModels;->getDevice_key()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/ibopro/player/models/WordModels;->getDevice_key()Ljava/lang/String;
 
     move-result-object v2
 
@@ -3372,9 +3367,9 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/ultra/helper/PreferenceHelper;
+    iget-object v1, p0, Lcom/ibopro/player/activities/SettingActivity;->preferenceHelper:Lcom/ibopro/player/helper/PreferenceHelper;
 
-    invoke-virtual {v1}, Lcom/ibopro/ultra/helper/PreferenceHelper;->getSharedPreferenceDeviceKey()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/ibopro/player/helper/PreferenceHelper;->getSharedPreferenceDeviceKey()Ljava/lang/String;
 
     move-result-object v1
 
@@ -3387,27 +3382,27 @@
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 9
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->wordModels:Lcom/ibopro/ultra/models/WordModels;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->wordModels:Lcom/ibopro/player/models/WordModels;
 
-    invoke-direct {p0, p1}, Lcom/ibopro/ultra/activities/SettingActivity;->getSettingLists(Lcom/ibopro/ultra/models/WordModels;)Ljava/util/List;
+    invoke-direct {p0, p1}, Lcom/ibopro/player/activities/SettingActivity;->getSettingLists(Lcom/ibopro/player/models/WordModels;)Ljava/util/List;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->settingLists:Ljava/util/List;
+    iput-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->settingLists:Ljava/util/List;
 
     .line 10
-    sget-object p1, Lcom/ibopro/ultra/apps/LTVApp;->version_name:Ljava/lang/String;
+    sget-object p1, Lcom/ibopro/player/apps/LTVApp;->version_name:Ljava/lang/String;
 
     invoke-static {p1}, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->current_version:D
+    iput-wide v0, p0, Lcom/ibopro/player/activities/SettingActivity;->current_version:D
 
     .line 11
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->appInfoModel:Lcom/ibopro/ultra/models/AppInfoModel;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->appInfoModel:Lcom/ibopro/player/models/AppInfoModel;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/AppInfoModel;->getApp_version()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/ibopro/player/models/AppInfoModel;->getApp_version()Ljava/lang/String;
 
     move-result-object p1
 
@@ -3415,14 +3410,14 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->api_version:D
+    iput-wide v0, p0, Lcom/ibopro/player/activities/SettingActivity;->api_version:D
 
     .line 12
-    new-instance p1, Lcom/ibopro/ultra/adapter/SettingRecyclerAdapter;
+    new-instance p1, Lcom/ibopro/player/adapter/SettingRecyclerAdapter;
 
-    iget-object v2, p0, Lcom/ibopro/ultra/activities/SettingActivity;->settingLists:Ljava/util/List;
+    iget-object v2, p0, Lcom/ibopro/player/activities/SettingActivity;->settingLists:Ljava/util/List;
 
-    iget-wide v3, p0, Lcom/ibopro/ultra/activities/SettingActivity;->current_version:D
+    iget-wide v3, p0, Lcom/ibopro/player/activities/SettingActivity;->current_version:D
 
     cmpl-double v5, v0, v3
 
@@ -3436,62 +3431,62 @@
     const/4 v0, -0x1
 
     :goto_8b
-    new-instance v1, Lcom/ibopro/ultra/activities/LiveActivity$$ExternalSyntheticLambda3;
+    new-instance v1, Lcom/ibopro/player/activities/LiveActivity$$ExternalSyntheticLambda3;
 
     const/4 v3, 0x7
 
-    invoke-direct {v1, p0, v3}, Lcom/ibopro/ultra/activities/LiveActivity$$ExternalSyntheticLambda3;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v1, p0, v3}, Lcom/ibopro/player/activities/LiveActivity$$ExternalSyntheticLambda3;-><init>(Ljava/lang/Object;I)V
 
-    invoke-direct {p1, p0, v2, v0, v1}, Lcom/ibopro/ultra/adapter/SettingRecyclerAdapter;-><init>(Landroid/content/Context;Ljava/util/List;ILkotlin/jvm/functions/Function3;)V
+    invoke-direct {p1, p0, v2, v0, v1}, Lcom/ibopro/player/adapter/SettingRecyclerAdapter;-><init>(Landroid/content/Context;Ljava/util/List;ILkotlin/jvm/functions/Function3;)V
 
-    iput-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->adapter:Lcom/ibopro/ultra/adapter/SettingRecyclerAdapter;
+    iput-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->adapter:Lcom/ibopro/player/adapter/SettingRecyclerAdapter;
 
     .line 13
-    iget-object v0, p0, Lcom/ibopro/ultra/activities/SettingActivity;->recycler_setting:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v0, p0, Lcom/ibopro/player/activities/SettingActivity;->recycler_setting:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$Adapter;)V
 
     .line 14
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->recycler_setting:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->recycler_setting:Landroidx/recyclerview/widget/RecyclerView;
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->scrollToPosition(I)V
 
     .line 15
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->btn_back:Landroid/widget/ImageButton;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->btn_back:Landroid/widget/ImageButton;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setFocusable(Z)V
 
     .line 16
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->btn_pay:Landroid/widget/Button;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->btn_pay:Landroid/widget/Button;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setFocusable(Z)V
 
     .line 17
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->btn_tv_pay:Landroid/widget/Button;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->btn_tv_pay:Landroid/widget/Button;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setFocusable(Z)V
 
     .line 18
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->btn_tv_pay:Landroid/widget/Button;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->btn_tv_pay:Landroid/widget/Button;
 
     const/16 v0, 0x8
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 19
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->btn_pay:Landroid/widget/Button;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->btn_pay:Landroid/widget/Button;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 20
     :try_start_bc
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->expire_format:Ljava/text/SimpleDateFormat;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->expire_format:Ljava/text/SimpleDateFormat;
 
-    iget-object v1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->appInfoModel:Lcom/ibopro/ultra/models/AppInfoModel;
+    iget-object v1, p0, Lcom/ibopro/player/activities/SettingActivity;->appInfoModel:Lcom/ibopro/player/models/AppInfoModel;
 
-    invoke-virtual {v1}, Lcom/ibopro/ultra/models/AppInfoModel;->getExpiredDate()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/ibopro/player/models/AppInfoModel;->getExpiredDate()Ljava/lang/String;
 
     move-result-object v1
 
@@ -3504,7 +3499,7 @@
 
     move-result-wide v1
 
-    iput-wide v1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->expired_mils:J
+    iput-wide v1, p0, Lcom/ibopro/player/activities/SettingActivity;->expired_mils:J
     :try_end_ce
     .catch Ljava/lang/Exception; {:try_start_bc .. :try_end_ce} :catch_cf
 
@@ -3514,13 +3509,13 @@
     const-wide/16 v1, 0x0
 
     .line 22
-    iput-wide v1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->expired_mils:J
+    iput-wide v1, p0, Lcom/ibopro/player/activities/SettingActivity;->expired_mils:J
 
     .line 23
     :goto_d3
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->appInfoModel:Lcom/ibopro/ultra/models/AppInfoModel;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->appInfoModel:Lcom/ibopro/player/models/AppInfoModel;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/AppInfoModel;->getIs_trial()I
+    invoke-virtual {p1}, Lcom/ibopro/player/models/AppInfoModel;->getIs_trial()I
 
     move-result p1
 
@@ -3528,15 +3523,15 @@
 
     if-eq p1, v1, :cond_f7
 
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->appInfoModel:Lcom/ibopro/ultra/models/AppInfoModel;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->appInfoModel:Lcom/ibopro/player/models/AppInfoModel;
 
-    invoke-virtual {p1}, Lcom/ibopro/ultra/models/AppInfoModel;->isIs_google_pay()Z
+    invoke-virtual {p1}, Lcom/ibopro/player/models/AppInfoModel;->isIs_google_pay()Z
 
     move-result p1
 
     if-nez p1, :cond_f7
 
-    iget-wide v1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->expired_mils:J
+    iget-wide v1, p0, Lcom/ibopro/player/activities/SettingActivity;->expired_mils:J
 
     new-instance p1, Ljava/util/Date;
 
@@ -3556,7 +3551,7 @@
 
     .line 24
     :cond_f7
-    iget-object p1, p0, Lcom/ibopro/ultra/activities/SettingActivity;->btn_pay:Landroid/widget/Button;
+    iget-object p1, p0, Lcom/ibopro/player/activities/SettingActivity;->btn_pay:Landroid/widget/Button;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
