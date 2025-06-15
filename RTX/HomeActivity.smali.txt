@@ -177,6 +177,8 @@
     .line 5
     iget-object v0, p0, Lcom/flextv/livestore/activities/HomeActivity;->txt_account:Landroid/widget/TextView;
 
+    if-eqz v0, :cond_32
+
     iget-object v1, p0, Lcom/flextv/livestore/activities/HomeActivity;->wordModels:Lcom/flextv/livestore/models/WordModels;
 
     invoke-virtual {v1}, Lcom/flextv/livestore/models/WordModels;->getAccount()Ljava/lang/String;
@@ -186,7 +188,10 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 6
+    :cond_32
     iget-object v0, p0, Lcom/flextv/livestore/activities/HomeActivity;->txt_change:Landroid/widget/TextView;
+
+    if-eqz v0, :cond_3f
 
     iget-object v1, p0, Lcom/flextv/livestore/activities/HomeActivity;->wordModels:Lcom/flextv/livestore/models/WordModels;
 
@@ -197,7 +202,10 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 7
+    :cond_3f
     iget-object v0, p0, Lcom/flextv/livestore/activities/HomeActivity;->txt_setting:Landroid/widget/TextView;
+
+    if-eqz v0, :cond_4c
 
     iget-object v1, p0, Lcom/flextv/livestore/activities/HomeActivity;->wordModels:Lcom/flextv/livestore/models/WordModels;
 
@@ -208,6 +216,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 8
+    :cond_4c
     iget-object v0, p0, Lcom/flextv/livestore/activities/HomeActivity;->txt_reload:Landroid/widget/TextView;
 
     iget-object v1, p0, Lcom/flextv/livestore/activities/HomeActivity;->wordModels:Lcom/flextv/livestore/models/WordModels;
@@ -221,6 +230,8 @@
     .line 9
     iget-object v0, p0, Lcom/flextv/livestore/activities/HomeActivity;->txt_exit:Landroid/widget/TextView;
 
+    if-eqz v0, :cond_64
+
     iget-object v1, p0, Lcom/flextv/livestore/activities/HomeActivity;->wordModels:Lcom/flextv/livestore/models/WordModels;
 
     invoke-virtual {v1}, Lcom/flextv/livestore/models/WordModels;->getExit()Ljava/lang/String;
@@ -229,6 +240,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
+    :cond_64
     return-void
 .end method
 
@@ -525,6 +537,8 @@
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
+    invoke-direct {p0}, Lcom/flextv/livestore/activities/HomeActivity;->loadWebview()V
+
     return-void
 .end method
 
@@ -587,6 +601,48 @@
     .line 4
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
+    return-void
+.end method
+
+.method private loadWebview()V
+    .registers 7
+
+    const v0, 0x7f0b0434
+
+    .line 19
+    invoke-virtual {p0, v0}, Landroidx/appcompat/app/AppCompatActivity;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_28
+
+    check-cast v0, Landroid/webkit/WebView;
+
+    invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
+
+    move-result-object v1
+
+    const v2, 0x1
+
+    invoke-virtual {v1, v2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+
+    iget-object v1, p0, Lcom/flextv/livestore/activities/HomeActivity;->preferenceHelper:Lcom/flextv/livestore/helper/PreferenceHelper;
+
+    invoke-virtual {v1}, Lcom/flextv/livestore/helper/PreferenceHelper;->getSharedPreferenceAppInfo()Lcom/flextv/livestore/models/AppInfoModel;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/flextv/livestore/models/AppInfoModel;->getHome_url1()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
+
+    const v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/webkit/WebView;->setBackgroundColor(I)V
+
+    :cond_28
     return-void
 .end method
 
@@ -721,53 +777,16 @@
 .end method
 
 .method private showAccountDlgFragment()V
-    .registers 5
+    .registers 7
 
-    .line 1
-    invoke-virtual {p0}, Landroidx/fragment/app/FragmentActivity;->getSupportFragmentManager()Landroidx/fragment/app/FragmentManager;
+    new-instance v1, Landroid/content/Intent;
 
-    move-result-object v0
+    const-class v0, Lcom/flextv/livestore/SportActivity;
 
-    .line 2
-    invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->beginTransaction()Landroidx/fragment/app/FragmentTransaction;
+    invoke-direct {v1, p0, v0}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    move-result-object v1
-
-    const-string v2, "fragment_account"
-
-    .line 3
-    invoke-virtual {v0, v2}, Landroidx/fragment/app/FragmentManager;->findFragmentByTag(Ljava/lang/String;)Landroidx/fragment/app/Fragment;
-
-    move-result-object v3
-
-    if-eqz v3, :cond_15
-
-    const/4 v0, 0x0
-
-    .line 4
-    invoke-static {v1, v3, v0}, Landroidx/core/graphics/Insets$$ExternalSyntheticOutline0;->m(Landroidx/fragment/app/FragmentTransaction;Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
-
-    return-void
-
-    .line 5
-    :cond_15
-    invoke-static {p0}, Lcom/flextv/livestore/dlgfragment/AccountDlgFragment;->newInstance(Landroid/content/Context;)Lcom/flextv/livestore/dlgfragment/AccountDlgFragment;
-
-    move-result-object v1
-
-    iput-object v1, p0, Lcom/flextv/livestore/activities/HomeActivity;->accountDlgFragment:Lcom/flextv/livestore/dlgfragment/AccountDlgFragment;
-
-    .line 6
-    new-instance v3, Lcom/flextv/livestore/activities/HomeActivity$$ExternalSyntheticLambda0;
-
-    invoke-direct {v3, p0}, Lcom/flextv/livestore/activities/HomeActivity$$ExternalSyntheticLambda0;-><init>(Lcom/flextv/livestore/activities/HomeActivity;)V
-
-    invoke-virtual {v1, v3}, Lcom/flextv/livestore/dlgfragment/AccountDlgFragment;->setOnPayButtonClickListener(Lcom/flextv/livestore/dlgfragment/AccountDlgFragment$PayButtonClickListener;)V
-
-    .line 7
-    iget-object v1, p0, Lcom/flextv/livestore/activities/HomeActivity;->accountDlgFragment:Lcom/flextv/livestore/dlgfragment/AccountDlgFragment;
-
-    invoke-virtual {v1, v0, v2}, Landroidx/fragment/app/DialogFragment;->show(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
+    .line 10
+    invoke-virtual {p0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
     return-void
 .end method
@@ -1376,9 +1395,90 @@
     .line 1
     invoke-super {p0, p1}, Lcom/flextv/livestore/apps/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
+    new-instance v1, Lcom/flextv/livestore/helper/PreferenceHelper;
+
+    invoke-direct {v1, p0}, Lcom/flextv/livestore/helper/PreferenceHelper;-><init>(Landroid/content/Context;)V
+
+    .line 5
+    invoke-virtual {v1}, Lcom/flextv/livestore/helper/PreferenceHelper;->getSharedPreferenceAppInfo()Lcom/flextv/livestore/models/AppInfoModel;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/flextv/livestore/models/AppInfoModel;->getTheme()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v0, "5"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_3c
+
+    const-string v0, "4"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_40
+
+    const-string v0, "3"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_44
+
+    const-string v0, "2"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_48
+
+    const-string v0, "6"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_4c
+
     const p1, 0x7f0e0022
 
+    goto :goto_50
+
+    :cond_3c
+    const p1, 0x7f0e0112
+
+    goto :goto_50
+
+    :cond_40
+    const p1, 0x7f0e010f
+
+    goto :goto_50
+
+    :cond_44
+    const p1, 0x7f0e0110
+
+    goto :goto_50
+
+    :cond_48
+    const p1, 0x7f0e0111
+
+    goto :goto_50
+
+    :cond_4c
+    const p1, 0x7f0e0113
+
+    goto :goto_50
+
     .line 2
+    :goto_50
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->setContentView(I)V
 
     .line 3
@@ -1473,13 +1573,13 @@
 
     move-result p1
 
-    if-nez p1, :cond_6c
+    if-nez p1, :cond_b6
 
     .line 15
     invoke-direct {p0}, Lcom/flextv/livestore/activities/HomeActivity;->syncParentControl()V
 
     .line 16
-    :cond_6c
+    :cond_b6
     iget-object p1, p0, Lcom/flextv/livestore/activities/HomeActivity;->ly_live:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     invoke-virtual {p1}, Landroid/view/View;->requestFocus()Z
