@@ -29,8 +29,6 @@
 .method static constructor <clinit>()V
     .registers 1
 
-    invoke-static {}, Lrtx/app/RTXRebrand;->initDcc()V
-
     invoke-static {}, Lamimo/dcc/DccApplication;->initDcc()V
 
     invoke-static {}, Lcom/andyhax/hook/Launch;->qaq()V
