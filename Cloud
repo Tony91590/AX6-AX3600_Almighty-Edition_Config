@@ -1,0 +1,266 @@
+.class Lcom/parse/ParseCloudCodeController;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field final restClient:Lcom/parse/ParseHttpClient;
+
+
+# direct methods
+.method public constructor <init>(Lcom/parse/ParseHttpClient;)V
+    .registers 2
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/parse/ParseCloudCodeController;->restClient:Lcom/parse/ParseHttpClient;
+
+    return-void
+.end method
+
+.method private synthetic lambda$callFunctionInBackground$0(Lcom/parse/boltsinternal/Task;)Ljava/lang/Object;
+    .registers 2
+
+    invoke-virtual {p1}, Lcom/parse/boltsinternal/Task;->getResult()Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lcom/parse/ParseCloudCodeController;->convertCloudResponse(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public static synthetic ـﹶ(Lcom/parse/ParseCloudCodeController;Lcom/parse/boltsinternal/Task;)Ljava/lang/Object;
+    .registers 2
+
+    invoke-direct {p0, p1}, Lcom/parse/ParseCloudCodeController;->lambda$callFunctionInBackground$0(Lcom/parse/boltsinternal/Task;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public callFunctionInBackground(Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lcom/parse/boltsinternal/Task;
+    .registers 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/lang/String;",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "*>;",
+            "Ljava/lang/String;",
+            ")",
+            "Lcom/parse/boltsinternal/Task<",
+            "TT;>;"
+        }
+    .end annotation
+
+    invoke-static {p1, p2, p3}, Lcom/parse/ParseRESTCloudCommand;->callFunctionCommand(Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lcom/parse/ParseRESTCloudCommand;
+
+    move-result-object p1
+
+    iget-object p2, p0, Lcom/parse/ParseCloudCodeController;->restClient:Lcom/parse/ParseHttpClient;
+
+    invoke-virtual {p1, p2}, Lcom/parse/ParseRequest;->executeAsync(Lcom/parse/ParseHttpClient;)Lcom/parse/boltsinternal/Task;
+
+    move-result-object p1
+
+    new-instance p2, Lcom/parse/ˆʿ;
+
+    const/4 p3, 0x3
+
+    invoke-direct {p2, p3, p0}, Lcom/parse/ˆʿ;-><init>(ILjava/lang/Object;)V
+
+    invoke-virtual {p1, p2}, Lcom/parse/boltsinternal/Task;->onSuccess(Lcom/parse/boltsinternal/Continuation;)Lcom/parse/boltsinternal/Task;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public convertCloudResponse(Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 4
+
+    instance-of v0, p1, Lorg/json/JSONObject;
+
+    if-eqz v0, :cond_18
+
+    check-cast p1, Lorg/json/JSONObject;
+
+    invoke-virtual {p0, p1}, Lcom/parse/ParseCloudCodeController;->saveme(Lorg/json/JSONObject;)Lorg/json/JSONObject;
+
+    move-result-object p1
+
+    const-string v0, "result"
+
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_14
+
+    const/4 p1, 0x0
+
+    return-object p1
+
+    :cond_14
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    :cond_18
+    invoke-static {}, Lcom/parse/ParseDecoder;->get()Lcom/parse/ParseDecoder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lcom/parse/ParseDecoder;->decode(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_23
+
+    return-object v0
+
+    :cond_23
+    return-object p1
+.end method
+
+.method public saveme(Lorg/json/JSONObject;)Lorg/json/JSONObject;
+    .registers 10
+    .param p1, "obj"  # Lorg/json/JSONObject;
+
+    .prologue
+    .line 167
+    invoke-virtual {p1}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 169
+    .local v2, "jsonString":Ljava/lang/String;
+    :try_start_4
+    new-instance v1, Lorg/json/JSONObject;
+
+    invoke-direct {v1, v2}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+
+    .line 170
+    .local v1, "jsonObject":Lorg/json/JSONObject;
+    const-string v6, "result"
+
+    invoke-virtual {v1, v6}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    move-result-object v5
+
+    .line 171
+    .local v5, "resultObject":Lorg/json/JSONObject;
+    const-string v6, "responseToken"
+
+    invoke-virtual {v5, v6}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
+
+    move-result v4
+
+    .line 173
+    .local v4, "responseToken":I
+    new-instance v0, Lorg/json/JSONObject;
+
+    invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
+
+    .line 174
+    .local v0, "finalobject":Lorg/json/JSONObject;
+    new-instance v3, Lorg/json/JSONObject;
+
+    invoke-direct {v3}, Lorg/json/JSONObject;-><init>()V
+
+    .line 175
+    .local v3, "putobject":Lorg/json/JSONObject;
+    const-string v6, "newApkUrl"
+
+    const-string v7, ""
+
+    invoke-virtual {v3, v6, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 176
+    const-string v6, "newVersionName"
+
+    const-string v7, ""
+
+    invoke-virtual {v3, v6, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 177
+    const-string v6, "shouldUpdateGooglePlayVersion"
+
+    const/4 v7, 0x0
+
+    invoke-virtual {v3, v6, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
+
+    .line 178
+    const-string v6, "forceAutoUpdate"
+
+    const/4 v7, 0x0
+
+    invoke-virtual {v3, v6, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
+
+    .line 179
+    const-string v6, "stagedRolloutDays"
+
+    const/4 v7, 0x0
+
+    invoke-virtual {v3, v6, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    .line 180
+    const-string v6, "isActivated"
+
+    const/4 v7, 0x1
+
+    invoke-virtual {v3, v6, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
+
+    .line 181
+    const-string v6, "deviceName"
+
+    const-string v7, "TV"
+
+    invoke-virtual {v3, v6, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 182
+    const-string v6, "account"
+
+    const-string v7, "rtx"
+
+    invoke-virtual {v3, v6, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 183
+    const-string v6, "responseToken"
+
+    invoke-virtual {v3, v6, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    .line 184
+    const-string v6, "result"
+
+    invoke-virtual {v0, v6, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+    :try_end_5d
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_5d} :catch_5e
+
+    .line 189
+    .end local v0  # "finalobject":Lorg/json/JSONObject;
+    .end local v1  # "jsonObject":Lorg/json/JSONObject;
+    .end local v3  # "putobject":Lorg/json/JSONObject;
+    .end local v4  # "responseToken":I
+    .end local v5  # "resultObject":Lorg/json/JSONObject;
+    :goto_5d
+    return-object v0
+
+    .line 186
+    :catch_5e
+    move-exception v6
+
+    .line 189
+    const/4 v0, 0x0
+
+    goto :goto_5d
+.end method
