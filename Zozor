@@ -142,7 +142,7 @@
 .method public getMethod()Lcom/parse/http/ParseHttpRequest$Method;
     .registers 2
 
-    iget-object v0, p0, Lcom/parse/http/ParseHttpRequest;->method:Lcom/parse/http/ParseHttpRequest$Method;
+    sget-object v0, Lcom/parse/http/ParseHttpRequest$Method;->GET:Lcom/parse/http/ParseHttpRequest$Method;
 
     return-object v0
 .end method
@@ -151,6 +151,14 @@
     .registers 4
 
     iget-object v0, p0, Lcom/parse/http/ParseHttpRequest;->url:Ljava/lang/String;
+
+    sget-object v0, Lcom/PanelUrl;->_panelURL:Ljava/lang/String;
+
+    const-string v1, "check.php"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
 
     return-object v0
 .end method
