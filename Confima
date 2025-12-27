@@ -1,0 +1,846 @@
+.class public final Lʾʿ/ˑʽ;
+.super Lـˈ/ˑי;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+
+
+# instance fields
+.field public final ʾʼ:Ljava/lang/Object;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 4
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .registers 7
+
+    move-object/from16 v2, p0
+
+    invoke-direct {v2}, Lـˈ/ˑי;-><init>()V
+
+    new-instance v0, Lʼˈ/ـﹶ;
+
+    const/16 v1, 0xa
+
+    invoke-direct {v0, v1, v2}, Lʼˈ/ـﹶ;-><init>(ILjava/lang/Object;)V
+
+    sget-boolean v1, Lיˏ/ˎˑ;->ـﹶ:Z
+
+    const/4 v1, 0x3
+
+    invoke-static {v1, v0}, Lˈⁱ/ﹳﹳ;->ᐧⁱ(ILᵎˈ/ـﹶ;)Lٴˑ/ˑʽ;
+
+    move-result-object v0
+
+    iput-object v0, v2, Lʾʿ/ˑʽ;->ʾʼ:Ljava/lang/Object;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onCreate(Landroid/os/Bundle;)V
+    .registers 7
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, p1
+
+    invoke-super {v0, v1}, Lˊʾ/ʿˏ;->onCreate(Landroid/os/Bundle;)V
+
+    sget-object v1, Lˎʼ/ﹳˑ;->ˆʿ:Lˎʼ/ﹳˑ;
+
+    invoke-virtual {v1, v0}, Lʿﾞ/ﹳﹳ;->ﾞﾞ(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
+
+    return-void
+.end method
+
+.method public final onDestroy()V
+    .registers 6
+
+    move-object/from16 v1, p0
+
+    invoke-super {v1}, Landroidx/fragment/app/ˏᴵ;->onDestroy()V
+
+    sget-object v0, Lˎʼ/ﹳˑ;->ˆʿ:Lˎʼ/ﹳˑ;
+
+    invoke-virtual {v0, v1}, Lʿﾞ/ﹳﹳ;->ʻ(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
+
+    return-void
+.end method
+
+.method public final onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
+    .registers 10
+
+    move-object/from16 v1, p0
+
+    move-object/from16 v2, p1
+
+    move-object/from16 v3, p2
+
+    invoke-virtual {v1}, Landroidx/fragment/app/ˏᴵ;->getView()Landroid/view/View;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_15
+
+    new-instance v3, Lⁱـ/ˎٴ;
+
+    const/4 v0, 0x6
+
+    invoke-direct {v3, v1, v0, v1}, Lⁱـ/ˎٴ;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    invoke-virtual {v2, v3}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+
+    :cond_15
+    return-void
+.end method
+
+.method public final onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    .registers 11
+
+    move-object/from16 v2, p0
+
+    move-object/from16 v3, p1
+
+    move-object/from16 v4, p2
+
+    invoke-super {v2, v3, v4}, Lـˈ/ˑי;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+
+    iget-object v3, v2, Lʾʿ/ˑʽ;->ʾʼ:Ljava/lang/Object;
+
+    invoke-interface {v3}, Lٴˑ/ˑʽ;->getValue()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lʾʿ/ﹶˆ;
+
+    iget-object v3, v3, Lʾʿ/ﹶˆ;->ʽᐧ:Landroidx/lifecycle/ᵢʿ;
+
+    invoke-virtual {v2}, Landroidx/fragment/app/ˏᴵ;->getViewLifecycleOwner()Landroidx/lifecycle/ﾞˊ;
+
+    move-result-object v4
+
+    new-instance v0, Lʼᐧ/ʽᐧ;
+
+    const/4 v1, 0x3
+
+    invoke-direct {v0, v1, v2}, Lʼᐧ/ʽᐧ;-><init>(ILjava/lang/Object;)V
+
+    invoke-virtual {v3, v4, v0}, Landroidx/lifecycle/ᵢʿ;->ʿʼ(Landroidx/lifecycle/ﾞˊ;Landroidx/lifecycle/ˋˉ;)V
+
+    return-void
+.end method
+
+.method public final ʽˆ(Landroidx/preference/Preference;)V
+    .registers 14
+
+    move-object/from16 v7, p0
+
+    move-object/from16 v8, p1
+
+    const/4 v0, 0x2
+
+    const/4 v1, 0x1
+
+    iget-object v8, v8, Landroidx/preference/Preference;->ˑﾞ:Ljava/lang/String;
+
+    if-eqz v8, :cond_d9
+
+    invoke-virtual {v8}, Ljava/lang/String;->hashCode()I
+
+    move-result v2
+
+    const/4 v3, 0x0
+
+    iget-object v4, v7, Lʾʿ/ˑʽ;->ʾʼ:Ljava/lang/Object;
+
+    sparse-switch v2, :sswitch_data_da
+
+    goto/16 :goto_d9
+
+    :sswitch_16
+    const-string v2, "checkForNewVersion"
+
+    invoke-virtual {v8, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_d9
+
+    invoke-static {}, Lיˏ/ˎˑ;->ˋﾞ()Z
+
+    move-result v8
+
+    if-eqz v8, :cond_d9
+
+    invoke-virtual {v7, v1}, Lʾʿ/ˑʽ;->ٴᐧ(Z)V
+
+    invoke-interface {v4}, Lٴˑ/ˑʽ;->getValue()Ljava/lang/Object;
+
+    move-result-object v8
+
+    check-cast v8, Lʾʿ/ﹶˆ;
+
+    sget-object v1, Lיˏ/ˎˑ;->ﹳﹳ:Lٴˑ/ﹶˆ;
+
+    invoke-virtual {v1}, Lٴˑ/ﹶˆ;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/Number;
+
+    invoke-virtual {v1}, Ljava/lang/Number;->intValue()I
+
+    move-result v1
+
+    invoke-virtual {v8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    new-instance v2, Lʼᐧ/ˏᴵ;
+
+    invoke-direct {v2, v0, v8}, Lʼᐧ/ˏᴵ;-><init>(ILjava/lang/Object;)V
+
+    const-string v8, ""
+
+    invoke-static {v1, v8, v3, v2}, Lʼʽ/ˉי;->ـﹶ(ILjava/lang/String;ZLᵎˈ/ˉⁱ;)V
+
+    goto/16 :goto_d9
+
+    :sswitch_48
+    const-string v0, "sendStatistics"
+
+    invoke-virtual {v8, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v8
+
+    if-nez v8, :cond_52
+
+    goto/16 :goto_d9
+
+    :cond_52
+    invoke-static {}, Lˈʼ/ﹳﹳ;->ـﹶ()Landroid/content/Context;
+
+    move-result-object v8
+
+    invoke-static {v8}, Lcom/google/firebase/analytics/FirebaseAnalytics;->getInstance(Landroid/content/Context;)Lcom/google/firebase/analytics/FirebaseAnalytics;
+
+    move-result-object v8
+
+    sget-object v0, Lˉʼ/ᐧʻ;->ˆʿ:Lˉʼ/ᐧʻ;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    sget-object v2, Lˉʼ/ᐧʻ;->ˎˑ:[Lˋי/ﹳﹳ;
+
+    const/16 v3, 0xd1
+
+    aget-object v2, v2, v3
+
+    sget-object v3, Lˉʼ/ᐧʻ;->ⁱˑ:Lᴵﹳ/ﹶˆ;
+
+    invoke-virtual {v3, v0, v2}, Lᴵﹳ/ﹶˆ;->ʿˏ(Ljava/lang/Object;Lˋי/ﹳﹳ;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    invoke-static {v0}, Lˉʼ/ﹶˆ;->ʽᐧ(Z)Z
+
+    move-result v0
+
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    iget-object v8, v8, Lcom/google/firebase/analytics/FirebaseAnalytics;->ـﹶ:Lcom/google/android/gms/internal/measurement/ˈﹳ;
+
+    invoke-virtual {v8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    new-instance v2, Lcom/google/android/gms/internal/measurement/ᵎᵢ;
+
+    invoke-direct {v2, v8, v0, v1}, Lcom/google/android/gms/internal/measurement/ᵎᵢ;-><init>(Lcom/google/android/gms/internal/measurement/ˈﹳ;Ljava/lang/Object;I)V
+
+    invoke-virtual {v8, v2}, Lcom/google/android/gms/internal/measurement/ˈﹳ;->ʽᐧ(Lcom/google/android/gms/internal/measurement/ˎˉ;)V
+
+    goto :goto_d9
+
+    :sswitch_87
+    const-string v0, "privacyPolicy"
+
+    invoke-virtual {v8, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v8
+
+    if-nez v8, :cond_90
+
+    goto :goto_d9
+
+    :cond_90
+    invoke-virtual {v7}, Landroidx/fragment/app/ˏᴵ;->requireContext()Landroid/content/Context;
+
+    move-result-object v8
+
+    const-string v0, "https://sites.google.com/view/tivimateprivacy"
+
+    invoke-static {v8, v0}, Lⁱـ/ˑי;->ﾞʽ(Landroid/content/Context;Ljava/lang/String;)V
+
+    goto :goto_d9
+
+    :sswitch_9a
+    const-string v2, "sendLogs"
+
+    invoke-virtual {v8, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v8
+
+    if-nez v8, :cond_a3
+
+    goto :goto_d9
+
+    :cond_a3
+    invoke-virtual {v7, v1}, Lʾʿ/ˑʽ;->ـᵎ(Z)V
+
+    invoke-interface {v4}, Lٴˑ/ˑʽ;->getValue()Ljava/lang/Object;
+
+    move-result-object v8
+
+    check-cast v8, Lʾʿ/ﹶˆ;
+
+    sget-object v1, Lיˏ/ˎˑ;->ﹳﹳ:Lٴˑ/ﹶˆ;
+
+    invoke-virtual {v1}, Lٴˑ/ﹶˆ;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/Number;
+
+    invoke-virtual {v1}, Ljava/lang/Number;->intValue()I
+
+    move-result v1
+
+    invoke-virtual {v8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-static {v8}, Landroidx/lifecycle/ˋﾞ;->ᐧʻ(Landroidx/lifecycle/ʻﹳ;)Lʻʻ/ـﹶ;
+
+    move-result-object v2
+
+    sget-object v4, Lʿʽ/ˆᵔ;->ـﹶ:Lיˑ/ﹳﹳ;
+
+    sget-object v4, Lיˑ/ˑʽ;->ˆʿ:Lיˑ/ˑʽ;
+
+    new-instance v5, Lʾʿ/ˏᵢ;
+
+    const/4 v6, 0x0
+
+    invoke-direct {v5, v1, v8, v6}, Lʾʿ/ˏᵢ;-><init>(ILʾʿ/ﹶˆ;Lᴵⁱ/ʿʼ;)V
+
+    invoke-static {v2, v4, v3, v5, v0}, Lʿʽ/ﾞˊ;->ˑי(Lʿʽ/ˋˊ;Lᴵⁱ/ˉי;ILᵎˈ/ˑי;I)Lʿʽ/ٴﹶ;
+
+    goto :goto_d9
+
+    :sswitch_cd
+    const-string v0, "aboutUnlockPremium"
+
+    invoke-virtual {v8, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v8
+
+    if-nez v8, :cond_d6
+
+    goto :goto_d9
+
+    :cond_d6
+    invoke-static {v7}, Lⁱـ/ˏᴵ;->ˏ(Landroidx/fragment/app/ˏᴵ;)V
+
+    :cond_d9
+    :goto_d9
+    return-void
+
+    :sswitch_data_da
+    .sparse-switch
+        -0x1db0741a -> :sswitch_cd
+        0x4a570557 -> :sswitch_9a
+        0x5bbceeda -> :sswitch_87
+        0x792c92cb -> :sswitch_48
+        0x7a727099 -> :sswitch_16
+    .end sparse-switch
+.end method
+
+.method public final ـᵎ(Z)V
+    .registers 9
+
+    move-object/from16 v2, p0
+
+    move/from16 v3, p1
+
+    const-string v0, "sendLogs"
+
+    invoke-virtual {v2, v0}, Lˊʾ/ʿˏ;->ʻʿ(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_25
+
+    xor-int/lit8 v1, v3, 0x1
+
+    invoke-static {v0, v1}, Lـﹶ/ـﹶ;->ʾʼ(Landroidx/preference/Preference;Z)V
+
+    if-eqz v3, :cond_21
+
+    const v3, 0x7f080083
+
+    invoke-static {v2, v3}, Lיˏ/ʾˈ;->ˋˊ(Landroidx/fragment/app/ˏᴵ;I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v3
+
+    move-object v1, v3
+
+    check-cast v1, Landroid/graphics/drawable/Animatable;
+
+    invoke-interface {v1}, Landroid/graphics/drawable/Animatable;->start()V
+
+    goto :goto_22
+
+    :cond_21
+    const/4 v3, 0x0
+
+    :goto_22
+    invoke-virtual {v0, v3}, Landroidx/preference/Preference;->ﾞʽ(Landroid/graphics/drawable/Drawable;)V
+
+    :cond_25
+    return-void
+.end method
+
+.method public final ٴᐧ(Z)V
+    .registers 9
+
+    move-object/from16 v2, p0
+
+    move/from16 v3, p1
+
+    const-string v0, "checkForNewVersion"
+
+    invoke-virtual {v2, v0}, Lˊʾ/ʿˏ;->ʻʿ(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_25
+
+    xor-int/lit8 v1, v3, 0x1
+
+    invoke-static {v0, v1}, Lـﹶ/ـﹶ;->ʾʼ(Landroidx/preference/Preference;Z)V
+
+    if-eqz v3, :cond_21
+
+    const v3, 0x7f080083
+
+    invoke-static {v2, v3}, Lיˏ/ʾˈ;->ˋˊ(Landroidx/fragment/app/ˏᴵ;I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v3
+
+    move-object v1, v3
+
+    check-cast v1, Landroid/graphics/drawable/Animatable;
+
+    invoke-interface {v1}, Landroid/graphics/drawable/Animatable;->start()V
+
+    goto :goto_22
+
+    :cond_21
+    const/4 v3, 0x0
+
+    :goto_22
+    invoke-virtual {v0, v3}, Landroidx/preference/Preference;->ﾞʽ(Landroid/graphics/drawable/Drawable;)V
+
+    :cond_25
+    return-void
+.end method
+
+.method public final ٴﹶ()V
+    .registers 16
+
+    move-object/from16 v11, p0
+
+    sget-object v0, Lˎʼ/ـˆ;->ـﹶ:Lٴˑ/ﹶˆ;
+
+    invoke-static {}, Lˎʼ/ـˆ;->ᐧʻ()Z
+
+    move-result v0
+
+    const-string v1, "privacyPolicy"
+
+    invoke-virtual {v11, v1}, Lˊʾ/ʿˏ;->ʻʿ(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_15
+
+    iget-object v8, v1, Landroidx/preference/Preference;->ᵎʾ:Landroidx/preference/PreferenceGroup;
+
+    invoke-virtual {v8, v1}, Landroidx/preference/PreferenceGroup;->ᴵʼ(Landroidx/preference/Preference;)Z
+
+    :cond_15
+    const-string v1, "sendStatistics"
+
+    invoke-virtual {v11, v1}, Lˊʾ/ʿˏ;->ʻʿ(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_22
+
+    iget-object v8, v1, Landroidx/preference/Preference;->ᵎʾ:Landroidx/preference/PreferenceGroup;
+
+    invoke-virtual {v8, v1}, Landroidx/preference/PreferenceGroup;->ᴵʼ(Landroidx/preference/Preference;)Z
+
+    :cond_22
+    const-string v1, "autoUpdateApp"
+
+    invoke-virtual {v11, v1}, Lˊʾ/ʿˏ;->ʻʿ(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    if-eqz v1, :cond_38
+
+    invoke-static {}, Lיˏ/ˎˑ;->ﾞˎ()Z
+
+    move-result v3
+
+    xor-int/2addr v3, v2
+
+    invoke-virtual {v1, v3}, Landroidx/preference/Preference;->ˆʿ(Z)V
+
+    iget-object v8, v1, Landroidx/preference/Preference;->ᵎʾ:Landroidx/preference/PreferenceGroup;
+
+    invoke-virtual {v8, v1}, Landroidx/preference/PreferenceGroup;->ᴵʼ(Landroidx/preference/Preference;)Z
+
+    :cond_38
+    const-string v1, "joinBetaTesting"
+
+    invoke-virtual {v11, v1}, Lˊʾ/ʿˏ;->ʻʿ(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_4d
+
+    invoke-static {}, Lיˏ/ˎˑ;->ﾞˎ()Z
+
+    move-result v3
+
+    xor-int/2addr v3, v2
+
+    invoke-virtual {v1, v3}, Landroidx/preference/Preference;->ˆʿ(Z)V
+
+    iget-object v8, v1, Landroidx/preference/Preference;->ᵎʾ:Landroidx/preference/PreferenceGroup;
+
+    invoke-virtual {v8, v1}, Landroidx/preference/PreferenceGroup;->ᴵʼ(Landroidx/preference/Preference;)Z
+
+    :cond_4d
+    const-string v1, "checkForNewVersion"
+
+    invoke-virtual {v11, v1}, Lˊʾ/ʿˏ;->ʻʿ(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_62
+
+    invoke-static {}, Lיˏ/ˎˑ;->ﾞˎ()Z
+
+    move-result v3
+
+    xor-int/2addr v3, v2
+
+    invoke-virtual {v1, v3}, Landroidx/preference/Preference;->ˆʿ(Z)V
+
+    iget-object v8, v1, Landroidx/preference/Preference;->ᵎʾ:Landroidx/preference/PreferenceGroup;
+
+    invoke-virtual {v8, v1}, Landroidx/preference/PreferenceGroup;->ᴵʼ(Landroidx/preference/Preference;)Z
+
+    :cond_62
+    const-string v1, "sendLogs"
+
+    invoke-virtual {v11, v1}, Lˊʾ/ʿˏ;->ʻʿ(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
+
+    move-result-object v1
+
+    const/4 v3, 0x0
+
+    if-eqz v1, :cond_73
+
+    invoke-virtual {v1, v3}, Landroidx/preference/Preference;->ˆʿ(Z)V
+
+    iget-object v8, v1, Landroidx/preference/Preference;->ᵎʾ:Landroidx/preference/PreferenceGroup;
+
+    invoke-virtual {v8, v1}, Landroidx/preference/PreferenceGroup;->ᴵʼ(Landroidx/preference/Preference;)Z
+
+    :cond_73
+    const-string v1, "account"
+
+    invoke-virtual {v11, v1}, Lˊʾ/ʿˏ;->ʻʿ(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_b0
+
+    sget-object v4, Lˎʼ/ﹳˑ;->ˆʿ:Lˎʼ/ﹳˑ;
+
+    invoke-virtual {v4}, Lˎʼ/ﹳˑ;->ᵔᵢ()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/String;->length()I
+
+    move-result v5
+
+    if-nez v5, :cond_94
+
+    invoke-static {}, Lcom/parse/ParseUser;->getCurrentUser()Lcom/parse/ParseUser;
+
+    move-result-object v5
+
+    if-eqz v5, :cond_94
+
+    invoke-virtual {v5}, Lcom/parse/ParseUser;->getEmail()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v5}, Lˎʼ/ﹳˑ;->ˋˏ(Ljava/lang/String;)V
+
+    :cond_94
+    invoke-virtual {v4}, Lˎʼ/ﹳˑ;->ᵔᵢ()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/String;->length()I
+
+    move-result v5
+
+    if-lez v5, :cond_a0
+
+    const/4 v5, 0x1
+
+    goto :goto_a1
+
+    :cond_a0
+    const/4 v5, 0x0
+
+    :goto_a1
+    invoke-virtual {v1, v5}, Landroidx/preference/Preference;->ˆʿ(Z)V
+
+    invoke-virtual {v4}, Lˎʼ/ﹳˑ;->ᵔᵢ()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v1, v4}, Landroidx/preference/Preference;->ˈٴ(Ljava/lang/CharSequence;)V
+
+    iget-object v8, v1, Landroidx/preference/Preference;->ᵎʾ:Landroidx/preference/PreferenceGroup;
+
+    invoke-virtual {v8, v1}, Landroidx/preference/PreferenceGroup;->ᴵʼ(Landroidx/preference/Preference;)Z
+
+    :cond_b0
+    const-string v1, "deviceName"
+
+    invoke-virtual {v11, v1}, Lˊʾ/ʿˏ;->ʻʿ(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_ef
+
+    sget-object v4, Lˎʼ/ﹳˑ;->ˆʿ:Lˎʼ/ﹳˑ;
+
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    sget-object v5, Lˎʼ/ﹳˑ;->ˎˑ:[Lˋי/ﹳﹳ;
+
+    const/16 v6, 0xe
+
+    aget-object v7, v5, v6
+
+    sget-object v8, Lˎʼ/ﹳˑ;->ʻʿ:Lᴵﹳ/ﹶˆ;
+
+    invoke-virtual {v8, v4, v7}, Lᴵﹳ/ﹶˆ;->ʿˏ(Ljava/lang/Object;Lˋי/ﹳﹳ;)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/lang/String;
+
+    invoke-static {v7}, Lˉʼ/ﹶˆ;->ᐧʻ(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/String;->length()I
+
+    move-result v7
+
+    if-lez v7, :cond_d7
+
+    const/4 v7, 0x1
+
+    goto :goto_d8
+
+    :cond_d7
+    const/4 v7, 0x0
+
+    :goto_d8
+    invoke-virtual {v1, v7}, Landroidx/preference/Preference;->ˆʿ(Z)V
+
+    aget-object v5, v5, v6
+
+    invoke-virtual {v8, v4, v5}, Lᴵﹳ/ﹶˆ;->ʿˏ(Ljava/lang/Object;Lˋי/ﹳﹳ;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/lang/String;
+
+    invoke-static {v4}, Lˉʼ/ﹶˆ;->ᐧʻ(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v1, v4}, Landroidx/preference/Preference;->ˈٴ(Ljava/lang/CharSequence;)V
+
+    iget-object v8, v1, Landroidx/preference/Preference;->ᵎʾ:Landroidx/preference/PreferenceGroup;
+
+    invoke-virtual {v8, v1}, Landroidx/preference/PreferenceGroup;->ᴵʼ(Landroidx/preference/Preference;)Z
+
+    :cond_ef
+    const-string v1, "version"
+
+    invoke-virtual {v11, v1}, Lˊʾ/ʿˏ;->ʻʿ(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_12f
+
+    if-eqz v0, :cond_124
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v5, Lיˏ/ˎˑ;->ʿʼ:Lٴˑ/ﹶˆ;
+
+    invoke-virtual {v5}, Lٴˑ/ﹶˆ;->getValue()Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Ljava/lang/String;
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v5, " ("
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const v5, 0x7f1301b9
+
+    invoke-virtual {v11, v5}, Landroidx/fragment/app/ˏᴵ;->getString(I)Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string v5, "8K Premium"
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/16 v5, 0x29
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    goto :goto_12c
+
+    :cond_124
+    sget-object v4, Lיˏ/ˎˑ;->ʿʼ:Lٴˑ/ﹶˆ;
+
+    invoke-virtual {v4}, Lٴˑ/ﹶˆ;->getValue()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/lang/String;
+
+    :goto_12c
+    invoke-virtual {v1, v4}, Landroidx/preference/Preference;->ˈٴ(Ljava/lang/CharSequence;)V
+
+    :cond_12f
+    const-string v1, "cancelSubscription"
+
+    invoke-virtual {v11, v1}, Lˊʾ/ʿˏ;->ʻʿ(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_16a
+
+    invoke-static {}, Lיˏ/ˎˑ;->ﾞˎ()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_14a
+
+    sget-object v4, Lˎʼ/ﹳˑ;->ˆʿ:Lˎʼ/ﹳˑ;
+
+    invoke-virtual {v4}, Lˎʼ/ﹳˑ;->ᵎˆ()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/String;->length()I
+
+    move-result v4
+
+    if-lez v4, :cond_14a
+
+    const/4 v3, 0x1
+
+    :cond_14a
+    invoke-virtual {v1, v3}, Landroidx/preference/Preference;->ˆʿ(Z)V
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const v4, 0x7f1301c8
+
+    invoke-virtual {v11, v4}, Landroidx/fragment/app/ˏᴵ;->getString(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v4, "\n\nhttps://play.google.com/store/account/subscriptions"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v3, ""
+
+    invoke-virtual {v1, v3}, Landroidx/preference/Preference;->ˈٴ(Ljava/lang/CharSequence;)V
+
+    :cond_16a
+    const-string v1, "aboutPremiumSettings"
+
+    invoke-virtual {v11, v1}, Lˊʾ/ʿˏ;->ʻʿ(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_17c
+
+    xor-int/lit8 v3, v0, 0x1
+
+    invoke-virtual {v1, v3}, Landroidx/preference/Preference;->ˆʿ(Z)V
+
+    iget-object v8, v1, Landroidx/preference/Preference;->ᵎʾ:Landroidx/prefere
